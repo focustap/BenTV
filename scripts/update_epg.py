@@ -10,23 +10,18 @@ from pathlib import Path
 SOURCE = "https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz"
 OUTPUT = Path(__file__).resolve().parents[1] / "guide.json"
 
-TARGET_NAMES = {
-    "freeform": "freeform - east feed",
-    "disney": "disney - eastern feed",
-    "nickelodeon": "nickelodeon usa - east feed",
-    "nicktoons": "nicktoons - east",
-    "teenick": "teennick - eastern",
-    "trutv": "trutv usa - eastern",
-    "cartoonnetwork": "cartoon network usa - eastern feed",
-    "disneyxd": "disney xd usa - eastern feed",
+TARGET_IDS = {
+    "freeform": "Freeform.HD.us2",
+    "disney": "Disney.Channel.HD.us2",
+    "nickelodeon": "Nickelodeon.HD.us2",
+    "nicktoons": "Nicktoons.us2",
+    "teenick": "Teen.Nick.us2",
+    "trutv": "truTV.HD.us2",
+    "cartoonnetwork": "Cartoon.Network.HD.us2",
+    "disneyxd": "Disney.XD.HD.us2",
 }
 
-
-def norm(value: str) -> str:
-    return re.sub(r"[^a-z0-9]+", " ", value.lower()).strip()
-
-
-TARGET_NORM = {key: norm(value) for key, value in TARGET_NAMES.items()}
+ID_TO_KEY = {channel_id: key for key, channel_id in TARGET_IDS.items()}
 
 
 def parse_xmltv_time(value: str):
@@ -66,30 +61,13 @@ def main():
     with urllib.request.urlopen(request, timeout=90) as response:
         compressed = response.read()
 
-    target_ids = {}
-    programmes = {key: [] for key in TARGET_NAMES}
+    programmes = {key: [] for key in TARGET_IDS}
 
     with gzip.GzipFile(fileobj=__import__("io").BytesIO(compressed)) as xml_stream:
         for event, elem in ET.iterparse(xml_stream, events=("end",)):
-            if elem.tag == "channel":
-                channel_id = elem.attrib.get("id", "")
-                display_names = [
-                    node.text.strip()
-                    for node in elem.findall("display-name")
-                    if node.text and node.text.strip()
-                ]
-                haystack = norm(" ".join(display_names + [channel_id]))
-
-                for key, wanted in TARGET_NORM.items():
-                    if wanted in haystack:
-                        target_ids[channel_id] = key
-                        break
-
-                elem.clear()
-
-            elif elem.tag == "programme":
+            if elem.tag == "programme":
                 channel_id = elem.attrib.get("channel", "")
-                key = target_ids.get(channel_id)
+                key = ID_TO_KEY.get(channel_id)
 
                 if key:
                     start = parse_xmltv_time(elem.attrib.get("start", ""))
@@ -111,8 +89,8 @@ def main():
     for key in programmes:
         programmes[key].sort(key=lambda item: item["start"])
 
-    missing = [key for key in TARGET_NAMES if not programmes[key]]
-    if len(missing) == len(TARGET_NAMES):
+    missing = [key for key in TARGET_IDS if not programmes[key]]
+    if len(missing) == len(TARGET_IDS):
         raise RuntimeError("No target channels were found in the EPG feed.")
 
     payload = {
