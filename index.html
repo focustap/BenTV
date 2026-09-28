@@ -12,6 +12,8 @@
       --muted: #c8d5e5;
       --selected: #fff59a;
       --selected-text: #13233a;
+      --channel-width: 172px;
+      --track-min-width: 900px;
     }
 
     * { box-sizing: border-box; }
@@ -214,40 +216,61 @@
       box-shadow: inset 0 0 0 1px rgba(255,255,255,.05);
     }
 
-    .guide-scroll { overflow-x: auto; }
+    .guide-scroll {
+      overflow-x: auto;
+      background: #102b4d;
+    }
 
     .timeline,
     .row {
       display: grid;
-      grid-template-columns: 172px repeat(6, minmax(132px, 1fr));
-      min-width: 980px;
+      grid-template-columns: var(--channel-width) minmax(var(--track-min-width), 1fr);
+      min-width: calc(var(--channel-width) + var(--track-min-width));
     }
 
     .timeline {
       background: linear-gradient(180deg, #244b78, #183a63);
       border-top: 1px solid rgba(255,255,255,.22);
-      border-bottom: 1px solid rgba(0,0,0,.5);
+      border-bottom: 1px solid rgba(0,0,0,.55);
     }
 
-    .timeline > div {
-      padding: 9px 10px;
-      border-right: 1px solid rgba(255,255,255,.24);
-      font-weight: 850;
-      font-size: .78rem;
-      text-align: center;
-      letter-spacing: .04em;
-      color: #dce9f5;
-    }
-
-    .timeline > div:first-child {
-      text-align: left;
-      font-size: .88rem;
+    .timeline-label {
+      padding: 10px 12px;
+      border-right: 2px solid rgba(255,255,255,.28);
+      font-size: .9rem;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      gap: 8px;
       color: white;
     }
 
-    .guide {
-      min-width: 980px;
-      background: #102b4d;
+    .time-track {
+      position: relative;
+      height: 42px;
+      background:
+        repeating-linear-gradient(
+          to right,
+          transparent 0,
+          transparent calc(25% - 1px),
+          rgba(255,255,255,.28) calc(25% - 1px),
+          rgba(255,255,255,.28) 25%
+        );
+    }
+
+    .time-label {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+      font-weight: 900;
+      font-size: .84rem;
+      font-variant-numeric: tabular-nums;
+      color: #eef6ff;
+      white-space: nowrap;
+      transform: translateX(0);
     }
 
     .row {
@@ -255,16 +278,11 @@
       border-bottom: 1px solid rgba(0,0,0,.48);
     }
 
-    .row > * {
-      border-right: 1px solid rgba(255,255,255,.25);
-    }
-
     .channel-cell {
       appearance: none;
       width: 100%;
-      border-top: 0;
-      border-bottom: 0;
-      border-left: 0;
+      border: 0;
+      border-right: 2px solid rgba(255,255,255,.28);
       color: #10233d;
       background: linear-gradient(180deg, #9dc5e7, #77a9d1);
       text-align: left;
@@ -291,34 +309,52 @@
       text-overflow: ellipsis;
     }
 
-    .program {
-      appearance: none;
-      border-top: 0;
-      border-bottom: 0;
-      border-left: 0;
-      padding: 9px 10px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: left;
-      background: var(--row-color, #2a4f7e);
-      color: #fff;
-      min-width: 0;
-      cursor: pointer;
+    .program-track {
+      position: relative;
+      min-height: 70px;
+      overflow: hidden;
+      background:
+        repeating-linear-gradient(
+          to right,
+          transparent 0,
+          transparent calc(25% - 1px),
+          rgba(255,255,255,.19) calc(25% - 1px),
+          rgba(255,255,255,.19) 25%
+        ),
+        var(--row-color, #2a4f7e);
     }
 
-    .program:hover { filter: brightness(1.08); }
+    .program {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      appearance: none;
+      border: 0;
+      border-right: 2px solid rgba(255,255,255,.30);
+      background: rgba(0,0,0,.04);
+      color: #fff;
+      padding: 9px 10px;
+      text-align: left;
+      cursor: pointer;
+      overflow: hidden;
+      min-width: 2px;
+    }
+
+    .program:hover {
+      background: rgba(255,255,255,.10);
+    }
 
     .program strong {
       display: block;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
-      font-size: .9rem;
+      font-size: .91rem;
     }
 
     .program small {
-      color: rgba(255,255,255,.72);
+      display: block;
+      color: rgba(255,255,255,.76);
       margin-top: 4px;
       font-size: .72rem;
       white-space: nowrap;
@@ -326,14 +362,39 @@
       text-overflow: ellipsis;
     }
 
-    .row.selected .channel-cell,
-    .row.selected .program.current {
+    .program.current.selected-program {
       background: var(--selected);
       color: var(--selected-text);
     }
 
-    .row.selected .program.current small {
-      color: rgba(19,35,58,.68);
+    .program.current.selected-program small {
+      color: rgba(19,35,58,.70);
+    }
+
+    .row.selected .channel-cell {
+      background: linear-gradient(180deg, #b8d9f3, #8ebce0);
+    }
+
+    .no-listing {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      padding-left: 12px;
+      color: rgba(255,255,255,.62);
+      font-size: .8rem;
+      font-style: italic;
+    }
+
+    .now-line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: #ffef5a;
+      box-shadow: 0 0 7px rgba(255,239,90,.9);
+      z-index: 6;
+      pointer-events: none;
     }
 
     .footer {
@@ -435,13 +496,8 @@
 
     <div class="guide-scroll" id="guideScroll">
       <div class="timeline">
-        <div>CHANNEL</div>
-        <div>NOW</div>
-        <div>NEXT</div>
-        <div>+2</div>
-        <div>+3</div>
-        <div>+4</div>
-        <div>+5</div>
+        <div class="timeline-label">Today</div>
+        <div class="time-track" id="timeTrack"></div>
       </div>
 
       <section class="guide" id="guide" aria-label="Channel guide"></section>
@@ -465,6 +521,9 @@
       { number: 222, key: "disneyxd", name: "Disney XD", src: "https://zlive.st/embed/auto-disney-xd", color: "#524479" }
     ];
 
+    const WINDOW_MINUTES = 120;
+    const HALF_HOUR = 30 * 60 * 1000;
+
     const guide = document.getElementById("guide");
     const player = document.getElementById("player");
     const channelTitle = document.getElementById("channelTitle");
@@ -477,6 +536,7 @@
     const guideFocusBtn = document.getElementById("guideFocusBtn");
     const guideScroll = document.getElementById("guideScroll");
     const guideStatus = document.getElementById("guideStatus");
+    const timeTrack = document.getElementById("timeTrack");
 
     let selectedIndex = 0;
     let guideData = { channels: {}, generatedAt: null };
@@ -494,30 +554,70 @@
       return `${formatTime(program.start)} – ${formatTime(program.stop)}`;
     }
 
+    function getWindowStart() {
+      const now = new Date();
+      const start = new Date(now);
+      start.setSeconds(0, 0);
+      start.setMinutes(now.getMinutes() < 30 ? 0 : 30);
+      return start;
+    }
+
+    function getWindowEnd(windowStart) {
+      return new Date(windowStart.getTime() + WINDOW_MINUTES * 60 * 1000);
+    }
+
+    function currentProgramFor(channel) {
+      const now = Date.now();
+      return (guideData.channels?.[channel.key] || []).find(program => {
+        const start = new Date(program.start).getTime();
+        const stop = new Date(program.stop).getTime();
+        return start <= now && now < stop;
+      }) || null;
+    }
+
+    function visibleProgramsFor(channel, windowStart, windowEnd) {
+      const startMs = windowStart.getTime();
+      const endMs = windowEnd.getTime();
+
+      return (guideData.channels?.[channel.key] || [])
+        .filter(program => {
+          const start = new Date(program.start).getTime();
+          const stop = new Date(program.stop).getTime();
+          return stop > startMs && start < endMs;
+        })
+        .sort((a, b) => new Date(a.start) - new Date(b.start));
+    }
+
     function updateClock() {
       clock.textContent = formatTime(new Date());
     }
 
-    function programsFor(channel) {
+    function renderTimeHeader(windowStart) {
+      timeTrack.innerHTML = "";
+
+      for (let minutes = 0; minutes < WINDOW_MINUTES; minutes += 30) {
+        const label = document.createElement("div");
+        label.className = "time-label";
+        label.style.left = `${(minutes / WINDOW_MINUTES) * 100}%`;
+        label.textContent = formatTime(new Date(windowStart.getTime() + minutes * 60 * 1000));
+        timeTrack.appendChild(label);
+      }
+
       const now = Date.now();
-      const list = (guideData.channels?.[channel.key] || [])
-        .filter(program => new Date(program.stop).getTime() > now)
-        .sort((a, b) => new Date(a.start) - new Date(b.start));
+      const start = windowStart.getTime();
+      const end = start + WINDOW_MINUTES * 60 * 1000;
 
-      const currentIndex = list.findIndex(program => {
-        const start = new Date(program.start).getTime();
-        const stop = new Date(program.stop).getTime();
-        return start <= now && now < stop;
-      });
-
-      if (currentIndex >= 0) return list.slice(currentIndex, currentIndex + 6);
-      return list.slice(0, 6);
+      if (now >= start && now < end) {
+        const nowLine = document.createElement("div");
+        nowLine.className = "now-line";
+        nowLine.style.left = `${((now - start) / (end - start)) * 100}%`;
+        timeTrack.appendChild(nowLine);
+      }
     }
 
     function updateHeroSchedule() {
       const channel = channels[selectedIndex];
-      const programs = programsFor(channel);
-      const current = programs[0];
+      const current = currentProgramFor(channel);
 
       if (current) {
         currentProgramTitle.textContent = current.title;
@@ -529,10 +629,19 @@
     }
 
     function renderGuide() {
+      const windowStart = getWindowStart();
+      const windowEnd = getWindowEnd(windowStart);
+      const windowStartMs = windowStart.getTime();
+      const windowEndMs = windowEnd.getTime();
+      const windowDuration = windowEndMs - windowStartMs;
+      const now = Date.now();
+
+      renderTimeHeader(windowStart);
       guide.innerHTML = "";
 
       channels.forEach((channel, index) => {
-        const programs = programsFor(channel);
+        const programs = visibleProgramsFor(channel, windowStart, windowEnd);
+
         const row = document.createElement("div");
         row.className = "row" + (index === selectedIndex ? " selected" : "");
         row.style.setProperty("--row-color", channel.color);
@@ -547,36 +656,58 @@
         channelButton.addEventListener("click", () => tune(index));
         row.appendChild(channelButton);
 
-        for (let slot = 0; slot < 6; slot++) {
-          const program = programs[slot];
-          const cell = document.createElement("button");
-          cell.type = "button";
-          cell.className = "program" + (slot === 0 ? " current" : "");
+        const track = document.createElement("div");
+        track.className = "program-track";
 
-          if (program) {
-            const title = document.createElement("strong");
-            title.textContent = program.title;
-
-            const time = document.createElement("small");
-            time.textContent = formatRange(program);
-
-            cell.append(title, time);
-            cell.title = program.subtitle
-              ? `${program.title} — ${program.subtitle}`
-              : program.title;
-          } else {
-            const title = document.createElement("strong");
-            title.textContent = slot === 0 ? "No listing" : "—";
-
-            const time = document.createElement("small");
-            time.textContent = "";
-            cell.append(title, time);
-          }
-
-          cell.addEventListener("click", () => tune(index));
-          row.appendChild(cell);
+        if (!programs.length) {
+          const empty = document.createElement("div");
+          empty.className = "no-listing";
+          empty.textContent = "No schedule data for this time";
+          track.appendChild(empty);
         }
 
+        programs.forEach(program => {
+          const actualStart = new Date(program.start).getTime();
+          const actualStop = new Date(program.stop).getTime();
+          const clippedStart = Math.max(actualStart, windowStartMs);
+          const clippedStop = Math.min(actualStop, windowEndMs);
+
+          const left = ((clippedStart - windowStartMs) / windowDuration) * 100;
+          const width = ((clippedStop - clippedStart) / windowDuration) * 100;
+          const isCurrent = actualStart <= now && now < actualStop;
+
+          const cell = document.createElement("button");
+          cell.type = "button";
+          cell.className =
+            "program" +
+            (isCurrent ? " current" : "") +
+            (isCurrent && index === selectedIndex ? " selected-program" : "");
+          cell.style.left = `${left}%`;
+          cell.style.width = `${width}%`;
+
+          const title = document.createElement("strong");
+          title.textContent = program.title;
+
+          const time = document.createElement("small");
+          time.textContent = formatRange(program);
+
+          cell.append(title, time);
+          cell.title = program.subtitle
+            ? `${program.title} — ${program.subtitle} (${formatRange(program)})`
+            : `${program.title} (${formatRange(program)})`;
+
+          cell.addEventListener("click", () => tune(index));
+          track.appendChild(cell);
+        });
+
+        if (now >= windowStartMs && now < windowEndMs) {
+          const nowLine = document.createElement("div");
+          nowLine.className = "now-line";
+          nowLine.style.left = `${((now - windowStartMs) / windowDuration) * 100}%`;
+          track.appendChild(nowLine);
+        }
+
+        row.appendChild(track);
         guide.appendChild(row);
       });
 
@@ -664,10 +795,7 @@
     tune(selectedIndex);
     loadGuide();
 
-    setInterval(() => {
-      renderGuide();
-    }, 30000);
-
+    setInterval(renderGuide, 30000);
     setInterval(loadGuide, 5 * 60 * 1000);
   </script>
 </body>
