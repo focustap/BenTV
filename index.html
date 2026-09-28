@@ -8,17 +8,10 @@
     :root {
       --navy: #17365f;
       --navy-deep: #0c2342;
-      --blue: #294f7f;
-      --blue-soft: #8db7dc;
-      --line: rgba(255,255,255,.28);
       --text: #f7fbff;
       --muted: #c8d5e5;
       --selected: #fff59a;
       --selected-text: #13233a;
-      --purple: #66439a;
-      --green: #0c7a45;
-      --cell-blue: #2a4f7e;
-      --glass: rgba(255,255,255,.06);
     }
 
     * { box-sizing: border-box; }
@@ -43,7 +36,7 @@
     button { font: inherit; }
 
     .tv {
-      width: min(1180px, 100%);
+      width: min(1240px, 100%);
       border: 1px solid rgba(255,255,255,.28);
       border-radius: 18px;
       overflow: hidden;
@@ -104,7 +97,7 @@
 
     .hero {
       display: grid;
-      grid-template-columns: minmax(0, .92fr) minmax(420px, 1.08fr);
+      grid-template-columns: minmax(0, .92fr) minmax(430px, 1.08fr);
       min-height: 320px;
       background: linear-gradient(135deg, rgba(20,57,96,.98), rgba(12,36,68,.98));
     }
@@ -131,8 +124,8 @@
 
     #channelTitle {
       margin: 0;
-      font-size: clamp(1.75rem, 4vw, 3.1rem);
-      line-height: .98;
+      font-size: clamp(1.7rem, 4vw, 3rem);
+      line-height: 1;
       letter-spacing: -.045em;
     }
 
@@ -140,9 +133,9 @@
       display: flex;
       flex-wrap: wrap;
       gap: 9px;
-      margin-top: 15px;
+      margin-top: 14px;
       color: var(--muted);
-      font-size: .95rem;
+      font-size: .9rem;
     }
 
     .pill {
@@ -152,12 +145,33 @@
       background: rgba(255,255,255,.06);
     }
 
-    .description {
-      margin: 20px 0 0;
-      max-width: 50ch;
-      color: #eef5fc;
-      line-height: 1.55;
-      font-size: 1rem;
+    .current-program {
+      margin-top: 23px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,.18);
+    }
+
+    .current-program .label {
+      display: block;
+      color: #bcd0e4;
+      font-size: .73rem;
+      font-weight: 900;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    #currentProgramTitle {
+      display: block;
+      font-size: clamp(1.12rem, 2vw, 1.55rem);
+      line-height: 1.15;
+    }
+
+    #currentProgramTime {
+      display: block;
+      color: #d2deeb;
+      margin-top: 6px;
+      font-size: .9rem;
     }
 
     .actions {
@@ -200,38 +214,44 @@
       box-shadow: inset 0 0 0 1px rgba(255,255,255,.05);
     }
 
-    .timeline {
+    .guide-scroll { overflow-x: auto; }
+
+    .timeline,
+    .row {
       display: grid;
-      grid-template-columns: 190px repeat(3, 1fr);
+      grid-template-columns: 172px repeat(6, minmax(132px, 1fr));
+      min-width: 980px;
+    }
+
+    .timeline {
       background: linear-gradient(180deg, #244b78, #183a63);
       border-top: 1px solid rgba(255,255,255,.22);
       border-bottom: 1px solid rgba(0,0,0,.5);
-      min-width: 760px;
     }
 
     .timeline > div {
-      padding: 10px 12px;
+      padding: 9px 10px;
       border-right: 1px solid rgba(255,255,255,.24);
-      font-weight: 800;
-      font-size: .92rem;
-    }
-
-    .timeline > div:not(:first-child) {
+      font-weight: 850;
+      font-size: .78rem;
       text-align: center;
-      font-variant-numeric: tabular-nums;
+      letter-spacing: .04em;
+      color: #dce9f5;
     }
 
-    .guide-scroll { overflow-x: auto; }
+    .timeline > div:first-child {
+      text-align: left;
+      font-size: .88rem;
+      color: white;
+    }
 
     .guide {
-      min-width: 760px;
+      min-width: 980px;
       background: #102b4d;
     }
 
     .row {
-      display: grid;
-      grid-template-columns: 190px repeat(3, 1fr);
-      min-height: 67px;
+      min-height: 70px;
       border-bottom: 1px solid rgba(0,0,0,.48);
     }
 
@@ -248,11 +268,11 @@
       color: #10233d;
       background: linear-gradient(180deg, #9dc5e7, #77a9d1);
       text-align: left;
-      padding: 10px 13px;
+      padding: 10px 12px;
       display: grid;
-      grid-template-columns: 44px 1fr;
+      grid-template-columns: 42px 1fr;
       align-items: center;
-      gap: 9px;
+      gap: 7px;
       cursor: pointer;
       font-weight: 900;
     }
@@ -260,9 +280,9 @@
     .channel-cell:hover { filter: brightness(1.05); }
 
     .number {
-      font-size: 1rem;
+      font-size: .95rem;
       font-variant-numeric: tabular-nums;
-      opacity: .88;
+      opacity: .85;
     }
 
     .name {
@@ -272,40 +292,47 @@
     }
 
     .program {
-      padding: 10px 12px;
+      appearance: none;
+      border-top: 0;
+      border-bottom: 0;
+      border-left: 0;
+      padding: 9px 10px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      background: var(--cell-blue);
+      text-align: left;
+      background: var(--row-color, #2a4f7e);
       color: #fff;
       min-width: 0;
+      cursor: pointer;
     }
 
-    .row:nth-child(2) .program { background: var(--purple); }
-    .row:nth-child(3) .program { background: var(--green); }
-    .row:nth-child(4) .program { background: #496a8f; }
-    .row:nth-child(5) .program { background: #31557d; }
+    .program:hover { filter: brightness(1.08); }
 
     .program strong {
       display: block;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
-      font-size: .97rem;
+      font-size: .9rem;
     }
 
     .program small {
       color: rgba(255,255,255,.72);
-      margin-top: 3px;
+      margin-top: 4px;
+      font-size: .72rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .row.selected .channel-cell,
-    .row.selected .program:first-of-type {
+    .row.selected .program.current {
       background: var(--selected);
       color: var(--selected-text);
     }
 
-    .row.selected .program:first-of-type small {
+    .row.selected .program.current small {
       color: rgba(19,35,58,.68);
     }
 
@@ -316,13 +343,12 @@
       display: flex;
       justify-content: space-between;
       gap: 14px;
-      font-size: .78rem;
+      font-size: .76rem;
       border-top: 1px solid rgba(255,255,255,.12);
     }
 
-    .keys {
-      white-space: nowrap;
-    }
+    .guide-status.error { color: #ffd2d2; }
+    .keys { white-space: nowrap; }
 
     kbd {
       display: inline-block;
@@ -343,13 +369,10 @@
       .tv { border-radius: 0; border-left: 0; border-right: 0; }
       .masthead { grid-template-columns: 1fr auto; }
       .guide-badge { display: none; }
-
-      .hero {
-        grid-template-columns: 1fr;
-      }
+      .hero { grid-template-columns: 1fr; }
 
       .info {
-        min-height: 220px;
+        min-height: 235px;
         border-right: 0;
         border-bottom: 2px solid rgba(0,0,0,.35);
       }
@@ -359,9 +382,7 @@
         aspect-ratio: 16 / 9;
       }
 
-      .footer {
-        flex-direction: column;
-      }
+      .footer { flex-direction: column; }
     }
   </style>
 </head>
@@ -381,14 +402,18 @@
         <div>
           <div class="eyebrow" id="channelLabel">21 · Freeform</div>
           <h1 id="channelTitle">Freeform</h1>
+
           <div class="channel-meta">
             <span class="pill">LIVE</span>
             <span class="pill" id="channelNumber">CH 21</span>
             <span class="pill">HD</span>
           </div>
-          <p class="description">
-            Live television, presented with the chunky guide-screen feel of old cable boxes — without making the interface feel twenty years old.
-          </p>
+
+          <div class="current-program">
+            <span class="label">On now</span>
+            <strong id="currentProgramTitle">Loading guide…</strong>
+            <span id="currentProgramTime"></span>
+          </div>
         </div>
 
         <div class="actions">
@@ -410,28 +435,34 @@
 
     <div class="guide-scroll" id="guideScroll">
       <div class="timeline">
-        <div>Today</div>
-        <div id="time1">Now</div>
-        <div id="time2">Next</div>
-        <div id="time3">Later</div>
+        <div>CHANNEL</div>
+        <div>NOW</div>
+        <div>NEXT</div>
+        <div>+2</div>
+        <div>+3</div>
+        <div>+4</div>
+        <div>+5</div>
       </div>
 
       <section class="guide" id="guide" aria-label="Channel guide"></section>
     </div>
 
     <footer class="footer">
-      <div>Select a channel to tune the live player. Program-guide data can be plugged in later.</div>
+      <div class="guide-status" id="guideStatus">Loading live TV listings…</div>
       <div class="keys"><kbd>↑</kbd><kbd>↓</kbd> channel &nbsp; <kbd>F</kbd> fullscreen</div>
     </footer>
   </main>
 
   <script>
     const channels = [
-      { number: 21, name: "Freeform", src: "https://zlive.st/embed/auto-freeform", tone: "Entertainment" },
-      { number: 22, name: "Disney Channel", src: "https://zlive.st/embed/auto-disney-channel", tone: "Family" },
-      { number: 23, name: "Nickelodeon", src: "https://zlive.st/embed/auto-nickelodeon", tone: "Kids & Family" },
-      { number: 24, name: "Nicktoons", src: "https://zlive.st/embed/auto-nicktoons", tone: "Animation" },
-      { number: 25, name: "TeenNick", src: "https://zlive.st/embed/auto-teenick", tone: "Teen & Comedy" }
+      { number: 21, key: "freeform", name: "Freeform", src: "https://zlive.st/embed/auto-freeform", color: "#2f567f" },
+      { number: 22, key: "disney", name: "Disney Channel", src: "https://zlive.st/embed/auto-disney-channel", color: "#654294" },
+      { number: 23, key: "nickelodeon", name: "Nickelodeon", src: "https://zlive.st/embed/auto-nickelodeon", color: "#0b7544" },
+      { number: 24, key: "nicktoons", name: "Nicktoons", src: "https://zlive.st/embed/auto-nicktoons", color: "#496a8f" },
+      { number: 25, key: "teenick", name: "TeenNick", src: "https://zlive.st/embed/auto-teenick", color: "#31557d" },
+      { number: 27, key: "trutv", name: "truTV", src: "https://zlive.st/embed/auto-trutv", color: "#536178" },
+      { number: 60, key: "cartoonnetwork", name: "Cartoon Network", src: "https://zlive.st/embed/auto-cartoon-network", color: "#39516c" },
+      { number: 222, key: "disneyxd", name: "Disney XD", src: "https://zlive.st/embed/auto-disney-xd", color: "#524479" }
     ];
 
     const guide = document.getElementById("guide");
@@ -439,80 +470,128 @@
     const channelTitle = document.getElementById("channelTitle");
     const channelLabel = document.getElementById("channelLabel");
     const channelNumber = document.getElementById("channelNumber");
+    const currentProgramTitle = document.getElementById("currentProgramTitle");
+    const currentProgramTime = document.getElementById("currentProgramTime");
     const clock = document.getElementById("clock");
     const fullscreenBtn = document.getElementById("fullscreenBtn");
     const guideFocusBtn = document.getElementById("guideFocusBtn");
     const guideScroll = document.getElementById("guideScroll");
+    const guideStatus = document.getElementById("guideStatus");
 
     let selectedIndex = 0;
+    let guideData = { channels: {}, generatedAt: null };
 
-    function formatTime(date) {
+    function formatTime(value) {
+      const date = value instanceof Date ? value : new Date(value);
       return new Intl.DateTimeFormat([], {
         hour: "numeric",
         minute: "2-digit"
       }).format(date);
     }
 
+    function formatRange(program) {
+      if (!program) return "";
+      return `${formatTime(program.start)} – ${formatTime(program.stop)}`;
+    }
+
     function updateClock() {
-      const now = new Date();
-      clock.textContent = formatTime(now);
+      clock.textContent = formatTime(new Date());
+    }
 
-      const minutes = now.getMinutes();
-      const base = new Date(now);
-      base.setMinutes(minutes < 30 ? 0 : 30, 0, 0);
+    function programsFor(channel) {
+      const now = Date.now();
+      const list = (guideData.channels?.[channel.key] || [])
+        .filter(program => new Date(program.stop).getTime() > now)
+        .sort((a, b) => new Date(a.start) - new Date(b.start));
 
-      document.getElementById("time1").textContent = formatTime(base);
+      const currentIndex = list.findIndex(program => {
+        const start = new Date(program.start).getTime();
+        const stop = new Date(program.stop).getTime();
+        return start <= now && now < stop;
+      });
 
-      const next = new Date(base);
-      next.setMinutes(next.getMinutes() + 30);
-      document.getElementById("time2").textContent = formatTime(next);
+      if (currentIndex >= 0) return list.slice(currentIndex, currentIndex + 6);
+      return list.slice(0, 6);
+    }
 
-      const later = new Date(base);
-      later.setMinutes(later.getMinutes() + 60);
-      document.getElementById("time3").textContent = formatTime(later);
+    function updateHeroSchedule() {
+      const channel = channels[selectedIndex];
+      const programs = programsFor(channel);
+      const current = programs[0];
+
+      if (current) {
+        currentProgramTitle.textContent = current.title;
+        currentProgramTime.textContent = formatRange(current) + (current.subtitle ? ` · ${current.subtitle}` : "");
+      } else {
+        currentProgramTitle.textContent = "Schedule unavailable";
+        currentProgramTime.textContent = "";
+      }
     }
 
     function renderGuide() {
       guide.innerHTML = "";
 
       channels.forEach((channel, index) => {
+        const programs = programsFor(channel);
         const row = document.createElement("div");
         row.className = "row" + (index === selectedIndex ? " selected" : "");
+        row.style.setProperty("--row-color", channel.color);
 
-        row.innerHTML = `
-          <button class="channel-cell" type="button" aria-label="Tune to ${channel.name}">
-            <span class="number">${channel.number}</span>
-            <span class="name">${channel.name}</span>
-          </button>
-          <div class="program">
-            <strong>Live on ${channel.name}</strong>
-            <small>${channel.tone}</small>
-          </div>
-          <div class="program">
-            <strong>Up next</strong>
-            <small>Schedule data not connected</small>
-          </div>
-          <div class="program">
-            <strong>Later</strong>
-            <small>Schedule data not connected</small>
-          </div>
+        const channelButton = document.createElement("button");
+        channelButton.className = "channel-cell";
+        channelButton.type = "button";
+        channelButton.innerHTML = `
+          <span class="number">${channel.number}</span>
+          <span class="name">${channel.name}</span>
         `;
+        channelButton.addEventListener("click", () => tune(index));
+        row.appendChild(channelButton);
 
-        row.querySelector(".channel-cell").addEventListener("click", () => tune(index));
-        row.querySelectorAll(".program").forEach(cell => {
+        for (let slot = 0; slot < 6; slot++) {
+          const program = programs[slot];
+          const cell = document.createElement("button");
+          cell.type = "button";
+          cell.className = "program" + (slot === 0 ? " current" : "");
+
+          if (program) {
+            const title = document.createElement("strong");
+            title.textContent = program.title;
+
+            const time = document.createElement("small");
+            time.textContent = formatRange(program);
+
+            cell.append(title, time);
+            cell.title = program.subtitle
+              ? `${program.title} — ${program.subtitle}`
+              : program.title;
+          } else {
+            const title = document.createElement("strong");
+            title.textContent = slot === 0 ? "No listing" : "—";
+
+            const time = document.createElement("small");
+            time.textContent = "";
+            cell.append(title, time);
+          }
+
           cell.addEventListener("click", () => tune(index));
-          cell.style.cursor = "pointer";
-        });
+          row.appendChild(cell);
+        }
 
         guide.appendChild(row);
       });
+
+      updateHeroSchedule();
     }
 
     function tune(index) {
       selectedIndex = (index + channels.length) % channels.length;
       const channel = channels[selectedIndex];
 
-      player.src = channel.src;
+      if (player.dataset.channel !== channel.key) {
+        player.src = channel.src;
+        player.dataset.channel = channel.key;
+      }
+
       channelTitle.textContent = channel.name;
       channelLabel.textContent = `${channel.number} · ${channel.name}`;
       channelNumber.textContent = `CH ${channel.number}`;
@@ -521,12 +600,37 @@
       renderGuide();
     }
 
+    async function loadGuide() {
+      try {
+        const response = await fetch(`guide.json?v=${Date.now()}`, { cache: "no-store" });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+        guideData = await response.json();
+
+        if (guideData.generatedAt) {
+          const updated = new Date(guideData.generatedAt);
+          guideStatus.textContent = `TV listings updated ${updated.toLocaleString()}`;
+        } else {
+          guideStatus.textContent = "TV listings updater is waiting for its first refresh.";
+        }
+
+        guideStatus.classList.remove("error");
+        renderGuide();
+      } catch (error) {
+        console.error("Could not load guide data:", error);
+        guideStatus.textContent = "Could not load TV listings. The channels still work.";
+        guideStatus.classList.add("error");
+        renderGuide();
+      }
+    }
+
     const saved = localStorage.getItem("bentv-channel");
     const savedIndex = channels.findIndex(channel => channel.name === saved);
     if (savedIndex >= 0) selectedIndex = savedIndex;
 
     fullscreenBtn.addEventListener("click", async () => {
       const container = document.querySelector(".preview");
+
       if (!document.fullscreenElement) {
         await container.requestFullscreen?.();
       } else {
@@ -538,7 +642,7 @@
       guideScroll.scrollIntoView({ behavior: "smooth", block: "nearest" });
     });
 
-    document.addEventListener("keydown", (event) => {
+    document.addEventListener("keydown", event => {
       if (event.key === "ArrowDown") {
         event.preventDefault();
         tune(selectedIndex + 1);
@@ -556,7 +660,15 @@
 
     updateClock();
     setInterval(updateClock, 1000);
+
     tune(selectedIndex);
+    loadGuide();
+
+    setInterval(() => {
+      renderGuide();
+    }, 30000);
+
+    setInterval(loadGuide, 5 * 60 * 1000);
   </script>
 </body>
 </html>
