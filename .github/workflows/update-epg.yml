@@ -1,6 +1,11 @@
 name: Update TV guide
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/update_epg.py"
+      - ".github/workflows/update-epg.yml"
   schedule:
     - cron: "17 */3 * * *"
   workflow_dispatch:
