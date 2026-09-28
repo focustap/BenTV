@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BenTV</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0b0d;
+      color: #fff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: #0b0b0d;
+    }
+
+    body {
+      min-height: 100vh;
+    }
+
+    .app {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 14px 18px;
+      background: #141418;
+      border-bottom: 1px solid #27272e;
+      overflow-x: auto;
+    }
+
+    .brand {
+      font-weight: 800;
+      font-size: 1.2rem;
+      white-space: nowrap;
+      margin-right: 8px;
+    }
+
+    .channels {
+      display: flex;
+      gap: 8px;
+      min-width: max-content;
+    }
+
+    .channel {
+      appearance: none;
+      border: 1px solid #33333b;
+      background: #202026;
+      color: #fff;
+      padding: 9px 13px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+
+    .channel:hover,
+    .channel.active {
+      background: #34343d;
+      border-color: #5b5b67;
+    }
+
+    .player-shell {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+    }
+
+    .now-playing {
+      padding: 10px 18px;
+      background: #101014;
+      border-bottom: 1px solid #222229;
+      font-size: 0.95rem;
+      color: #c8c8cf;
+    }
+
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+      background: #000;
+    }
+
+    .video-wrap iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    @media (min-aspect-ratio: 16/9) {
+      .player-shell {
+        justify-content: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">BenTV</div>
+
+      <nav class="channels" aria-label="Channels">
+        <button class="channel active" data-name="Freeform" data-src="https://zlive.st/embed/auto-freeform">Freeform</button>
+        <button class="channel" data-name="Disney Channel" data-src="https://zlive.st/embed/auto-disney-channel">Disney Channel</button>
+        <button class="channel" data-name="Nickelodeon" data-src="https://zlive.st/embed/auto-nickelodeon">Nickelodeon</button>
+        <button class="channel" data-name="Nicktoons" data-src="https://zlive.st/embed/auto-nicktoons">Nicktoons</button>
+        <button class="channel" data-name="TeenNick" data-src="https://zlive.st/embed/auto-teenick">TeenNick</button>
+      </nav>
+    </header>
+
+    <main class="player-shell">
+      <div class="now-playing" id="nowPlaying">Now playing: Freeform</div>
+
+      <div class="video-wrap">
+        <iframe
+          id="player"
+          src="https://zlive.st/embed/auto-freeform"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+          title="BenTV player"
+        ></iframe>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    const player = document.getElementById("player");
+    const nowPlaying = document.getElementById("nowPlaying");
+    const buttons = [...document.querySelectorAll(".channel")];
+
+    function changeChannel(button) {
+      const { name, src } = button.dataset;
+
+      player.src = src;
+      nowPlaying.textContent = `Now playing: ${name}`;
+
+      buttons.forEach((item) => item.classList.remove("active"));
+      button.classList.add("active");
+
+      localStorage.setItem("bentv-channel", name);
+    }
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => changeChannel(button));
+    });
+
+    const savedChannel = localStorage.getItem("bentv-channel");
+    if (savedChannel) {
+      const savedButton = buttons.find((button) => button.dataset.name === savedChannel);
+      if (savedButton) {
+        changeChannel(savedButton);
+      }
+    }
+  </script>
+</body>
+</html>
