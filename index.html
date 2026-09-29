@@ -480,13 +480,14 @@
         <div class="actions">
           <button class="action" id="fullscreenBtn">⛶ Fullscreen</button>
           <button class="action" id="guideFocusBtn">▦ Guide</button>
+          <button class="action" id="sourceBtn">↻ Backup</button>
         </div>
       </div>
 
       <div class="preview">
         <iframe
           id="player"
-          src="https://zlive.st/embed/auto-freeform"
+          src="https://dlive.sx/stream/stream-301.php"
           allow="autoplay; fullscreen; picture-in-picture"
           allowfullscreen
           title="BenTV player"
@@ -511,14 +512,14 @@
 
   <script>
     const channels = [
-      { number: 21, key: "freeform", name: "Freeform", src: "https://zlive.st/embed/auto-freeform", color: "#2f567f" },
-      { number: 22, key: "disney", name: "Disney Channel", src: "https://zlive.st/embed/auto-disney-channel", color: "#654294" },
-      { number: 23, key: "nickelodeon", name: "Nickelodeon", src: "https://zlive.st/embed/auto-nickelodeon", color: "#0b7544" },
-      { number: 24, key: "nicktoons", name: "Nicktoons", src: "https://zlive.st/embed/auto-nicktoons", color: "#496a8f" },
-      { number: 25, key: "teenick", name: "TeenNick", src: "https://zlive.st/embed/auto-teenick", color: "#31557d" },
-      { number: 27, key: "trutv", name: "truTV", src: "https://zlive.st/embed/auto-trutv", color: "#536178" },
-      { number: 60, key: "cartoonnetwork", name: "Cartoon Network", src: "https://zlive.st/embed/auto-cartoon-network", color: "#39516c" },
-      { number: 222, key: "disneyxd", name: "Disney XD", src: "https://zlive.st/embed/auto-disney-xd", color: "#524479" }
+      { number: 21, key: "freeform", name: "Freeform", primarySrc: "https://dlive.sx/stream/stream-301.php", backupSrc: "https://zlive.st/embed/auto-freeform", color: "#2f567f" },
+      { number: 22, key: "disney", name: "Disney Channel", primarySrc: "https://dlive.sx/stream/stream-312.php", backupSrc: "https://zlive.st/embed/auto-disney-channel", color: "#654294" },
+      { number: 23, key: "nickelodeon", name: "Nickelodeon", primarySrc: "https://dlive.sx/stream/stream-330.php", backupSrc: "https://zlive.st/embed/auto-nickelodeon", color: "#0b7544" },
+      { number: 24, key: "nicktoons", name: "Nicktoons", primarySrc: "https://dlive.sx/stream/stream-649.php", backupSrc: "https://zlive.st/embed/auto-nicktoons", color: "#496a8f" },
+      { number: 25, key: "teenick", name: "TeenNick", primarySrc: "https://dlive.sx/stream/stream-650.php", backupSrc: "https://zlive.st/embed/auto-teenick", color: "#31557d" },
+      { number: 27, key: "trutv", name: "truTV", primarySrc: "https://dlive.sx/stream/stream-341.php", backupSrc: "https://zlive.st/embed/auto-trutv", color: "#536178" },
+      { number: 60, key: "cartoonnetwork", name: "Cartoon Network", primarySrc: "https://dlive.sx/stream/stream-339.php", backupSrc: "https://zlive.st/embed/auto-cartoon-network", color: "#39516c" },
+      { number: 222, key: "disneyxd", name: "Disney XD", primarySrc: "https://dlive.sx/stream/stream-314.php", backupSrc: "https://zlive.st/embed/auto-disney-xd", color: "#524479" }
     ];
 
     const WINDOW_MINUTES = 120;
@@ -534,6 +535,7 @@
     const clock = document.getElementById("clock");
     const fullscreenBtn = document.getElementById("fullscreenBtn");
     const guideFocusBtn = document.getElementById("guideFocusBtn");
+    const sourceBtn = document.getElementById("sourceBtn");
     const guideScroll = document.getElementById("guideScroll");
     const guideStatus = document.getElementById("guideStatus");
     const timeTrack = document.getElementById("timeTrack");
@@ -714,13 +716,23 @@
       updateHeroSchedule();
     }
 
+    function setPlayerSource(channel, source = "primary") {
+      const useBackup = source === "backup";
+      const nextSrc = useBackup ? channel.backupSrc : channel.primarySrc;
+
+      player.src = nextSrc;
+      player.dataset.channel = channel.key;
+      player.dataset.source = useBackup ? "backup" : "primary";
+      sourceBtn.textContent = useBackup ? "↻ Primary" : "↻ Backup";
+      sourceBtn.title = useBackup ? "Switch back to dlive.sx" : "Switch to zlive.st backup";
+    }
+
     function tune(index) {
       selectedIndex = (index + channels.length) % channels.length;
       const channel = channels[selectedIndex];
 
       if (player.dataset.channel !== channel.key) {
-        player.src = channel.src;
-        player.dataset.channel = channel.key;
+        setPlayerSource(channel, "primary");
       }
 
       channelTitle.textContent = channel.name;
@@ -771,6 +783,18 @@
 
     guideFocusBtn.addEventListener("click", () => {
       guideScroll.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    });
+
+    sourceBtn.addEventListener("click", () => {
+      const channel = channels[selectedIndex];
+      const nextSource = player.dataset.source === "backup" ? "primary" : "backup";
+      setPlayerSource(channel, nextSource);
+    });
+
+    player.addEventListener("error", () => {
+      if (player.dataset.source !== "backup") {
+        setPlayerSource(channels[selectedIndex], "backup");
+      }
     });
 
     document.addEventListener("keydown", event => {
