@@ -80,6 +80,13 @@
       white-space: nowrap;
     }
 
+    .brand .build-tag {
+      font-size: .62rem;
+      letter-spacing: .08em;
+      opacity: .62;
+      font-variant-numeric: tabular-nums;
+    }
+
     .guide-badge {
       padding: 8px 12px;
       border-radius: 8px;
@@ -453,6 +460,7 @@
       <div class="brand">
         <strong>BenTV</strong>
         <span>Digital Cable</span>
+        <span class="build-tag" id="buildTag">BUILD ----</span>
       </div>
       <div class="guide-badge">TV GUIDE</div>
       <div class="clock" id="clock">--:--</div>
@@ -487,7 +495,7 @@
       <div class="preview">
         <iframe
           id="player"
-          src="https://dlive.sx/stream/stream-301.php"
+          src="https://zlive.st/embed/auto-freeform"
           allow="autoplay; fullscreen; picture-in-picture"
           allowfullscreen
           title="BenTV player"
@@ -512,14 +520,14 @@
 
   <script>
     const channels = [
-      { number: 21, key: "freeform", name: "Freeform", primarySrc: "https://dlive.sx/stream/stream-301.php", backupSrc: "https://zlive.st/embed/auto-freeform", color: "#2f567f" },
-      { number: 22, key: "disney", name: "Disney Channel", primarySrc: "https://dlive.sx/stream/stream-312.php", backupSrc: "https://zlive.st/embed/auto-disney-channel", color: "#654294" },
-      { number: 23, key: "nickelodeon", name: "Nickelodeon", primarySrc: "https://dlive.sx/stream/stream-330.php", backupSrc: "https://zlive.st/embed/auto-nickelodeon", color: "#0b7544" },
-      { number: 24, key: "nicktoons", name: "Nicktoons", primarySrc: "https://dlive.sx/stream/stream-649.php", backupSrc: "https://zlive.st/embed/auto-nicktoons", color: "#496a8f" },
-      { number: 25, key: "teenick", name: "TeenNick", primarySrc: "https://dlive.sx/stream/stream-650.php", backupSrc: "https://zlive.st/embed/auto-teenick", color: "#31557d" },
-      { number: 27, key: "trutv", name: "truTV", primarySrc: "https://dlive.sx/stream/stream-341.php", backupSrc: "https://zlive.st/embed/auto-trutv", color: "#536178" },
-      { number: 60, key: "cartoonnetwork", name: "Cartoon Network", primarySrc: "https://dlive.sx/stream/stream-339.php", backupSrc: "https://zlive.st/embed/auto-cartoon-network", color: "#39516c" },
-      { number: 222, key: "disneyxd", name: "Disney XD", primarySrc: "https://dlive.sx/stream/stream-314.php", backupSrc: "https://zlive.st/embed/auto-disney-xd", color: "#524479" }
+      { number: 21, key: "freeform", name: "Freeform", primarySrc: "https://zlive.st/embed/auto-freeform", backupSrc: "https://dlive.sx/stream/stream-301.php", color: "#2f567f" },
+      { number: 22, key: "disney", name: "Disney Channel", primarySrc: "https://zlive.st/embed/auto-disney-channel", backupSrc: "https://dlive.sx/stream/stream-312.php", color: "#654294" },
+      { number: 23, key: "nickelodeon", name: "Nickelodeon", primarySrc: "https://zlive.st/embed/auto-nickelodeon", backupSrc: "https://dlive.sx/stream/stream-330.php", color: "#0b7544" },
+      { number: 24, key: "nicktoons", name: "Nicktoons", primarySrc: "https://zlive.st/embed/auto-nicktoons", backupSrc: "https://dlive.sx/stream/stream-649.php", color: "#496a8f" },
+      { number: 25, key: "teenick", name: "TeenNick", primarySrc: "https://zlive.st/embed/auto-teenick", backupSrc: "https://dlive.sx/stream/stream-650.php", color: "#31557d" },
+      { number: 27, key: "trutv", name: "truTV", primarySrc: "https://zlive.st/embed/auto-trutv", backupSrc: "https://dlive.sx/stream/stream-341.php", color: "#536178" },
+      { number: 60, key: "cartoonnetwork", name: "Cartoon Network", primarySrc: "https://zlive.st/embed/auto-cartoon-network", backupSrc: "https://dlive.sx/stream/stream-339.php", color: "#39516c" },
+      { number: 222, key: "disneyxd", name: "Disney XD", primarySrc: "https://zlive.st/embed/auto-disney-xd", backupSrc: "https://dlive.sx/stream/stream-314.php", color: "#524479" }
     ];
 
     const WINDOW_MINUTES = 120;
@@ -533,6 +541,7 @@
     const currentProgramTitle = document.getElementById("currentProgramTitle");
     const currentProgramTime = document.getElementById("currentProgramTime");
     const clock = document.getElementById("clock");
+    const buildTag = document.getElementById("buildTag");
     const fullscreenBtn = document.getElementById("fullscreenBtn");
     const guideFocusBtn = document.getElementById("guideFocusBtn");
     const sourceBtn = document.getElementById("sourceBtn");
@@ -720,11 +729,17 @@
       const useBackup = source === "backup";
       const nextSrc = useBackup ? channel.backupSrc : channel.primarySrc;
 
+      if (useBackup) {
+        player.setAttribute("sandbox", "allow-scripts allow-same-origin allow-forms allow-presentation");
+      } else {
+        player.removeAttribute("sandbox");
+      }
+
       player.src = nextSrc;
       player.dataset.channel = channel.key;
       player.dataset.source = useBackup ? "backup" : "primary";
       sourceBtn.textContent = useBackup ? "↻ Primary" : "↻ Backup";
-      sourceBtn.title = useBackup ? "Switch back to dlive.sx" : "Switch to zlive.st backup";
+      sourceBtn.title = useBackup ? "Switch back to zlive.st" : "Switch to sandboxed dlive.sx backup";
     }
 
     function tune(index) {
@@ -741,6 +756,21 @@
 
       localStorage.setItem("bentv-channel", channel.name);
       renderGuide();
+    }
+
+    async function loadBuildTag() {
+      try {
+        const response = await fetch("https://api.github.com/repos/focustap/BenTV/commits/main", { cache: "no-store" });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        const commit = String(data.sha || "");
+        if (commit.length >= 4) {
+          buildTag.textContent = `BUILD ${commit.slice(-4).toUpperCase()}`;
+          buildTag.title = `Latest main commit: ${commit}`;
+        }
+      } catch (error) {
+        console.warn("Could not load build commit:", error);
+      }
     }
 
     async function loadGuide() {
@@ -817,6 +847,7 @@
     setInterval(updateClock, 1000);
 
     tune(selectedIndex);
+    loadBuildTag();
     loadGuide();
 
     setInterval(renderGuide, 30000);
