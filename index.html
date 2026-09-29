@@ -527,6 +527,7 @@
       { number: 25, key: "teenick", name: "TeenNick", primarySrc: "https://zlive.st/embed/auto-teenick", backupSrc: "https://dlive.sx/stream/stream-650.php", color: "#31557d" },
       { number: 27, key: "trutv", name: "truTV", primarySrc: "https://zlive.st/embed/auto-trutv", backupSrc: "https://dlive.sx/stream/stream-341.php", color: "#536178" },
       { number: 60, key: "cartoonnetwork", name: "Cartoon Network", primarySrc: "https://zlive.st/embed/auto-cartoon-network", backupSrc: "https://dlive.sx/stream/stream-339.php", color: "#39516c" },
+      { number: 61, key: "cartoonnetworkuk", name: "Cartoon Network UK", primarySrc: "https://zlive.st/embed/cartoonnetwork-uk", backupSrc: null, color: "#314966" },
       { number: 222, key: "disneyxd", name: "Disney XD", primarySrc: "https://zlive.st/embed/auto-disney-xd", backupSrc: "https://dlive.sx/stream/stream-314.php", color: "#524479" }
     ];
 
@@ -726,7 +727,8 @@
     }
 
     function setPlayerSource(channel, source = "primary") {
-      const useBackup = source === "backup";
+      const hasBackup = Boolean(channel.backupSrc);
+      const useBackup = source === "backup" && hasBackup;
       const nextSrc = useBackup ? channel.backupSrc : channel.primarySrc;
 
       if (useBackup) {
@@ -738,8 +740,12 @@
       player.src = nextSrc;
       player.dataset.channel = channel.key;
       player.dataset.source = useBackup ? "backup" : "primary";
-      sourceBtn.textContent = useBackup ? "↻ Primary" : "↻ Backup";
-      sourceBtn.title = useBackup ? "Switch back to zlive.st" : "Switch to sandboxed dlive.sx backup";
+
+      sourceBtn.disabled = !hasBackup;
+      sourceBtn.textContent = !hasBackup ? "No Backup" : (useBackup ? "↻ Primary" : "↻ Backup");
+      sourceBtn.title = !hasBackup
+        ? "No backup source is configured for this channel"
+        : (useBackup ? "Switch back to zlive.st" : "Switch to sandboxed dlive.sx backup");
     }
 
     function tune(index) {
@@ -817,6 +823,7 @@
 
     sourceBtn.addEventListener("click", () => {
       const channel = channels[selectedIndex];
+      if (!channel.backupSrc) return;
       const nextSource = player.dataset.source === "backup" ? "primary" : "backup";
       setPlayerSource(channel, nextSource);
     });
