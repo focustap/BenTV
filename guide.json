@@ -1,14 +1,8 @@
 {
-  "generatedAt": "2026-09-30T16:59:42.344769Z",
+  "generatedAt": "2026-09-30T17:17:29.755519Z",
   "source": "EPGShare01 US2 + ErsatzTV",
   "channels": {
     "freeform": [
-      {
-        "title": "The 700 Club",
-        "subtitle": "",
-        "start": "2026-09-30T13:00:00Z",
-        "stop": "2026-09-30T14:00:00Z"
-      },
       {
         "title": "CBN Newswatch",
         "subtitle": "",
@@ -185,12 +179,6 @@
       }
     ],
     "disney": [
-      {
-        "title": "Sofia the First: Royal Magic",
-        "subtitle": "Crown Chaos / Off to the Races",
-        "start": "2026-09-30T13:30:00Z",
-        "stop": "2026-09-30T14:00:00Z"
-      },
       {
         "title": "Mickey Mouse Clubhouse+",
         "subtitle": "The Big Acorn Hunt",
@@ -514,15 +502,15 @@
         "subtitle": "Sandcastle Scramble; Butterfly Fish",
         "start": "2026-10-01T16:30:00Z",
         "stop": "2026-10-01T17:00:00Z"
+      },
+      {
+        "title": "Bluey",
+        "subtitle": "Ghost Basket; Escape; Surprise",
+        "start": "2026-10-01T17:00:00Z",
+        "stop": "2026-10-01T17:30:00Z"
       }
     ],
     "nickelodeon": [
-      {
-        "title": "PAW Patrol",
-        "subtitle": "Pups vs. a Neon Humdinger; Pups Save a Royal Painting",
-        "start": "2026-09-30T13:30:00Z",
-        "stop": "2026-09-30T14:00:00Z"
-      },
       {
         "title": "PAW Patrol",
         "subtitle": "Pups Save a Dino Digi and Tal; Pups Save a Dino Daredevil",
@@ -834,6 +822,12 @@
         "subtitle": "Pups Save the Mountain Surfers; Pups Save Humdinger's Home Away From Home",
         "start": "2026-10-01T16:30:00Z",
         "stop": "2026-10-01T17:00:00Z"
+      },
+      {
+        "title": "PAW Patrol",
+        "subtitle": "Dino Rescue: Pups and the Lost Dino Eggs",
+        "start": "2026-10-01T17:00:00Z",
+        "stop": "2026-10-01T17:30:00Z"
       }
     ],
     "nicktoons": [
@@ -1594,15 +1588,15 @@
         "subtitle": "Doppel-Gamers",
         "start": "2026-10-01T16:38:00Z",
         "stop": "2026-10-01T17:04:00Z"
+      },
+      {
+        "title": "The Thundermans",
+        "subtitle": "Are You Afraid of the Park?",
+        "start": "2026-10-01T17:04:00Z",
+        "stop": "2026-10-01T17:30:00Z"
       }
     ],
     "trutv": [
-      {
-        "title": "Impractical Jokers",
-        "subtitle": "Roy Wood Jr",
-        "start": "2026-09-30T13:30:00Z",
-        "stop": "2026-09-30T14:00:00Z"
-      },
       {
         "title": "Impractical Jokers",
         "subtitle": "Michael Ian Black",
@@ -1848,21 +1842,15 @@
         "subtitle": "Customer Disservice",
         "start": "2026-10-01T16:30:00Z",
         "stop": "2026-10-01T17:00:00Z"
+      },
+      {
+        "title": "Impractical Jokers",
+        "subtitle": "Rage Baiter",
+        "start": "2026-10-01T17:00:00Z",
+        "stop": "2026-10-01T17:30:00Z"
       }
     ],
     "cartoonnetwork": [
-      {
-        "title": "Steven Universe",
-        "subtitle": "Historical Friction",
-        "start": "2026-09-30T13:44:00Z",
-        "stop": "2026-09-30T14:00:00Z"
-      },
-      {
-        "title": "Craig of the Creek",
-        "subtitle": "A Tattle Tale",
-        "start": "2026-09-30T14:00:00Z",
-        "stop": "2026-09-30T14:15:00Z"
-      },
       {
         "title": "Craig of the Creek",
         "subtitle": "Craig of the Campus",
@@ -2276,15 +2264,15 @@
         "subtitle": "Large Dragon at Large",
         "start": "2026-10-01T16:30:00Z",
         "stop": "2026-10-01T17:00:00Z"
+      },
+      {
+        "title": "What's New Scooby-Doo?",
+        "subtitle": "Mummy Scares Best",
+        "start": "2026-10-01T17:00:00Z",
+        "stop": "2026-10-01T17:30:00Z"
       }
     ],
     "disneyxd": [
-      {
-        "title": "Big Hero 6 The Series",
-        "subtitle": "The MiSFIT; Return to Sycorax",
-        "start": "2026-09-30T13:30:00Z",
-        "stop": "2026-09-30T14:00:00Z"
-      },
       {
         "title": "Big Hero 6 The Series",
         "subtitle": "A Fresh Sparkles; Noodle Burger Ploy",
@@ -2608,8 +2596,813 @@
         "subtitle": "Stramded; Hairstory",
         "start": "2026-10-01T16:30:00Z",
         "stop": "2026-10-01T17:00:00Z"
+      },
+      {
+        "title": "Dragon Striker",
+        "subtitle": "Awakening, The",
+        "start": "2026-10-01T17:00:00Z",
+        "stop": "2026-10-01T17:30:00Z"
       }
     ],
-    "bencentral": []
+    "bencentral": [
+      {
+        "title": "iCarly",
+        "subtitle": "S01E13",
+        "start": "2026-09-30T12:41:44Z",
+        "stop": "2026-09-30T13:05:27Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E08",
+        "start": "2026-09-30T13:05:27Z",
+        "stop": "2026-09-30T13:29:11Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E09",
+        "start": "2026-09-30T13:29:11Z",
+        "stop": "2026-09-30T13:52:55Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E11",
+        "start": "2026-09-30T13:52:55Z",
+        "stop": "2026-09-30T14:16:38Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E13",
+        "start": "2026-09-30T14:16:38Z",
+        "stop": "2026-09-30T14:40:21Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E06",
+        "start": "2026-09-30T14:40:21Z",
+        "stop": "2026-09-30T15:04:04Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E05",
+        "start": "2026-09-30T15:04:04Z",
+        "stop": "2026-09-30T15:27:48Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E17",
+        "start": "2026-09-30T15:27:48Z",
+        "stop": "2026-09-30T15:51:31Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E04",
+        "start": "2026-09-30T15:51:31Z",
+        "stop": "2026-09-30T16:15:15Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E25",
+        "start": "2026-09-30T16:15:15Z",
+        "stop": "2026-09-30T16:38:58Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E01",
+        "start": "2026-09-30T16:38:58Z",
+        "stop": "2026-09-30T17:02:40Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E12",
+        "start": "2026-09-30T17:02:40Z",
+        "stop": "2026-09-30T17:26:23Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E10",
+        "start": "2026-09-30T17:26:23Z",
+        "stop": "2026-09-30T17:50:06Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E09",
+        "start": "2026-09-30T17:50:06Z",
+        "stop": "2026-09-30T18:13:50Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E23",
+        "start": "2026-09-30T18:13:50Z",
+        "stop": "2026-09-30T18:37:34Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E22",
+        "start": "2026-09-30T18:37:34Z",
+        "stop": "2026-09-30T19:01:16Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E15",
+        "start": "2026-09-30T19:01:16Z",
+        "stop": "2026-09-30T19:24:59Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E19",
+        "start": "2026-09-30T19:24:59Z",
+        "stop": "2026-09-30T19:48:42Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E21",
+        "start": "2026-09-30T19:48:42Z",
+        "stop": "2026-09-30T20:12:25Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E24",
+        "start": "2026-09-30T20:12:25Z",
+        "stop": "2026-09-30T20:36:07Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E02",
+        "start": "2026-09-30T20:36:07Z",
+        "stop": "2026-09-30T20:59:50Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E20",
+        "start": "2026-09-30T20:59:50Z",
+        "stop": "2026-09-30T21:23:33Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E08",
+        "start": "2026-09-30T21:23:33Z",
+        "stop": "2026-09-30T21:47:16Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E03",
+        "start": "2026-09-30T21:47:16Z",
+        "stop": "2026-09-30T22:10:59Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E14",
+        "start": "2026-09-30T22:10:59Z",
+        "stop": "2026-09-30T22:34:42Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E18",
+        "start": "2026-09-30T22:34:42Z",
+        "stop": "2026-09-30T22:58:25Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E16",
+        "start": "2026-09-30T22:58:25Z",
+        "stop": "2026-09-30T23:22:08Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E07",
+        "start": "2026-09-30T23:22:08Z",
+        "stop": "2026-09-30T23:45:51Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E01",
+        "start": "2026-09-30T23:45:51Z",
+        "stop": "2026-10-01T00:09:33Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E15",
+        "start": "2026-10-01T00:09:33Z",
+        "stop": "2026-10-01T00:33:16Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E05",
+        "start": "2026-10-01T00:33:16Z",
+        "stop": "2026-10-01T00:57:00Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E18",
+        "start": "2026-10-01T00:57:00Z",
+        "stop": "2026-10-01T01:20:43Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E06",
+        "start": "2026-10-01T01:20:43Z",
+        "stop": "2026-10-01T01:44:27Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E23",
+        "start": "2026-10-01T01:44:27Z",
+        "stop": "2026-10-01T02:08:10Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E07",
+        "start": "2026-10-01T02:08:10Z",
+        "stop": "2026-10-01T02:31:53Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E21",
+        "start": "2026-10-01T02:31:53Z",
+        "stop": "2026-10-01T02:55:36Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E25",
+        "start": "2026-10-01T02:55:36Z",
+        "stop": "2026-10-01T03:19:19Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E13",
+        "start": "2026-10-01T03:19:19Z",
+        "stop": "2026-10-01T03:43:02Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E11",
+        "start": "2026-10-01T03:43:02Z",
+        "stop": "2026-10-01T04:06:45Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E20",
+        "start": "2026-10-01T04:06:45Z",
+        "stop": "2026-10-01T04:30:27Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E03",
+        "start": "2026-10-01T04:30:27Z",
+        "stop": "2026-10-01T04:54:11Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E04",
+        "start": "2026-10-01T04:54:11Z",
+        "stop": "2026-10-01T05:17:54Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E09",
+        "start": "2026-10-01T05:17:54Z",
+        "stop": "2026-10-01T05:41:39Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E14",
+        "start": "2026-10-01T05:41:39Z",
+        "stop": "2026-10-01T06:05:22Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E24",
+        "start": "2026-10-01T06:05:22Z",
+        "stop": "2026-10-01T06:29:03Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E12",
+        "start": "2026-10-01T06:29:03Z",
+        "stop": "2026-10-01T06:52:46Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E08",
+        "start": "2026-10-01T06:52:46Z",
+        "stop": "2026-10-01T07:16:29Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E19",
+        "start": "2026-10-01T07:16:29Z",
+        "stop": "2026-10-01T07:40:12Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E17",
+        "start": "2026-10-01T07:40:12Z",
+        "stop": "2026-10-01T08:03:55Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E16",
+        "start": "2026-10-01T08:03:55Z",
+        "stop": "2026-10-01T08:27:38Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E10",
+        "start": "2026-10-01T08:27:38Z",
+        "stop": "2026-10-01T08:51:21Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E22",
+        "start": "2026-10-01T08:51:21Z",
+        "stop": "2026-10-01T09:15:04Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E02",
+        "start": "2026-10-01T09:15:04Z",
+        "stop": "2026-10-01T09:38:47Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E23",
+        "start": "2026-10-01T09:38:47Z",
+        "stop": "2026-10-01T10:02:30Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E09",
+        "start": "2026-10-01T10:02:30Z",
+        "stop": "2026-10-01T10:26:15Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E07",
+        "start": "2026-10-01T10:26:15Z",
+        "stop": "2026-10-01T10:49:58Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E20",
+        "start": "2026-10-01T10:49:58Z",
+        "stop": "2026-10-01T11:13:40Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E05",
+        "start": "2026-10-01T11:13:40Z",
+        "stop": "2026-10-01T11:37:24Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E01",
+        "start": "2026-10-01T11:37:24Z",
+        "stop": "2026-10-01T12:01:07Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E10",
+        "start": "2026-10-01T12:01:07Z",
+        "stop": "2026-10-01T12:24:50Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E13",
+        "start": "2026-10-01T12:24:50Z",
+        "stop": "2026-10-01T12:48:32Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E17",
+        "start": "2026-10-01T12:48:32Z",
+        "stop": "2026-10-01T13:12:15Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E16",
+        "start": "2026-10-01T13:12:15Z",
+        "stop": "2026-10-01T13:35:58Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E12",
+        "start": "2026-10-01T13:35:58Z",
+        "stop": "2026-10-01T13:59:41Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E14",
+        "start": "2026-10-01T13:59:41Z",
+        "stop": "2026-10-01T14:23:23Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E15",
+        "start": "2026-10-01T14:23:23Z",
+        "stop": "2026-10-01T14:47:06Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E19",
+        "start": "2026-10-01T14:47:06Z",
+        "stop": "2026-10-01T15:10:49Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E08",
+        "start": "2026-10-01T15:10:49Z",
+        "stop": "2026-10-01T15:34:33Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E02",
+        "start": "2026-10-01T15:34:33Z",
+        "stop": "2026-10-01T15:58:16Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E22",
+        "start": "2026-10-01T15:58:16Z",
+        "stop": "2026-10-01T16:21:58Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E06",
+        "start": "2026-10-01T16:21:58Z",
+        "stop": "2026-10-01T16:45:42Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E11",
+        "start": "2026-10-01T16:45:42Z",
+        "stop": "2026-10-01T17:09:25Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E04",
+        "start": "2026-10-01T17:09:25Z",
+        "stop": "2026-10-01T17:33:08Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E03",
+        "start": "2026-10-01T17:33:08Z",
+        "stop": "2026-10-01T17:56:52Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E18",
+        "start": "2026-10-01T17:56:52Z",
+        "stop": "2026-10-01T18:20:35Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E25",
+        "start": "2026-10-01T18:20:35Z",
+        "stop": "2026-10-01T18:44:18Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E24",
+        "start": "2026-10-01T18:44:18Z",
+        "stop": "2026-10-01T19:07:59Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E21",
+        "start": "2026-10-01T19:07:59Z",
+        "stop": "2026-10-01T19:31:42Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E04",
+        "start": "2026-10-01T19:31:42Z",
+        "stop": "2026-10-01T19:55:26Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E13",
+        "start": "2026-10-01T19:55:26Z",
+        "stop": "2026-10-01T20:19:09Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E23",
+        "start": "2026-10-01T20:19:09Z",
+        "stop": "2026-10-01T20:42:52Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E17",
+        "start": "2026-10-01T20:42:52Z",
+        "stop": "2026-10-01T21:06:35Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E24",
+        "start": "2026-10-01T21:06:35Z",
+        "stop": "2026-10-01T21:30:16Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E14",
+        "start": "2026-10-01T21:30:16Z",
+        "stop": "2026-10-01T21:53:59Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E03",
+        "start": "2026-10-01T21:53:59Z",
+        "stop": "2026-10-01T22:17:43Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E20",
+        "start": "2026-10-01T22:17:43Z",
+        "stop": "2026-10-01T22:41:25Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E12",
+        "start": "2026-10-01T22:41:25Z",
+        "stop": "2026-10-01T23:05:08Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E25",
+        "start": "2026-10-01T23:05:08Z",
+        "stop": "2026-10-01T23:28:51Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E11",
+        "start": "2026-10-01T23:28:51Z",
+        "stop": "2026-10-01T23:52:34Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E19",
+        "start": "2026-10-01T23:52:34Z",
+        "stop": "2026-10-02T00:16:17Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E22",
+        "start": "2026-10-02T00:16:17Z",
+        "stop": "2026-10-02T00:39:59Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E01",
+        "start": "2026-10-02T00:39:59Z",
+        "stop": "2026-10-02T01:03:41Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E08",
+        "start": "2026-10-02T01:03:41Z",
+        "stop": "2026-10-02T01:27:25Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E10",
+        "start": "2026-10-02T01:27:25Z",
+        "stop": "2026-10-02T01:51:08Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E05",
+        "start": "2026-10-02T01:51:08Z",
+        "stop": "2026-10-02T02:14:52Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E16",
+        "start": "2026-10-02T02:14:52Z",
+        "stop": "2026-10-02T02:38:34Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E06",
+        "start": "2026-10-02T02:38:34Z",
+        "stop": "2026-10-02T03:02:18Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E21",
+        "start": "2026-10-02T03:02:18Z",
+        "stop": "2026-10-02T03:26:01Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E02",
+        "start": "2026-10-02T03:26:01Z",
+        "stop": "2026-10-02T03:49:44Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E15",
+        "start": "2026-10-02T03:49:44Z",
+        "stop": "2026-10-02T04:13:27Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E18",
+        "start": "2026-10-02T04:13:27Z",
+        "stop": "2026-10-02T04:37:10Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E07",
+        "start": "2026-10-02T04:37:10Z",
+        "stop": "2026-10-02T05:00:53Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E09",
+        "start": "2026-10-02T05:00:53Z",
+        "stop": "2026-10-02T05:24:38Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E23",
+        "start": "2026-10-02T05:24:38Z",
+        "stop": "2026-10-02T05:48:21Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E24",
+        "start": "2026-10-02T05:48:21Z",
+        "stop": "2026-10-02T06:12:03Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E07",
+        "start": "2026-10-02T06:12:03Z",
+        "stop": "2026-10-02T06:35:46Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E21",
+        "start": "2026-10-02T06:35:46Z",
+        "stop": "2026-10-02T06:59:29Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E06",
+        "start": "2026-10-02T06:59:29Z",
+        "stop": "2026-10-02T07:23:13Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E16",
+        "start": "2026-10-02T07:23:13Z",
+        "stop": "2026-10-02T07:46:56Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E12",
+        "start": "2026-10-02T07:46:56Z",
+        "stop": "2026-10-02T08:10:38Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E05",
+        "start": "2026-10-02T08:10:38Z",
+        "stop": "2026-10-02T08:34:22Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E01",
+        "start": "2026-10-02T08:34:22Z",
+        "stop": "2026-10-02T08:58:05Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E25",
+        "start": "2026-10-02T08:58:05Z",
+        "stop": "2026-10-02T09:21:48Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E02",
+        "start": "2026-10-02T09:21:48Z",
+        "stop": "2026-10-02T09:45:31Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E11",
+        "start": "2026-10-02T09:45:31Z",
+        "stop": "2026-10-02T10:09:14Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E04",
+        "start": "2026-10-02T10:09:14Z",
+        "stop": "2026-10-02T10:32:57Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E22",
+        "start": "2026-10-02T10:32:57Z",
+        "stop": "2026-10-02T10:56:40Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E13",
+        "start": "2026-10-02T10:56:40Z",
+        "stop": "2026-10-02T11:20:23Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E19",
+        "start": "2026-10-02T11:20:23Z",
+        "stop": "2026-10-02T11:44:06Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E08",
+        "start": "2026-10-02T11:44:06Z",
+        "stop": "2026-10-02T12:07:49Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E18",
+        "start": "2026-10-02T12:07:49Z",
+        "stop": "2026-10-02T12:31:32Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E03",
+        "start": "2026-10-02T12:31:32Z",
+        "stop": "2026-10-02T12:55:15Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E17",
+        "start": "2026-10-02T12:55:15Z",
+        "stop": "2026-10-02T13:18:58Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E09",
+        "start": "2026-10-02T13:18:58Z",
+        "stop": "2026-10-02T13:42:43Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E15",
+        "start": "2026-10-02T13:42:43Z",
+        "stop": "2026-10-02T14:06:26Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E20",
+        "start": "2026-10-02T14:06:26Z",
+        "stop": "2026-10-02T14:30:08Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E10",
+        "start": "2026-10-02T14:30:08Z",
+        "stop": "2026-10-02T14:53:51Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E14",
+        "start": "2026-10-02T14:53:51Z",
+        "stop": "2026-10-02T15:17:34Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E01",
+        "start": "2026-10-02T15:17:34Z",
+        "stop": "2026-10-02T15:41:16Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E20",
+        "start": "2026-10-02T15:41:16Z",
+        "stop": "2026-10-02T16:04:59Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E15",
+        "start": "2026-10-02T16:04:59Z",
+        "stop": "2026-10-02T16:28:42Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E17",
+        "start": "2026-10-02T16:28:42Z",
+        "stop": "2026-10-02T16:52:24Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E05",
+        "start": "2026-10-02T16:52:24Z",
+        "stop": "2026-10-02T17:16:08Z"
+      }
+    ]
   }
 }
