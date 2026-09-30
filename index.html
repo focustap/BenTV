@@ -221,6 +221,64 @@
       object-fit: contain;
     }
 
+    .hls-controls {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 8;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 8px 12px;
+      background: linear-gradient(180deg, transparent, rgba(0,0,0,.82));
+    }
+
+    .hls-controls[hidden] { display: none; }
+
+    .hls-control {
+      appearance: none;
+      border: 0;
+      border-radius: 7px;
+      background: rgba(0,0,0,.28);
+      color: #fff;
+      min-width: 34px;
+      height: 34px;
+      padding: 0 9px;
+      cursor: pointer;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .hls-control:hover { background: rgba(255,255,255,.18); }
+
+    .hls-volume {
+      width: 90px;
+      accent-color: #fff;
+      cursor: pointer;
+    }
+
+    .hls-live {
+      margin-left: auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: .76rem;
+      font-weight: 900;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .hls-live::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: #ff3b30;
+      box-shadow: 0 0 8px rgba(255,59,48,.85);
+    }
+
     .preview::after {
       content: "";
       pointer-events: none;
@@ -508,12 +566,18 @@
         ></iframe>
         <video
           id="hlsPlayer"
-          controls
           playsinline
           autoplay
           hidden
           title="BenTV HLS player"
         ></video>
+        <div class="hls-controls" id="hlsControls" hidden>
+          <button class="hls-control" id="hlsPlayPause" type="button" aria-label="Pause">❚❚</button>
+          <button class="hls-control" id="hlsMute" type="button" aria-label="Mute">🔊</button>
+          <input class="hls-volume" id="hlsVolume" type="range" min="0" max="1" step="0.05" value="1" aria-label="Volume" />
+          <span class="hls-live">Live</span>
+          <button class="hls-control" id="hlsFullscreen" type="button" aria-label="Fullscreen">⛶</button>
+        </div>
       </div>
     </section>
 
@@ -553,6 +617,11 @@
     const guide = document.getElementById("guide");
     const player = document.getElementById("player");
     const hlsPlayer = document.getElementById("hlsPlayer");
+    const hlsControls = document.getElementById("hlsControls");
+    const hlsPlayPause = document.getElementById("hlsPlayPause");
+    const hlsMute = document.getElementById("hlsMute");
+    const hlsVolume = document.getElementById("hlsVolume");
+    const hlsFullscreen = document.getElementById("hlsFullscreen");
     const channelTitle = document.getElementById("channelTitle");
     const channelLabel = document.getElementById("channelLabel");
     const channelNumber = document.getElementById("channelNumber");
@@ -754,12 +823,17 @@
       hlsPlayer.removeAttribute("src");
       hlsPlayer.load();
       hlsPlayer.hidden = true;
+      hlsControls.hidden = true;
+      hlsPlayPause.textContent = "❚❚";
+      hlsPlayPause.setAttribute("aria-label", "Pause");
     }
 
     function startHlsPlayer(channel) {
       player.style.display = "none";
       stopHlsPlayer();
       hlsPlayer.hidden = false;
+      hlsControls.hidden = false;
+      hlsPlayer.controls = false;
 
       player.dataset.channel = channel.key;
       player.dataset.source = "primary";
@@ -779,7 +853,11 @@
       if (window.Hls && Hls.isSupported()) {
         hls = new Hls({
           enableWorker: true,
-          lowLatencyMode: false
+          lowLatencyMode: false,
+          liveSyncDuration: 12,
+          liveMaxLatencyDuration: 30,
+          maxLiveSyncPlaybackRate: 1.0,
+          backBufferLength: 0
         });
 
         hls.loadSource(src);
@@ -897,7 +975,7 @@
     const savedIndex = channels.findIndex(channel => channel.name === saved);
     if (savedIndex >= 0) selectedIndex = savedIndex;
 
-    fullscreenBtn.addEventListener("click", async () => {
+    async function togglePreviewFullscreen() {
       const container = document.querySelector(".preview");
 
       if (!document.fullscreenElement) {
@@ -905,6 +983,41 @@
       } else {
         await document.exitFullscreen?.();
       }
+    }
+
+    fullscreenBtn.addEventListener("click", togglePreviewFullscreen);
+    hlsFullscreen.addEventListener("click", togglePreviewFullscreen);
+
+    hlsPlayPause.addEventListener("click", async () => {
+      if (hlsPlayer.paused) {
+        await hlsPlayer.play().catch(() => {});
+      } else {
+        hlsPlayer.pause();
+      }
+    });
+
+    hlsPlayer.addEventListener("play", () => {
+      hlsPlayPause.textContent = "❚❚";
+      hlsPlayPause.setAttribute("aria-label", "Pause");
+    });
+
+    hlsPlayer.addEventListener("pause", () => {
+      hlsPlayPause.textContent = "▶";
+      hlsPlayPause.setAttribute("aria-label", "Play");
+    });
+
+    hlsMute.addEventListener("click", () => {
+      hlsPlayer.muted = !hlsPlayer.muted;
+      hlsMute.textContent = hlsPlayer.muted || hlsPlayer.volume === 0 ? "🔇" : "🔊";
+      hlsMute.setAttribute("aria-label", hlsPlayer.muted ? "Unmute" : "Mute");
+    });
+
+    hlsVolume.addEventListener("input", () => {
+      const volume = Number(hlsVolume.value);
+      hlsPlayer.volume = volume;
+      hlsPlayer.muted = volume === 0;
+      hlsMute.textContent = volume === 0 ? "🔇" : "🔊";
+      hlsMute.setAttribute("aria-label", volume === 0 ? "Unmute" : "Mute");
     });
 
     guideFocusBtn.addEventListener("click", () => {
