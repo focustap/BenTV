@@ -95,29 +95,53 @@ def parse_epgshare(programmes, window_start, window_end):
 
 def parse_ersatztv(programmes, window_start, window_end):
     xml_data = fetch_bytes(ERSATZ_SOURCE, timeout=30)
+    root = ET.fromstring(xml_data)
 
-    for _event, elem in ET.iterparse(io.BytesIO(xml_data), events=("end",)):
-        if elem.tag != "programme":
+    channel_ids = set()
+    for channel in root.findall("channel"):
+        display_names = [
+            (node.text or "").strip().lower()
+            for node in channel.findall("display-name")
+        ]
+        channel_id = channel.attrib.get("id", "")
+
+        if "bencentral" in display_names or channel_id == ERSATZ_CHANNEL_ID:
+            channel_ids.add(channel_id)
+
+    if not channel_ids:
+        channel_ids.add(ERSATZ_CHANNEL_ID)
+
+    seen_programme_channels = set()
+
+    for elem in root.findall("programme"):
+        channel_id = elem.attrib.get("channel", "")
+        seen_programme_channels.add(channel_id)
+
+        if channel_id not in channel_ids:
             continue
 
-        if elem.attrib.get("channel", "") == ERSATZ_CHANNEL_ID:
-            start = parse_xmltv_time(elem.attrib.get("start", ""))
-            stop = parse_xmltv_time(elem.attrib.get("stop", ""))
+        start = parse_xmltv_time(elem.attrib.get("start", ""))
+        stop = parse_xmltv_time(elem.attrib.get("stop", ""))
 
-            if start and stop and stop > start and stop >= window_start and start <= window_end:
-                title = text_of(elem, "title") or "BenCentral"
-                episode = episode_label(elem)
-                subtitle = episode or text_of(elem, "sub-title")
+        if not start or not stop or stop <= start:
+            continue
 
-                programmes["bencentral"].append({
-                    "title": title,
-                    "subtitle": subtitle,
-                    "start": start.isoformat().replace("+00:00", "Z"),
-                    "stop": stop.isoformat().replace("+00:00", "Z"),
-                })
+        # Keep the full ErsatzTV playout returned by XMLTV. The BenTV frontend
+        # already clips listings to the visible window, and retaining the whole
+        # feed avoids dropping valid items when the playout crosses timezones.
+        title = text_of(elem, "title") or "BenCentral"
+        episode = episode_label(elem)
+        subtitle = episode or text_of(elem, "sub-title")
 
-        elem.clear()
+        programmes["bencentral"].append({
+            "title": title,
+            "subtitle": subtitle,
+            "start": start.isoformat().replace("+00:00", "Z"),
+            "stop": stop.isoformat().replace("+00:00", "Z"),
+        })
 
+    print("ErsatzTV BenCentral channel IDs:", ", ".join(sorted(channel_ids)))
+    print("ErsatzTV programme channel IDs:", ", ".join(sorted(seen_programme_channels)))
 
 def restore_previous_bencentral(programmes, window_start, window_end):
     if not OUTPUT.exists():
