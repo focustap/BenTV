@@ -207,12 +207,18 @@
       background: #000;
     }
 
-    .preview iframe {
+    .preview iframe,
+    .preview video {
       position: absolute;
       inset: 0;
       width: 100%;
       height: 100%;
       border: 0;
+    }
+
+    .preview video {
+      background: #000;
+      object-fit: contain;
     }
 
     .preview::after {
@@ -500,6 +506,14 @@
           allowfullscreen
           title="BenTV player"
         ></iframe>
+        <video
+          id="hlsPlayer"
+          controls
+          playsinline
+          autoplay
+          hidden
+          title="BenTV HLS player"
+        ></video>
       </div>
     </section>
 
@@ -518,6 +532,7 @@
     </footer>
   </main>
 
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1/dist/hls.min.js"></script>
   <script>
     const channels = [
       { number: 21, key: "freeform", name: "Freeform", primarySrc: "https://zlive.st/embed/auto-freeform", backupSrc: "https://dlive.sx/stream/stream-301.php", color: "#2f567f" },
@@ -528,6 +543,7 @@
       { number: 27, key: "trutv", name: "truTV", primarySrc: "https://zlive.st/embed/auto-trutv", backupSrc: "https://dlive.sx/stream/stream-341.php", color: "#536178" },
       { number: 60, key: "cartoonnetwork", name: "Cartoon Network", primarySrc: "https://zlive.st/embed/auto-cartoon-network", backupSrc: "https://dlive.sx/stream/stream-339.php", color: "#39516c" },
       { number: 61, key: "cartoonnetworkuk", name: "Cartoon Network UK", primarySrc: "https://zlive.st/embed/cartoonnetwork-uk", backupSrc: null, color: "#314966" },
+      { number: 80, key: "bencentral", name: "BenCentral", type: "hls", primarySrc: "https://desktop-9j9r86p.tailc28749.ts.net/iptv/channel/80.m3u8?mode=segmenter", backupSrc: null, color: "#6a4f7b" },
       { number: 222, key: "disneyxd", name: "Disney XD", primarySrc: "https://zlive.st/embed/auto-disney-xd", backupSrc: "https://dlive.sx/stream/stream-314.php", color: "#524479" }
     ];
 
@@ -536,6 +552,7 @@
 
     const guide = document.getElementById("guide");
     const player = document.getElementById("player");
+    const hlsPlayer = document.getElementById("hlsPlayer");
     const channelTitle = document.getElementById("channelTitle");
     const channelLabel = document.getElementById("channelLabel");
     const channelNumber = document.getElementById("channelNumber");
@@ -552,6 +569,7 @@
 
     let selectedIndex = 0;
     let guideData = { channels: {}, generatedAt: null };
+    let hls = null;
 
     function formatTime(value) {
       const date = value instanceof Date ? value : new Date(value);
@@ -726,7 +744,79 @@
       updateHeroSchedule();
     }
 
+    function stopHlsPlayer() {
+      if (hls) {
+        hls.destroy();
+        hls = null;
+      }
+
+      hlsPlayer.pause();
+      hlsPlayer.removeAttribute("src");
+      hlsPlayer.load();
+      hlsPlayer.hidden = true;
+    }
+
+    function startHlsPlayer(channel) {
+      player.style.display = "none";
+      stopHlsPlayer();
+      hlsPlayer.hidden = false;
+
+      player.dataset.channel = channel.key;
+      player.dataset.source = "primary";
+
+      sourceBtn.disabled = true;
+      sourceBtn.textContent = "No Backup";
+      sourceBtn.title = "No backup source is configured for this channel";
+
+      const src = channel.primarySrc;
+
+      if (hlsPlayer.canPlayType("application/vnd.apple.mpegurl")) {
+        hlsPlayer.src = src;
+        hlsPlayer.play().catch(() => {});
+        return;
+      }
+
+      if (window.Hls && Hls.isSupported()) {
+        hls = new Hls({
+          enableWorker: true,
+          lowLatencyMode: false
+        });
+
+        hls.loadSource(src);
+        hls.attachMedia(hlsPlayer);
+
+        hls.on(Hls.Events.MANIFEST_PARSED, () => {
+          hlsPlayer.play().catch(() => {});
+        });
+
+        hls.on(Hls.Events.ERROR, (_event, data) => {
+          if (!data.fatal) return;
+
+          if (data.type === Hls.ErrorTypes.NETWORK_ERROR) {
+            hls.startLoad();
+          } else if (data.type === Hls.ErrorTypes.MEDIA_ERROR) {
+            hls.recoverMediaError();
+          } else {
+            hls.destroy();
+            hls = null;
+          }
+        });
+
+        return;
+      }
+
+      console.error("This browser does not support HLS playback.");
+    }
+
     function setPlayerSource(channel, source = "primary") {
+      if (channel.type === "hls") {
+        startHlsPlayer(channel);
+        return;
+      }
+
+      stopHlsPlayer();
+      player.style.display = "";
+
       const hasBackup = Boolean(channel.backupSrc);
       const useBackup = source === "backup" && hasBackup;
       const nextSrc = useBackup ? channel.backupSrc : channel.primarySrc;
