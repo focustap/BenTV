@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import gzip
+import io
 import json
 import re
 import urllib.request
@@ -8,6 +9,8 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 SOURCE = "https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz"
+ERSATZ_SOURCE = "https://desktop-9j9r86p.tailc28749.ts.net/iptv/xmltv.xml"
+ERSATZ_CHANNEL_ID = "c80.200.ersatztv.org"
 OUTPUT = Path(__file__).resolve().parents[1] / "guide.json"
 
 TARGET_IDS = {
@@ -48,43 +51,113 @@ def text_of(element, tag):
     return child.text.strip()
 
 
+def episode_label(element):
+    for child in element.findall("episode-num"):
+        if child.attrib.get("system") == "onscreen" and child.text:
+            return child.text.strip()
+    return ""
+
+
+def fetch_bytes(url, timeout=90):
+    request = urllib.request.Request(
+        url,
+        headers={"User-Agent": "BenTV-Guide/1.1 (+https://github.com/focustap/BenTV)"}
+    )
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        return response.read()
+
+
+def parse_epgshare(programmes, window_start, window_end):
+    compressed = fetch_bytes(SOURCE)
+
+    with gzip.GzipFile(fileobj=io.BytesIO(compressed)) as xml_stream:
+        for _event, elem in ET.iterparse(xml_stream, events=("end",)):
+            if elem.tag != "programme":
+                continue
+
+            channel_id = elem.attrib.get("channel", "")
+            key = ID_TO_KEY.get(channel_id)
+
+            if key:
+                start = parse_xmltv_time(elem.attrib.get("start", ""))
+                stop = parse_xmltv_time(elem.attrib.get("stop", ""))
+
+                if start and stop and stop > start and stop >= window_start and start <= window_end:
+                    programmes[key].append({
+                        "title": text_of(elem, "title") or "Untitled",
+                        "subtitle": text_of(elem, "sub-title"),
+                        "start": start.isoformat().replace("+00:00", "Z"),
+                        "stop": stop.isoformat().replace("+00:00", "Z"),
+                    })
+
+            elem.clear()
+
+
+def parse_ersatztv(programmes, window_start, window_end):
+    xml_data = fetch_bytes(ERSATZ_SOURCE, timeout=30)
+
+    for _event, elem in ET.iterparse(io.BytesIO(xml_data), events=("end",)):
+        if elem.tag != "programme":
+            continue
+
+        if elem.attrib.get("channel", "") == ERSATZ_CHANNEL_ID:
+            start = parse_xmltv_time(elem.attrib.get("start", ""))
+            stop = parse_xmltv_time(elem.attrib.get("stop", ""))
+
+            if start and stop and stop > start and stop >= window_start and start <= window_end:
+                title = text_of(elem, "title") or "BenCentral"
+                episode = episode_label(elem)
+                subtitle = episode or text_of(elem, "sub-title")
+
+                programmes["bencentral"].append({
+                    "title": title,
+                    "subtitle": subtitle,
+                    "start": start.isoformat().replace("+00:00", "Z"),
+                    "stop": stop.isoformat().replace("+00:00", "Z"),
+                })
+
+        elem.clear()
+
+
+def restore_previous_bencentral(programmes, window_start, window_end):
+    if not OUTPUT.exists():
+        return
+
+    try:
+        previous = json.loads(OUTPUT.read_text(encoding="utf-8"))
+    except Exception:
+        return
+
+    for item in previous.get("channels", {}).get("bencentral", []):
+        start = parse_xmltv_time(item.get("start", "").replace("-", "").replace(":", "").replace("T", "").replace("Z", ""))
+        stop = parse_xmltv_time(item.get("stop", "").replace("-", "").replace(":", "").replace("T", "").replace("Z", ""))
+
+        # The previous guide uses ISO timestamps, so parse them directly if the XMLTV parser did not.
+        try:
+            start = datetime.fromisoformat(item["start"].replace("Z", "+00:00")).astimezone(timezone.utc)
+            stop = datetime.fromisoformat(item["stop"].replace("Z", "+00:00")).astimezone(timezone.utc)
+        except Exception:
+            continue
+
+        if stop > start and stop >= window_start and start <= window_end:
+            programmes["bencentral"].append(item)
+
+
 def main():
     now = datetime.now(timezone.utc)
     window_start = now - timedelta(hours=3)
     window_end = now + timedelta(hours=24)
 
-    request = urllib.request.Request(
-        SOURCE,
-        headers={"User-Agent": "BenTV-Guide/1.0 (+https://github.com/focustap/BenTV)"}
-    )
-
-    with urllib.request.urlopen(request, timeout=90) as response:
-        compressed = response.read()
-
     programmes = {key: [] for key in TARGET_IDS}
+    programmes["bencentral"] = []
 
-    with gzip.GzipFile(fileobj=__import__("io").BytesIO(compressed)) as xml_stream:
-        for event, elem in ET.iterparse(xml_stream, events=("end",)):
-            if elem.tag == "programme":
-                channel_id = elem.attrib.get("channel", "")
-                key = ID_TO_KEY.get(channel_id)
+    parse_epgshare(programmes, window_start, window_end)
 
-                if key:
-                    start = parse_xmltv_time(elem.attrib.get("start", ""))
-                    stop = parse_xmltv_time(elem.attrib.get("stop", ""))
-
-                    if start and stop and stop >= window_start and start <= window_end:
-                        title = text_of(elem, "title") or "Untitled"
-                        subtitle = text_of(elem, "sub-title")
-
-                        programmes[key].append({
-                            "title": title,
-                            "subtitle": subtitle,
-                            "start": start.isoformat().replace("+00:00", "Z"),
-                            "stop": stop.isoformat().replace("+00:00", "Z"),
-                        })
-
-                elem.clear()
+    try:
+        parse_ersatztv(programmes, window_start, window_end)
+    except Exception as exc:
+        print(f"Warning: BenCentral guide fetch failed: {exc}")
+        restore_previous_bencentral(programmes, window_start, window_end)
 
     for key in programmes:
         programmes[key].sort(key=lambda item: item["start"])
@@ -95,7 +168,7 @@ def main():
 
     payload = {
         "generatedAt": now.isoformat().replace("+00:00", "Z"),
-        "source": "EPGShare01 US2",
+        "source": "EPGShare01 US2 + ErsatzTV",
         "channels": programmes,
     }
 
