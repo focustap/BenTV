@@ -613,6 +613,8 @@
 
     const WINDOW_MINUTES = 120;
     const HALF_HOUR = 30 * 60 * 1000;
+    const BENCENTRAL_XMLTV = "https://desktop-9j9r86p.tailc28749.ts.net/iptv/xmltv.xml";
+    const BENCENTRAL_XMLTV_CHANNEL_ID = "c80.200.ersatztv.org";
 
     const guide = document.getElementById("guide");
     const player = document.getElementById("player");
@@ -651,6 +653,88 @@
     function formatRange(program) {
       if (!program) return "";
       return `${formatTime(program.start)} – ${formatTime(program.stop)}`;
+    }
+
+    function parseXmltvTime(value) {
+      const match = String(value || "").trim().match(
+        /^(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})(\d{2})(?:\s*([+-])(\d{2})(\d{2}))?/
+      );
+      if (!match) return null;
+
+      const [, year, month, day, hour, minute, second, sign, offsetHour, offsetMinute] = match;
+      const offset = sign
+        ? `${sign}${offsetHour}:${offsetMinute}`
+        : "Z";
+      const parsed = new Date(`${year}-${month}-${day}T${hour}:${minute}:${second}${offset}`);
+      return Number.isNaN(parsed.getTime()) ? null : parsed;
+    }
+
+    function xmlText(element, selector) {
+      return element.querySelector(selector)?.textContent?.trim() || "";
+    }
+
+    async function refreshBenCentralGuide(renderAfter = true) {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 6000);
+
+      try {
+        const separator = BENCENTRAL_XMLTV.includes("?") ? "&" : "?";
+        const response = await fetch(
+          `${BENCENTRAL_XMLTV}${separator}v=${Date.now()}`,
+          { cache: "no-store", signal: controller.signal }
+        );
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+        const xmlTextContent = await response.text();
+        const xml = new DOMParser().parseFromString(xmlTextContent, "application/xml");
+        if (xml.querySelector("parsererror")) throw new Error("Invalid XMLTV response");
+
+        const channelIds = new Set([BENCENTRAL_XMLTV_CHANNEL_ID]);
+        xml.querySelectorAll("channel").forEach(channel => {
+          const names = Array.from(channel.querySelectorAll("display-name"))
+            .map(node => node.textContent?.trim().toLowerCase())
+            .filter(Boolean);
+
+          if (names.includes("bencentral")) {
+            const id = channel.getAttribute("id");
+            if (id) channelIds.add(id);
+          }
+        });
+
+        const programmes = Array.from(xml.querySelectorAll("programme"))
+          .filter(programme => channelIds.has(programme.getAttribute("channel")))
+          .map(programme => {
+            const start = parseXmltvTime(programme.getAttribute("start"));
+            const stop = parseXmltvTime(programme.getAttribute("stop"));
+            if (!start || !stop || stop <= start) return null;
+
+            const episode =
+              xmlText(programme, 'episode-num[system="onscreen"]') ||
+              xmlText(programme, "sub-title");
+
+            return {
+              title: xmlText(programme, "title") || "BenCentral",
+              subtitle: episode,
+              start: start.toISOString(),
+              stop: stop.toISOString()
+            };
+          })
+          .filter(Boolean)
+          .sort((a, b) => new Date(a.start) - new Date(b.start));
+
+        if (!programmes.length) throw new Error("No BenCentral listings found");
+
+        guideData.channels ||= {};
+        guideData.channels.bencentral = programmes;
+
+        if (renderAfter) renderGuide();
+        return true;
+      } catch (error) {
+        console.warn("Could not refresh the live BenCentral schedule:", error);
+        return false;
+      } finally {
+        clearTimeout(timeout);
+      }
     }
 
     function getWindowStart() {
@@ -953,20 +1037,29 @@
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
         guideData = await response.json();
+        const benCentralLive = await refreshBenCentralGuide(false);
 
         if (guideData.generatedAt) {
           const updated = new Date(guideData.generatedAt);
-          guideStatus.textContent = `TV listings updated ${updated.toLocaleString()}`;
+          guideStatus.textContent =
+            `TV listings updated ${updated.toLocaleString()}` +
+            (benCentralLive ? " · BenCentral synced live" : "");
         } else {
-          guideStatus.textContent = "TV listings updater is waiting for its first refresh.";
+          guideStatus.textContent = benCentralLive
+            ? "BenCentral schedule synced live."
+            : "TV listings updater is waiting for its first refresh.";
         }
 
         guideStatus.classList.remove("error");
         renderGuide();
       } catch (error) {
         console.error("Could not load guide data:", error);
-        guideStatus.textContent = "Could not load TV listings. The channels still work.";
-        guideStatus.classList.add("error");
+
+        const benCentralLive = await refreshBenCentralGuide(false);
+        guideStatus.textContent = benCentralLive
+          ? "BenCentral schedule synced live; other listings are unavailable."
+          : "Could not load TV listings. The channels still work.";
+        guideStatus.classList.toggle("error", !benCentralLive);
         renderGuide();
       }
     }
@@ -1061,6 +1154,7 @@
     loadGuide();
 
     setInterval(renderGuide, 30000);
+    setInterval(refreshBenCentralGuide, 60 * 1000);
     setInterval(loadGuide, 5 * 60 * 1000);
   </script>
 </body>
