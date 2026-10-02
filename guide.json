@@ -1,20 +1,8 @@
 {
-  "generatedAt": "2026-10-01T21:49:47.369818Z",
+  "generatedAt": "2026-10-02T01:41:36.073246Z",
   "source": "EPGShare01 US2 + ErsatzTV",
   "channels": {
     "freeform": [
-      {
-        "title": "The Addams Family",
-        "subtitle": "",
-        "start": "2026-10-01T17:55:00Z",
-        "stop": "2026-10-01T19:55:00Z"
-      },
-      {
-        "title": "Addams Family Values",
-        "subtitle": "",
-        "start": "2026-10-01T19:55:00Z",
-        "stop": "2026-10-01T21:55:00Z"
-      },
       {
         "title": "Hocus Pocus",
         "subtitle": "",
@@ -188,57 +176,21 @@
         "subtitle": "",
         "start": "2026-10-02T21:15:00Z",
         "stop": "2026-10-02T23:15:00Z"
+      },
+      {
+        "title": "Tim Burton's The Nightmare Before Christmas",
+        "subtitle": "",
+        "start": "2026-10-02T23:15:00Z",
+        "stop": "2026-10-03T00:55:00Z"
+      },
+      {
+        "title": "Beetlejuice",
+        "subtitle": "",
+        "start": "2026-10-03T00:55:00Z",
+        "stop": "2026-10-03T03:00:00Z"
       }
     ],
     "disney": [
-      {
-        "title": "Bluey",
-        "subtitle": "Sleepytime; Daddy Dropoff; Favorite Thing",
-        "start": "2026-10-01T18:30:00Z",
-        "stop": "2026-10-01T19:00:00Z"
-      },
-      {
-        "title": "Kiff",
-        "subtitle": "Beach Day; Sun's Out Buns Out",
-        "start": "2026-10-01T19:00:00Z",
-        "stop": "2026-10-01T19:30:00Z"
-      },
-      {
-        "title": "Phineas and Ferb",
-        "subtitle": "Entrance Exam; Dungeons & Dating",
-        "start": "2026-10-01T19:30:00Z",
-        "stop": "2026-10-01T20:00:00Z"
-      },
-      {
-        "title": "Big City Greens",
-        "subtitle": "Locked In; City Wayne",
-        "start": "2026-10-01T20:00:00Z",
-        "stop": "2026-10-01T20:30:00Z"
-      },
-      {
-        "title": "Big City Greens",
-        "subtitle": "Saxon Saxability; Remy Dillemy",
-        "start": "2026-10-01T20:30:00Z",
-        "stop": "2026-10-01T21:00:00Z"
-      },
-      {
-        "title": "Big City Greens",
-        "subtitle": "Swashbuckled; Nick Scouts",
-        "start": "2026-10-01T21:00:00Z",
-        "stop": "2026-10-01T21:30:00Z"
-      },
-      {
-        "title": "Bluey",
-        "subtitle": "Rug Island; Hairdressers; Sticky Gecko",
-        "start": "2026-10-01T21:30:00Z",
-        "stop": "2026-10-01T22:00:00Z"
-      },
-      {
-        "title": "Bluey",
-        "subtitle": "Flat Pack; Queens; Train",
-        "start": "2026-10-01T22:00:00Z",
-        "stop": "2026-10-01T22:30:00Z"
-      },
       {
         "title": "Big City Greens",
         "subtitle": "Flexed; After Dark",
@@ -496,51 +448,39 @@
         "subtitle": "Bus; Mum School; Piggyback",
         "start": "2026-10-02T21:30:00Z",
         "stop": "2026-10-02T22:00:00Z"
+      },
+      {
+        "title": "Bluey",
+        "subtitle": "See Saw; Movies; Grandad",
+        "start": "2026-10-02T22:00:00Z",
+        "stop": "2026-10-02T22:30:00Z"
+      },
+      {
+        "title": "Big City Greens",
+        "subtitle": "Gloria Green / Daddy Ditty",
+        "start": "2026-10-02T22:30:00Z",
+        "stop": "2026-10-02T23:00:00Z"
+      },
+      {
+        "title": "Hocus Pocus",
+        "subtitle": "",
+        "start": "2026-10-02T23:00:00Z",
+        "stop": "2026-10-03T00:45:00Z"
+      },
+      {
+        "title": "Wizards Beyond Waverly Place",
+        "subtitle": "Something Wizard This Way Comes",
+        "start": "2026-10-03T00:45:00Z",
+        "stop": "2026-10-03T01:15:00Z"
+      },
+      {
+        "title": "Miraculous: Tales of Ladybug and Cat Noir",
+        "subtitle": "Zombizou",
+        "start": "2026-10-03T01:15:00Z",
+        "stop": "2026-10-03T01:45:00Z"
       }
     ],
     "nickelodeon": [
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Duct Tape Dystopia; Farmers Market Feud",
-        "start": "2026-10-01T18:30:00Z",
-        "stop": "2026-10-01T19:00:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Night School Knuckleheads; Painfully Employed",
-        "start": "2026-10-01T19:00:00Z",
-        "stop": "2026-10-01T19:30:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "My Tighty Whiteys; What Ever Happened to Baby Prunes?",
-        "start": "2026-10-01T19:30:00Z",
-        "stop": "2026-10-01T20:00:00Z"
-      },
-      {
-        "title": "The Patrick Star Show",
-        "subtitle": "Gone Bootin'; Roller Bunny",
-        "start": "2026-10-01T20:00:00Z",
-        "stop": "2026-10-01T20:30:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "The Fry Cook and the Elves; It's About Mime",
-        "start": "2026-10-01T20:30:00Z",
-        "stop": "2026-10-01T21:00:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Lady in the Lighthouse; Bitter Groans and Gardens",
-        "start": "2026-10-01T21:00:00Z",
-        "stop": "2026-10-01T21:30:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Home Away From Home; SpongeBob SpareParts",
-        "start": "2026-10-01T21:30:00Z",
-        "stop": "2026-10-01T22:00:00Z"
-      },
       {
         "title": "SpongeBob SquarePants",
         "subtitle": "SpongeBob's Best of the Worst",
@@ -780,63 +720,39 @@
         "subtitle": "Hobblin' the Goblin; Fruit Dispute",
         "start": "2026-10-02T21:30:00Z",
         "stop": "2026-10-02T22:00:00Z"
+      },
+      {
+        "title": "The Patrick Star Show",
+        "subtitle": "Squ-AD-ina / Don't Friend the Reaper",
+        "start": "2026-10-02T22:00:00Z",
+        "stop": "2026-10-02T22:30:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "Curse of the WereDoodle; Gorilla Suit Day",
+        "start": "2026-10-02T22:30:00Z",
+        "stop": "2026-10-02T23:00:00Z"
+      },
+      {
+        "title": "Hotel Transylvania 2",
+        "subtitle": "",
+        "start": "2026-10-02T23:00:00Z",
+        "stop": "2026-10-03T01:00:00Z"
+      },
+      {
+        "title": "Friends",
+        "subtitle": "The One With Ross's Denial",
+        "start": "2026-10-03T01:00:00Z",
+        "stop": "2026-10-03T01:30:00Z"
+      },
+      {
+        "title": "Friends",
+        "subtitle": "The One Where Joey Loses His Insurance",
+        "start": "2026-10-03T01:30:00Z",
+        "stop": "2026-10-03T02:00:00Z"
       }
     ],
     "nicktoons": [
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "The Inmates of Summer; To Save a Squirrel",
-        "start": "2026-10-01T18:40:00Z",
-        "stop": "2026-10-01T19:07:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Dunces and Dragons",
-        "start": "2026-10-01T19:07:00Z",
-        "stop": "2026-10-01T19:33:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "SpongeBob vs. the Goo",
-        "start": "2026-10-01T19:33:00Z",
-        "stop": "2026-10-01T19:59:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Giant Squidward; No Nose Knows",
-        "start": "2026-10-01T19:59:00Z",
-        "stop": "2026-10-01T20:25:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Single-Celled Defense; Buff for Puff",
-        "start": "2026-10-01T20:25:00Z",
-        "stop": "2026-10-01T20:51:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Something Smells; Bossy Boots",
-        "start": "2026-10-01T20:51:00Z",
-        "stop": "2026-10-01T21:17:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Texas; Walking Small",
-        "start": "2026-10-01T21:17:00Z",
-        "stop": "2026-10-01T21:43:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "You Don't Know Sponge; Tunnel of Glove",
-        "start": "2026-10-01T21:43:00Z",
-        "stop": "2026-10-01T22:09:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Shellback Shenanigans; Hide and Then What Happens?",
-        "start": "2026-10-01T22:09:00Z",
-        "stop": "2026-10-01T22:35:00Z"
-      },
       {
         "title": "SpongeBob SquarePants",
         "subtitle": "Knock Knock, Who's There?; Pat Hearts Squid",
@@ -1166,57 +1082,69 @@
         "subtitle": "The Masterpiece; Whelk Attack",
         "start": "2026-10-02T21:43:00Z",
         "stop": "2026-10-02T22:09:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "Mermaid Man and Barnacle Boy III; Squirrel Jokes",
+        "start": "2026-10-02T22:09:00Z",
+        "stop": "2026-10-02T22:35:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "Blood Is Thicker Than Grease; Don't Make Me Laugh",
+        "start": "2026-10-02T22:35:00Z",
+        "stop": "2026-10-02T23:01:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "Shell Games; Senior Discount",
+        "start": "2026-10-02T23:01:00Z",
+        "stop": "2026-10-02T23:28:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "The Lost Mattress; Krabs vs. Plankton",
+        "start": "2026-10-02T23:28:00Z",
+        "stop": "2026-10-02T23:54:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "Snow Yellow",
+        "start": "2026-10-02T23:54:00Z",
+        "stop": "2026-10-03T00:20:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "Squid Plus One; The Executive Treatment",
+        "start": "2026-10-03T00:20:00Z",
+        "stop": "2026-10-03T00:46:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "Grandpappy the Pirate; Cephalopod Lodge",
+        "start": "2026-10-03T00:46:00Z",
+        "stop": "2026-10-03T01:12:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "Feral Friends; Don't Wake Patrick!",
+        "start": "2026-10-03T01:12:00Z",
+        "stop": "2026-10-03T01:38:00Z"
+      },
+      {
+        "title": "To Be Announced",
+        "subtitle": "",
+        "start": "2026-10-03T01:38:00Z",
+        "stop": "2026-10-03T01:39:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "Pressure; The Smoking Peanut",
+        "start": "2026-10-03T01:39:00Z",
+        "stop": "2026-10-03T02:05:00Z"
       }
     ],
     "teenick": [
-      {
-        "title": "The Thundermans",
-        "subtitle": "Gimme a Break-Up",
-        "start": "2026-10-01T18:49:00Z",
-        "stop": "2026-10-01T19:15:00Z"
-      },
-      {
-        "title": "The Thundermans",
-        "subtitle": "Meet the Evilmans",
-        "start": "2026-10-01T19:15:00Z",
-        "stop": "2026-10-01T19:42:00Z"
-      },
-      {
-        "title": "The Thundermans",
-        "subtitle": "Weekend Guest",
-        "start": "2026-10-01T19:42:00Z",
-        "stop": "2026-10-01T20:08:00Z"
-      },
-      {
-        "title": "The Thundermans",
-        "subtitle": "Ditch Day",
-        "start": "2026-10-01T20:08:00Z",
-        "stop": "2026-10-01T20:34:00Z"
-      },
-      {
-        "title": "The Thundermans",
-        "subtitle": "Call of Lunch Duty",
-        "start": "2026-10-01T20:34:00Z",
-        "stop": "2026-10-01T21:01:00Z"
-      },
-      {
-        "title": "The Thundermans",
-        "subtitle": "Thunder Van",
-        "start": "2026-10-01T21:01:00Z",
-        "stop": "2026-10-01T21:28:00Z"
-      },
-      {
-        "title": "The Thundermans",
-        "subtitle": "Cheer and Present Danger",
-        "start": "2026-10-01T21:28:00Z",
-        "stop": "2026-10-01T21:54:00Z"
-      },
-      {
-        "title": "The Thundermans",
-        "subtitle": "Breaking Dad",
-        "start": "2026-10-01T21:54:00Z",
-        "stop": "2026-10-01T22:21:00Z"
-      },
       {
         "title": "The Thundermans",
         "subtitle": "Can't Spy Me Love",
@@ -1540,57 +1468,63 @@
         "subtitle": "This Looks Like a Job For",
         "start": "2026-10-02T21:28:00Z",
         "stop": "2026-10-02T21:54:00Z"
+      },
+      {
+        "title": "The Thundermans",
+        "subtitle": "All the President's Thunder-Men",
+        "start": "2026-10-02T21:54:00Z",
+        "stop": "2026-10-02T22:21:00Z"
+      },
+      {
+        "title": "The Thundermans",
+        "subtitle": "Save the Past Dance",
+        "start": "2026-10-02T22:21:00Z",
+        "stop": "2026-10-02T22:48:00Z"
+      },
+      {
+        "title": "The Thundermans",
+        "subtitle": "Have an Ice Birthday",
+        "start": "2026-10-02T22:48:00Z",
+        "stop": "2026-10-02T23:15:00Z"
+      },
+      {
+        "title": "The Thundermans",
+        "subtitle": "Dinner Party",
+        "start": "2026-10-02T23:15:00Z",
+        "stop": "2026-10-02T23:42:00Z"
+      },
+      {
+        "title": "The Thundermans",
+        "subtitle": "Who's Your Mommy?",
+        "start": "2026-10-02T23:42:00Z",
+        "stop": "2026-10-03T00:09:00Z"
+      },
+      {
+        "title": "The Thundermans: Undercover",
+        "subtitle": "I Know What You Did This Summer",
+        "start": "2026-10-03T00:09:00Z",
+        "stop": "2026-10-03T00:36:00Z"
+      },
+      {
+        "title": "The Thundermans: Undercover",
+        "subtitle": "For Your Spies Only",
+        "start": "2026-10-03T00:36:00Z",
+        "stop": "2026-10-03T01:03:00Z"
+      },
+      {
+        "title": "The Loud House",
+        "subtitle": "Love Birds; Rocket Men",
+        "start": "2026-10-03T01:03:00Z",
+        "stop": "2026-10-03T01:30:00Z"
+      },
+      {
+        "title": "The Loud House",
+        "subtitle": "Deep Cuts; Game Off",
+        "start": "2026-10-03T01:30:00Z",
+        "stop": "2026-10-03T01:57:00Z"
       }
     ],
     "trutv": [
-      {
-        "title": "American Dad!",
-        "subtitle": "Santa, Schmanta",
-        "start": "2026-10-01T18:30:00Z",
-        "stop": "2026-10-01T19:00:00Z"
-      },
-      {
-        "title": "American Dad!",
-        "subtitle": "The Never-Ending Stories",
-        "start": "2026-10-01T19:00:00Z",
-        "stop": "2026-10-01T19:30:00Z"
-      },
-      {
-        "title": "American Dad!",
-        "subtitle": "Railroaded",
-        "start": "2026-10-01T19:30:00Z",
-        "stop": "2026-10-01T20:00:00Z"
-      },
-      {
-        "title": "American Dad!",
-        "subtitle": "My Purity Ball and Chain",
-        "start": "2026-10-01T20:00:00Z",
-        "stop": "2026-10-01T20:30:00Z"
-      },
-      {
-        "title": "American Dad!",
-        "subtitle": "OreTron Trail",
-        "start": "2026-10-01T20:30:00Z",
-        "stop": "2026-10-01T21:00:00Z"
-      },
-      {
-        "title": "American Dad!",
-        "subtitle": "Mean Francine",
-        "start": "2026-10-01T21:00:00Z",
-        "stop": "2026-10-01T21:30:00Z"
-      },
-      {
-        "title": "American Dad!",
-        "subtitle": "One-Woman Swole",
-        "start": "2026-10-01T21:30:00Z",
-        "stop": "2026-10-01T22:00:00Z"
-      },
-      {
-        "title": "American Dad!",
-        "subtitle": "Flavortown",
-        "start": "2026-10-01T22:00:00Z",
-        "stop": "2026-10-01T22:30:00Z"
-      },
       {
         "title": "American Dad!",
         "subtitle": "Persona Assistant",
@@ -1758,57 +1692,27 @@
         "subtitle": "Let's Get Crackin'",
         "start": "2026-10-02T21:30:00Z",
         "stop": "2026-10-02T22:00:00Z"
+      },
+      {
+        "title": "Live: NHL on TNT Face Off",
+        "subtitle": "",
+        "start": "2026-10-02T22:00:00Z",
+        "stop": "2026-10-02T22:30:00Z"
+      },
+      {
+        "title": "Live: NHL Hockey",
+        "subtitle": "",
+        "start": "2026-10-02T22:30:00Z",
+        "stop": "2026-10-03T01:00:00Z"
+      },
+      {
+        "title": "Live: NHL Hockey",
+        "subtitle": "",
+        "start": "2026-10-03T01:00:00Z",
+        "stop": "2026-10-03T04:00:00Z"
       }
     ],
     "cartoonnetwork": [
-      {
-        "title": "What's New Scooby-Doo?",
-        "subtitle": "Homeward Hound",
-        "start": "2026-10-01T18:30:00Z",
-        "stop": "2026-10-01T19:00:00Z"
-      },
-      {
-        "title": "What's New Scooby-Doo?",
-        "subtitle": "The Vampire Strikes Back",
-        "start": "2026-10-01T19:00:00Z",
-        "stop": "2026-10-01T19:30:00Z"
-      },
-      {
-        "title": "What's New Scooby-Doo?",
-        "subtitle": "",
-        "start": "2026-10-01T19:30:00Z",
-        "stop": "2026-10-01T20:00:00Z"
-      },
-      {
-        "title": "What's New Scooby-Doo?",
-        "subtitle": "New Mexico, Old Monster",
-        "start": "2026-10-01T20:00:00Z",
-        "stop": "2026-10-01T20:30:00Z"
-      },
-      {
-        "title": "What's New Scooby-Doo?",
-        "subtitle": "Recipe for Disaster",
-        "start": "2026-10-01T20:30:00Z",
-        "stop": "2026-10-01T21:00:00Z"
-      },
-      {
-        "title": "Dexter's Laboratory",
-        "subtitle": "Old Flame; Don't Be a Hero; My Favorite Martian",
-        "start": "2026-10-01T21:00:00Z",
-        "stop": "2026-10-01T21:30:00Z"
-      },
-      {
-        "title": "Dexter's Laboratory",
-        "subtitle": "The Old Switcherooms; Trick or Treehouse; Paper Route Bout",
-        "start": "2026-10-01T21:30:00Z",
-        "stop": "2026-10-01T22:00:00Z"
-      },
-      {
-        "title": "Bob's Burgers",
-        "subtitle": "Sacred Cow",
-        "start": "2026-10-01T22:00:00Z",
-        "stop": "2026-10-01T22:30:00Z"
-      },
       {
         "title": "Bob's Burgers",
         "subtitle": "Sexy Dance Fighting",
@@ -2234,57 +2138,57 @@
         "subtitle": "Streaky Clean; A Dad Cartoon; Sole Brother",
         "start": "2026-10-02T21:30:00Z",
         "stop": "2026-10-02T22:00:00Z"
+      },
+      {
+        "title": "Bob's Burgers",
+        "subtitle": "Bed & Breakfast",
+        "start": "2026-10-02T22:00:00Z",
+        "stop": "2026-10-02T22:30:00Z"
+      },
+      {
+        "title": "Bob's Burgers",
+        "subtitle": "Art Crawl",
+        "start": "2026-10-02T22:30:00Z",
+        "stop": "2026-10-02T23:00:00Z"
+      },
+      {
+        "title": "Bob's Burgers",
+        "subtitle": "Spaghetti Western and Meatballs",
+        "start": "2026-10-02T23:00:00Z",
+        "stop": "2026-10-02T23:30:00Z"
+      },
+      {
+        "title": "Bob's Burgers",
+        "subtitle": "Burger War",
+        "start": "2026-10-02T23:30:00Z",
+        "stop": "2026-10-03T00:00:00Z"
+      },
+      {
+        "title": "Bob's Burgers",
+        "subtitle": "Teen-a-Witch",
+        "start": "2026-10-03T00:00:00Z",
+        "stop": "2026-10-03T00:30:00Z"
+      },
+      {
+        "title": "Family Guy",
+        "subtitle": "Petey IV",
+        "start": "2026-10-03T00:30:00Z",
+        "stop": "2026-10-03T01:00:00Z"
+      },
+      {
+        "title": "Family Guy",
+        "subtitle": "Crimes and Meg's Demeanor",
+        "start": "2026-10-03T01:00:00Z",
+        "stop": "2026-10-03T01:30:00Z"
+      },
+      {
+        "title": "Family Guy",
+        "subtitle": "Don't Be a Dickens at Christmas",
+        "start": "2026-10-03T01:30:00Z",
+        "stop": "2026-10-03T02:00:00Z"
       }
     ],
     "disneyxd": [
-      {
-        "title": "Pokémon the Series: Adventures in the Orange Islands",
-        "subtitle": "A Scare in the Air",
-        "start": "2026-10-01T18:30:00Z",
-        "stop": "2026-10-01T19:00:00Z"
-      },
-      {
-        "title": "Yu-Gi-Oh! GO RUSH!!",
-        "subtitle": "Operation Yudias",
-        "start": "2026-10-01T19:00:00Z",
-        "stop": "2026-10-01T19:30:00Z"
-      },
-      {
-        "title": "Yu-Gi-Oh! GO RUSH!!",
-        "subtitle": "Decisions, Decisions",
-        "start": "2026-10-01T19:30:00Z",
-        "stop": "2026-10-01T20:00:00Z"
-      },
-      {
-        "title": "Yu-Gi-Oh! GO RUSH!!",
-        "subtitle": "Who is the Earthdama?",
-        "start": "2026-10-01T20:00:00Z",
-        "stop": "2026-10-01T20:30:00Z"
-      },
-      {
-        "title": "Yu-Gi-Oh! GO RUSH!!",
-        "subtitle": "Dueling with Efficiency",
-        "start": "2026-10-01T20:30:00Z",
-        "stop": "2026-10-01T21:00:00Z"
-      },
-      {
-        "title": "Yu-Gi-Oh! GO RUSH!!",
-        "subtitle": "Playtime with Damamu",
-        "start": "2026-10-01T21:00:00Z",
-        "stop": "2026-10-01T21:30:00Z"
-      },
-      {
-        "title": "Yu-Gi-Oh! GO RUSH!!",
-        "subtitle": "Rush to War",
-        "start": "2026-10-01T21:30:00Z",
-        "stop": "2026-10-01T22:00:00Z"
-      },
-      {
-        "title": "Yu-Gi-Oh! GO RUSH!!",
-        "subtitle": "Rush to Retaliate",
-        "start": "2026-10-01T22:00:00Z",
-        "stop": "2026-10-01T22:30:00Z"
-      },
       {
         "title": "Yu-Gi-Oh! GO RUSH!!",
         "subtitle": "Rush to Redemption",
@@ -2566,782 +2470,818 @@
         "subtitle": "Never Defeated",
         "start": "2026-10-02T21:30:00Z",
         "stop": "2026-10-02T22:00:00Z"
+      },
+      {
+        "title": "Beyblade X",
+        "subtitle": "Supernova",
+        "start": "2026-10-02T22:00:00Z",
+        "stop": "2026-10-02T22:30:00Z"
+      },
+      {
+        "title": "Beyblade X",
+        "subtitle": "Star Devourer",
+        "start": "2026-10-02T22:30:00Z",
+        "stop": "2026-10-02T23:00:00Z"
+      },
+      {
+        "title": "Hannah Montana",
+        "subtitle": "I Honestly Love You (No, Not You)",
+        "start": "2026-10-02T23:00:00Z",
+        "stop": "2026-10-02T23:30:00Z"
+      },
+      {
+        "title": "Hannah Montana",
+        "subtitle": "",
+        "start": "2026-10-02T23:30:00Z",
+        "stop": "2026-10-03T00:00:00Z"
+      },
+      {
+        "title": "Hannah Montana",
+        "subtitle": "B-B-B-Bad to the Chrome",
+        "start": "2026-10-03T00:00:00Z",
+        "stop": "2026-10-03T00:30:00Z"
+      },
+      {
+        "title": "Hannah Montana",
+        "subtitle": "Judge Me Tender",
+        "start": "2026-10-03T00:30:00Z",
+        "stop": "2026-10-03T01:00:00Z"
+      },
+      {
+        "title": "Hannah Montana",
+        "subtitle": "Can't Get Home to You, Girl",
+        "start": "2026-10-03T01:00:00Z",
+        "stop": "2026-10-03T01:30:00Z"
+      },
+      {
+        "title": "Hannah Montana",
+        "subtitle": "Come Fail Away",
+        "start": "2026-10-03T01:30:00Z",
+        "stop": "2026-10-03T02:00:00Z"
       }
     ],
     "bencentral": [
       {
         "title": "Henry Danger",
-        "subtitle": "S04E09",
-        "start": "2026-10-01T16:43:37Z",
-        "stop": "2026-10-01T17:05:55Z"
+        "subtitle": "S01E01",
+        "start": "2026-10-01T20:44:22Z",
+        "stop": "2026-10-01T21:29:26Z"
       },
       {
         "title": "Henry Danger",
-        "subtitle": "S04E13",
-        "start": "2026-10-01T17:05:55Z",
-        "stop": "2026-10-01T17:28:28Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S03E08",
-        "start": "2026-10-01T17:28:28Z",
-        "stop": "2026-10-01T17:50:51Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S03E07",
-        "start": "2026-10-01T17:50:51Z",
-        "stop": "2026-10-01T18:13:54Z"
-      },
-      {
-        "title": "iCarly",
-        "subtitle": "S02E12",
-        "start": "2026-10-01T18:13:54Z",
-        "stop": "2026-10-01T18:37:39Z"
+        "subtitle": "S01E03",
+        "start": "2026-10-01T21:29:26Z",
+        "stop": "2026-10-01T21:51:59Z"
       },
       {
         "title": "iCarly",
         "subtitle": "S01E08",
-        "start": "2026-10-01T18:37:39Z",
-        "stop": "2026-10-01T19:01:22Z"
+        "start": "2026-10-01T21:51:59Z",
+        "stop": "2026-10-01T22:15:43Z"
       },
       {
-        "title": "Henry Danger",
-        "subtitle": "S01E05",
-        "start": "2026-10-01T19:01:22Z",
-        "stop": "2026-10-01T19:23:55Z"
-      },
-      {
-        "title": "Victorious",
-        "subtitle": "S01E10",
-        "start": "2026-10-01T19:23:55Z",
-        "stop": "2026-10-01T19:47:39Z"
-      },
-      {
-        "title": "Victorious",
-        "subtitle": "S02E07",
-        "start": "2026-10-01T19:47:39Z",
-        "stop": "2026-10-01T20:11:16Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S03E15",
-        "start": "2026-10-01T20:11:16Z",
-        "stop": "2026-10-01T20:33:49Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S02E13",
-        "start": "2026-10-01T20:33:49Z",
-        "stop": "2026-10-01T20:56:22Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S01E11",
-        "start": "2026-10-01T20:56:22Z",
-        "stop": "2026-10-01T21:18:55Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S01E04",
-        "start": "2026-10-01T21:18:55Z",
-        "stop": "2026-10-01T21:41:28Z"
-      },
-      {
-        "title": "iCarly",
-        "subtitle": "S01E24",
-        "start": "2026-10-01T21:41:28Z",
-        "stop": "2026-10-01T22:05:10Z"
-      },
-      {
-        "title": "Victorious",
-        "subtitle": "S01E17",
-        "start": "2026-10-01T22:05:10Z",
-        "stop": "2026-10-01T22:28:59Z"
-      },
-      {
-        "title": "iCarly",
+        "title": "Avatar TLAB",
         "subtitle": "S03E06",
-        "start": "2026-10-01T22:28:59Z",
-        "stop": "2026-10-01T22:52:43Z"
-      },
-      {
-        "title": "iCarly",
-        "subtitle": "S01E10",
-        "start": "2026-10-01T22:52:43Z",
-        "stop": "2026-10-01T23:16:26Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S01E09",
-        "start": "2026-10-01T23:16:26Z",
-        "stop": "2026-10-01T23:38:58Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S04E20",
-        "start": "2026-10-01T23:38:58Z",
-        "stop": "2026-10-02T00:01:30Z"
-      },
-      {
-        "title": "iCarly",
-        "subtitle": "S01E22",
-        "start": "2026-10-02T00:01:30Z",
-        "stop": "2026-10-02T00:25:13Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S01E17",
-        "start": "2026-10-02T00:25:13Z",
-        "stop": "2026-10-02T00:47:45Z"
-      },
-      {
-        "title": "iCarly",
-        "subtitle": "S02E16",
-        "start": "2026-10-02T00:47:45Z",
-        "stop": "2026-10-02T01:11:29Z"
+        "start": "2026-10-01T22:15:43Z",
+        "stop": "2026-10-01T22:40:18Z"
       },
       {
         "title": "Victorious",
-        "subtitle": "S01E07",
-        "start": "2026-10-02T01:11:29Z",
-        "stop": "2026-10-02T01:35:13Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S02E09",
-        "start": "2026-10-02T01:35:13Z",
-        "stop": "2026-10-02T01:57:46Z"
-      },
-      {
-        "title": "iCarly",
-        "subtitle": "S02E05",
-        "start": "2026-10-02T01:57:46Z",
-        "stop": "2026-10-02T03:10:07Z"
-      },
-      {
-        "title": "iCarly",
-        "subtitle": "S02E01",
-        "start": "2026-10-02T03:10:07Z",
-        "stop": "2026-10-02T03:33:50Z"
-      },
-      {
-        "title": "Victorious",
-        "subtitle": "S01E16",
-        "start": "2026-10-02T03:33:50Z",
-        "stop": "2026-10-02T03:57:35Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S02E18",
-        "start": "2026-10-02T03:57:35Z",
-        "stop": "2026-10-02T04:20:07Z"
-      },
-      {
-        "title": "Victorious",
-        "subtitle": "S01E04",
-        "start": "2026-10-02T04:20:07Z",
-        "stop": "2026-10-02T04:43:51Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S04E19",
-        "start": "2026-10-02T04:43:51Z",
-        "stop": "2026-10-02T05:06:23Z"
-      },
-      {
-        "title": "iCarly",
-        "subtitle": "S01E07",
-        "start": "2026-10-02T05:06:23Z",
-        "stop": "2026-10-02T05:30:07Z"
-      },
-      {
-        "title": "Victorious",
-        "subtitle": "S02E04",
-        "start": "2026-10-02T05:30:07Z",
-        "stop": "2026-10-02T05:53:44Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S04E17",
-        "start": "2026-10-02T05:53:44Z",
-        "stop": "2026-10-02T06:16:18Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S03E10",
-        "start": "2026-10-02T06:16:18Z",
-        "stop": "2026-10-02T06:37:20Z"
-      },
-      {
-        "title": "iCarly",
-        "subtitle": "S03E04",
-        "start": "2026-10-02T06:37:20Z",
-        "stop": "2026-10-02T07:01:04Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S01E22",
-        "start": "2026-10-02T07:01:04Z",
-        "stop": "2026-10-02T07:23:37Z"
-      },
-      {
-        "title": "iCarly",
-        "subtitle": "S03E16",
-        "start": "2026-10-02T07:23:37Z",
-        "stop": "2026-10-02T07:47:21Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S01E20",
-        "start": "2026-10-02T07:47:21Z",
-        "stop": "2026-10-02T08:09:49Z"
-      },
-      {
-        "title": "iCarly",
         "subtitle": "S02E10",
-        "start": "2026-10-02T08:09:49Z",
-        "stop": "2026-10-02T08:33:32Z"
-      },
-      {
-        "title": "iCarly",
-        "subtitle": "S02E11",
-        "start": "2026-10-02T08:33:32Z",
-        "stop": "2026-10-02T08:57:16Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S01E15",
-        "start": "2026-10-02T08:57:16Z",
-        "stop": "2026-10-02T09:19:49Z"
-      },
-      {
-        "title": "Victorious",
-        "subtitle": "S01E12",
-        "start": "2026-10-02T09:19:49Z",
-        "stop": "2026-10-02T09:43:33Z"
-      },
-      {
-        "title": "iCarly",
-        "subtitle": "S01E11",
-        "start": "2026-10-02T09:43:33Z",
-        "stop": "2026-10-02T10:07:16Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S04E01",
-        "start": "2026-10-02T10:07:16Z",
-        "stop": "2026-10-02T10:29:44Z"
-      },
-      {
-        "title": "iCarly",
-        "subtitle": "S01E05",
-        "start": "2026-10-02T10:29:44Z",
-        "stop": "2026-10-02T10:53:28Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S03E13",
-        "start": "2026-10-02T10:53:28Z",
-        "stop": "2026-10-02T11:15:58Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S02E06",
-        "start": "2026-10-02T11:15:58Z",
-        "stop": "2026-10-02T11:38:31Z"
-      },
-      {
-        "title": "Victorious",
-        "subtitle": "S02E02",
-        "start": "2026-10-02T11:38:31Z",
-        "stop": "2026-10-02T12:02:08Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S03E16",
-        "start": "2026-10-02T12:02:08Z",
-        "stop": "2026-10-02T12:24:26Z"
-      },
-      {
-        "title": "iCarly",
-        "subtitle": "S03E02",
-        "start": "2026-10-02T12:24:26Z",
-        "stop": "2026-10-02T12:48:10Z"
-      },
-      {
-        "title": "Victorious",
-        "subtitle": "S02E06",
-        "start": "2026-10-02T12:48:10Z",
-        "stop": "2026-10-02T13:34:21Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S03E06",
-        "start": "2026-10-02T13:34:21Z",
-        "stop": "2026-10-02T14:18:26Z"
+        "start": "2026-10-01T22:40:18Z",
+        "stop": "2026-10-01T23:03:56Z"
       },
       {
         "title": "Henry Danger",
         "subtitle": "S04E06",
-        "start": "2026-10-02T14:18:26Z",
-        "stop": "2026-10-02T14:40:49Z"
+        "start": "2026-10-01T23:03:56Z",
+        "stop": "2026-10-01T23:26:19Z"
+      },
+      {
+        "title": "Avatar TLAB",
+        "subtitle": "S03E09",
+        "start": "2026-10-01T23:26:19Z",
+        "stop": "2026-10-01T23:50:54Z"
+      },
+      {
+        "title": "Avatar TLAB",
+        "subtitle": "S01E04",
+        "start": "2026-10-01T23:50:54Z",
+        "stop": "2026-10-02T00:14:04Z"
       },
       {
         "title": "Victorious",
-        "subtitle": "S01E05",
-        "start": "2026-10-02T14:40:49Z",
-        "stop": "2026-10-02T15:04:33Z"
+        "subtitle": "S01E15",
+        "start": "2026-10-02T00:14:04Z",
+        "stop": "2026-10-02T00:37:42Z"
+      },
+      {
+        "title": "Victorious",
+        "subtitle": "S01E07",
+        "start": "2026-10-02T00:37:42Z",
+        "stop": "2026-10-02T01:01:26Z"
+      },
+      {
+        "title": "Avatar TLAB",
+        "subtitle": "S02E14",
+        "start": "2026-10-02T01:01:26Z",
+        "stop": "2026-10-02T01:26:00Z"
       },
       {
         "title": "iCarly",
-        "subtitle": "S03E01",
-        "start": "2026-10-02T15:04:33Z",
-        "stop": "2026-10-02T15:28:17Z"
-      },
-      {
-        "title": "Victorious",
-        "subtitle": "S01E01",
-        "start": "2026-10-02T15:28:17Z",
-        "stop": "2026-10-02T15:52:05Z"
+        "subtitle": "S01E23",
+        "start": "2026-10-02T01:26:00Z",
+        "stop": "2026-10-02T01:49:43Z"
       },
       {
         "title": "Henry Danger",
-        "subtitle": "S04E15",
-        "start": "2026-10-02T15:52:05Z",
-        "stop": "2026-10-02T16:14:28Z"
+        "subtitle": "S01E22",
+        "start": "2026-10-02T01:49:43Z",
+        "stop": "2026-10-02T02:12:16Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S02E18",
+        "start": "2026-10-02T02:12:16Z",
+        "stop": "2026-10-02T02:34:49Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S01E07",
+        "start": "2026-10-02T02:34:49Z",
+        "stop": "2026-10-02T02:57:22Z"
       },
       {
         "title": "iCarly",
-        "subtitle": "S03E07",
-        "start": "2026-10-02T16:14:28Z",
-        "stop": "2026-10-02T16:38:12Z"
+        "subtitle": "S02E13",
+        "start": "2026-10-02T02:57:22Z",
+        "stop": "2026-10-02T03:20:49Z"
       },
       {
         "title": "Henry Danger",
-        "subtitle": "S02E02",
-        "start": "2026-10-02T16:38:12Z",
-        "stop": "2026-10-02T17:00:45Z"
-      },
-      {
-        "title": "Victorious",
-        "subtitle": "S02E12",
-        "start": "2026-10-02T17:00:45Z",
-        "stop": "2026-10-02T17:24:22Z"
-      },
-      {
-        "title": "Victorious",
-        "subtitle": "S02E09",
-        "start": "2026-10-02T17:24:22Z",
-        "stop": "2026-10-02T17:48:00Z"
-      },
-      {
-        "title": "Victorious",
-        "subtitle": "S02E12",
-        "start": "2026-10-02T17:48:00Z",
-        "stop": "2026-10-02T18:11:38Z"
+        "subtitle": "S04E09",
+        "start": "2026-10-02T03:20:49Z",
+        "stop": "2026-10-02T03:43:06Z"
       },
       {
         "title": "Henry Danger",
         "subtitle": "S03E02",
-        "start": "2026-10-02T18:11:38Z",
-        "stop": "2026-10-02T18:34:40Z"
+        "start": "2026-10-02T03:43:06Z",
+        "stop": "2026-10-02T04:06:09Z"
       },
       {
         "title": "Victorious",
-        "subtitle": "S01E20",
-        "start": "2026-10-02T18:34:40Z",
-        "stop": "2026-10-02T18:58:25Z"
+        "subtitle": "S02E06",
+        "start": "2026-10-02T04:06:09Z",
+        "stop": "2026-10-02T04:52:20Z"
       },
       {
         "title": "Henry Danger",
-        "subtitle": "S01E18",
-        "start": "2026-10-02T18:58:25Z",
-        "stop": "2026-10-02T19:20:57Z"
+        "subtitle": "S01E06",
+        "start": "2026-10-02T04:52:20Z",
+        "stop": "2026-10-02T05:14:54Z"
       },
       {
-        "title": "Henry Danger",
-        "subtitle": "S03E14",
-        "start": "2026-10-02T19:20:57Z",
-        "stop": "2026-10-02T19:44:01Z"
-      },
-      {
-        "title": "iCarly",
-        "subtitle": "S01E12",
-        "start": "2026-10-02T19:44:01Z",
-        "stop": "2026-10-02T20:07:43Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S03E19",
-        "start": "2026-10-02T20:07:43Z",
-        "stop": "2026-10-02T20:29:57Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S04E16",
-        "start": "2026-10-02T20:29:57Z",
-        "stop": "2026-10-02T20:52:30Z"
-      },
-      {
-        "title": "iCarly",
-        "subtitle": "S02E15",
-        "start": "2026-10-02T20:52:30Z",
-        "stop": "2026-10-02T21:16:14Z"
-      },
-      {
-        "title": "iCarly",
-        "subtitle": "S02E21",
-        "start": "2026-10-02T21:16:14Z",
-        "stop": "2026-10-02T21:39:58Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S02E17",
-        "start": "2026-10-02T21:39:58Z",
-        "stop": "2026-10-02T22:23:59Z"
-      },
-      {
-        "title": "Victorious",
-        "subtitle": "S01E15",
-        "start": "2026-10-02T22:23:59Z",
-        "stop": "2026-10-02T22:47:37Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S02E12",
-        "start": "2026-10-02T22:47:37Z",
-        "stop": "2026-10-02T23:10:05Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S03E03",
-        "start": "2026-10-02T23:10:05Z",
-        "stop": "2026-10-02T23:33:07Z"
-      },
-      {
-        "title": "iCarly",
+        "title": "Avatar TLAB",
         "subtitle": "S01E19",
-        "start": "2026-10-02T23:33:07Z",
-        "stop": "2026-10-02T23:56:50Z"
+        "start": "2026-10-02T05:14:54Z",
+        "stop": "2026-10-02T05:38:47Z"
       },
       {
         "title": "iCarly",
-        "subtitle": "S03E12",
-        "start": "2026-10-02T23:56:50Z",
-        "stop": "2026-10-03T00:20:34Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S04E12",
-        "start": "2026-10-03T00:20:34Z",
-        "stop": "2026-10-03T00:43:07Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S01E21",
-        "start": "2026-10-03T00:43:07Z",
-        "stop": "2026-10-03T01:05:40Z"
+        "subtitle": "S01E02",
+        "start": "2026-10-02T05:38:47Z",
+        "stop": "2026-10-02T06:02:30Z"
       },
       {
         "title": "Victorious",
-        "subtitle": "S02E08",
-        "start": "2026-10-03T01:05:40Z",
-        "stop": "2026-10-03T01:29:18Z"
+        "subtitle": "S02E04",
+        "start": "2026-10-02T06:02:30Z",
+        "stop": "2026-10-02T06:26:08Z"
+      },
+      {
+        "title": "Avatar TLAB",
+        "subtitle": "S01E20",
+        "start": "2026-10-02T06:26:08Z",
+        "stop": "2026-10-02T06:50:11Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E04",
+        "start": "2026-10-02T06:50:11Z",
+        "stop": "2026-10-02T07:13:55Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S02E14",
+        "start": "2026-10-02T07:13:55Z",
+        "stop": "2026-10-02T07:36:28Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S02E16",
+        "start": "2026-10-02T07:36:28Z",
+        "stop": "2026-10-02T08:00:11Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S02E10",
+        "start": "2026-10-02T08:00:11Z",
+        "stop": "2026-10-02T08:23:54Z"
       },
       {
         "title": "Victorious",
-        "subtitle": "S02E01",
-        "start": "2026-10-03T01:29:18Z",
-        "stop": "2026-10-03T01:52:54Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S03E11",
-        "start": "2026-10-03T01:52:54Z",
-        "stop": "2026-10-03T02:15:58Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S01E03",
-        "start": "2026-10-03T02:15:58Z",
-        "stop": "2026-10-03T02:38:31Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S03E04",
-        "start": "2026-10-03T02:38:31Z",
-        "stop": "2026-10-03T03:01:34Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S02E07",
-        "start": "2026-10-03T03:01:34Z",
-        "stop": "2026-10-03T03:24:08Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S02E08",
-        "start": "2026-10-03T03:24:08Z",
-        "stop": "2026-10-03T03:46:40Z"
-      },
-      {
-        "title": "iCarly",
-        "subtitle": "S02E22",
-        "start": "2026-10-03T03:46:40Z",
-        "stop": "2026-10-03T04:10:25Z"
-      },
-      {
-        "title": "iCarly",
-        "subtitle": "S01E17",
-        "start": "2026-10-03T04:10:25Z",
-        "stop": "2026-10-03T04:34:08Z"
+        "subtitle": "S02E03",
+        "start": "2026-10-02T08:23:54Z",
+        "stop": "2026-10-02T08:47:32Z"
       },
       {
         "title": "Victorious",
         "subtitle": "S02E09",
-        "start": "2026-10-03T04:34:08Z",
-        "stop": "2026-10-03T04:57:45Z"
+        "start": "2026-10-02T08:47:32Z",
+        "stop": "2026-10-02T09:11:10Z"
       },
       {
         "title": "Henry Danger",
-        "subtitle": "S04E01",
-        "start": "2026-10-03T04:57:45Z",
-        "stop": "2026-10-03T05:20:13Z"
+        "subtitle": "S01E10",
+        "start": "2026-10-02T09:11:10Z",
+        "stop": "2026-10-02T09:33:43Z"
       },
       {
-        "title": "Henry Danger",
-        "subtitle": "S01E03",
-        "start": "2026-10-03T05:20:13Z",
-        "stop": "2026-10-03T05:42:47Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S01E15",
-        "start": "2026-10-03T05:42:47Z",
-        "stop": "2026-10-03T06:05:20Z"
+        "title": "Victorious",
+        "subtitle": "S01E17",
+        "start": "2026-10-02T09:33:43Z",
+        "stop": "2026-10-02T09:57:32Z"
       },
       {
         "title": "iCarly",
-        "subtitle": "S01E24",
-        "start": "2026-10-03T06:05:20Z",
-        "stop": "2026-10-03T06:29:02Z"
-      },
-      {
-        "title": "iCarly",
-        "subtitle": "S02E15",
-        "start": "2026-10-03T06:29:02Z",
-        "stop": "2026-10-03T06:52:46Z"
-      },
-      {
-        "title": "iCarly",
-        "subtitle": "S02E05",
-        "start": "2026-10-03T06:52:46Z",
-        "stop": "2026-10-03T08:05:07Z"
+        "subtitle": "S01E14",
+        "start": "2026-10-02T09:57:32Z",
+        "stop": "2026-10-02T10:21:15Z"
       },
       {
         "title": "Henry Danger",
-        "subtitle": "S02E05",
-        "start": "2026-10-03T08:05:07Z",
-        "stop": "2026-10-03T08:27:40Z"
+        "subtitle": "S02E02",
+        "start": "2026-10-02T10:21:15Z",
+        "stop": "2026-10-02T10:43:47Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S01E23",
+        "start": "2026-10-02T10:43:47Z",
+        "stop": "2026-10-02T11:06:20Z"
       },
       {
         "title": "iCarly",
-        "subtitle": "S03E11",
-        "start": "2026-10-03T08:27:40Z",
-        "stop": "2026-10-03T08:51:24Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S04E07",
-        "start": "2026-10-03T08:51:24Z",
-        "stop": "2026-10-03T09:13:57Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S02E08",
-        "start": "2026-10-03T09:13:57Z",
-        "stop": "2026-10-03T09:36:29Z"
+        "subtitle": "S01E09",
+        "start": "2026-10-02T11:06:20Z",
+        "stop": "2026-10-02T11:30:05Z"
       },
       {
         "title": "iCarly",
         "subtitle": "S02E04",
-        "start": "2026-10-03T09:36:29Z",
-        "stop": "2026-10-03T10:00:12Z"
+        "start": "2026-10-02T11:30:05Z",
+        "stop": "2026-10-02T11:53:48Z"
+      },
+      {
+        "title": "Avatar TLAB",
+        "subtitle": "S02E16",
+        "start": "2026-10-02T11:53:48Z",
+        "stop": "2026-10-02T12:18:22Z"
       },
       {
         "title": "iCarly",
-        "subtitle": "S01E03",
-        "start": "2026-10-03T10:00:12Z",
-        "stop": "2026-10-03T10:23:55Z"
+        "subtitle": "S03E05",
+        "start": "2026-10-02T12:18:22Z",
+        "stop": "2026-10-02T12:42:05Z"
       },
       {
         "title": "Henry Danger",
-        "subtitle": "S02E15",
-        "start": "2026-10-03T10:23:55Z",
-        "stop": "2026-10-03T10:46:28Z"
-      },
-      {
-        "title": "Victorious",
-        "subtitle": "S01E03",
-        "start": "2026-10-03T10:46:28Z",
-        "stop": "2026-10-03T11:10:11Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S04E17",
-        "start": "2026-10-03T11:10:11Z",
-        "stop": "2026-10-03T11:32:44Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S02E01",
-        "start": "2026-10-03T11:32:44Z",
-        "stop": "2026-10-03T11:55:17Z"
+        "subtitle": "S03E13",
+        "start": "2026-10-02T12:42:05Z",
+        "stop": "2026-10-02T13:04:36Z"
       },
       {
         "title": "iCarly",
-        "subtitle": "S02E12",
-        "start": "2026-10-03T11:55:17Z",
-        "stop": "2026-10-03T12:19:01Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S01E02",
-        "start": "2026-10-03T12:19:01Z",
-        "stop": "2026-10-03T12:41:34Z"
-      },
-      {
-        "title": "Victorious",
-        "subtitle": "S01E01",
-        "start": "2026-10-03T12:41:34Z",
-        "stop": "2026-10-03T13:05:22Z"
+        "subtitle": "S01E25",
+        "start": "2026-10-02T13:04:36Z",
+        "stop": "2026-10-02T13:28:19Z"
       },
       {
         "title": "iCarly",
-        "subtitle": "S02E08",
-        "start": "2026-10-03T13:05:22Z",
-        "stop": "2026-10-03T13:29:05Z"
-      },
-      {
-        "title": "Victorious",
-        "subtitle": "S01E16",
-        "start": "2026-10-03T13:29:05Z",
-        "stop": "2026-10-03T13:52:49Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S01E18",
-        "start": "2026-10-03T13:52:49Z",
-        "stop": "2026-10-03T14:15:22Z"
-      },
-      {
-        "title": "iCarly",
-        "subtitle": "S03E03",
-        "start": "2026-10-03T14:15:22Z",
-        "stop": "2026-10-03T14:39:06Z"
-      },
-      {
-        "title": "Victorious",
-        "subtitle": "S02E08",
-        "start": "2026-10-03T14:39:06Z",
-        "stop": "2026-10-03T15:02:43Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S01E14",
-        "start": "2026-10-03T15:02:43Z",
-        "stop": "2026-10-03T15:25:21Z"
-      },
-      {
-        "title": "iCarly",
-        "subtitle": "S03E15",
-        "start": "2026-10-03T15:25:21Z",
-        "stop": "2026-10-03T15:49:05Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S03E16",
-        "start": "2026-10-03T15:49:05Z",
-        "stop": "2026-10-03T16:11:23Z"
-      },
-      {
-        "title": "iCarly",
-        "subtitle": "S02E23",
-        "start": "2026-10-03T16:11:23Z",
-        "stop": "2026-10-03T16:35:07Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S01E11",
-        "start": "2026-10-03T16:35:07Z",
-        "stop": "2026-10-03T16:57:39Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S02E02",
-        "start": "2026-10-03T16:57:39Z",
-        "stop": "2026-10-03T17:20:12Z"
-      },
-      {
-        "title": "iCarly",
-        "subtitle": "S01E22",
-        "start": "2026-10-03T17:20:12Z",
-        "stop": "2026-10-03T17:43:55Z"
-      },
-      {
-        "title": "iCarly",
-        "subtitle": "S03E06",
-        "start": "2026-10-03T17:43:55Z",
-        "stop": "2026-10-03T18:07:38Z"
-      },
-      {
-        "title": "Henry Danger",
         "subtitle": "S03E10",
-        "start": "2026-10-03T18:07:38Z",
-        "stop": "2026-10-03T18:28:40Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S04E20",
-        "start": "2026-10-03T18:28:40Z",
-        "stop": "2026-10-03T18:51:12Z"
-      },
-      {
-        "title": "Henry Danger",
-        "subtitle": "S03E02",
-        "start": "2026-10-03T18:51:12Z",
-        "stop": "2026-10-03T19:14:15Z"
+        "start": "2026-10-02T13:28:19Z",
+        "stop": "2026-10-02T13:52:02Z"
       },
       {
         "title": "Henry Danger",
         "subtitle": "S03E08",
-        "start": "2026-10-03T19:14:15Z",
-        "stop": "2026-10-03T19:36:38Z"
+        "start": "2026-10-02T13:52:02Z",
+        "stop": "2026-10-02T14:14:26Z"
+      },
+      {
+        "title": "Victorious",
+        "subtitle": "S01E01",
+        "start": "2026-10-02T14:14:26Z",
+        "stop": "2026-10-02T14:38:14Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S04E10",
+        "start": "2026-10-02T14:38:14Z",
+        "stop": "2026-10-02T15:00:47Z"
+      },
+      {
+        "title": "Avatar TLAB",
+        "subtitle": "S01E09",
+        "start": "2026-10-02T15:00:47Z",
+        "stop": "2026-10-02T15:24:44Z"
       },
       {
         "title": "Henry Danger",
         "subtitle": "S04E13",
-        "start": "2026-10-03T19:36:38Z",
-        "stop": "2026-10-03T19:59:11Z"
+        "start": "2026-10-02T15:24:44Z",
+        "stop": "2026-10-02T15:47:17Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E17",
+        "start": "2026-10-02T15:47:17Z",
+        "stop": "2026-10-02T16:10:59Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S02E22",
+        "start": "2026-10-02T16:10:59Z",
+        "stop": "2026-10-02T16:34:44Z"
+      },
+      {
+        "title": "Avatar TLAB",
+        "subtitle": "S03E05",
+        "start": "2026-10-02T16:34:44Z",
+        "stop": "2026-10-02T16:59:17Z"
+      },
+      {
+        "title": "Victorious",
+        "subtitle": "S01E03",
+        "start": "2026-10-02T16:59:17Z",
+        "stop": "2026-10-02T17:23:01Z"
+      },
+      {
+        "title": "Victorious",
+        "subtitle": "S02E02",
+        "start": "2026-10-02T17:23:01Z",
+        "stop": "2026-10-02T17:46:38Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E11",
+        "start": "2026-10-02T17:46:38Z",
+        "stop": "2026-10-02T18:10:21Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S01E21",
+        "start": "2026-10-02T18:10:21Z",
+        "stop": "2026-10-02T18:32:54Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S03E20",
+        "start": "2026-10-02T18:32:54Z",
+        "stop": "2026-10-02T18:56:38Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S03E06",
+        "start": "2026-10-02T18:56:38Z",
+        "stop": "2026-10-02T19:40:42Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S02E04",
+        "start": "2026-10-02T19:40:42Z",
+        "stop": "2026-10-02T20:03:15Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S03E07",
+        "start": "2026-10-02T20:03:15Z",
+        "stop": "2026-10-02T20:26:18Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S02E03",
+        "start": "2026-10-02T20:26:18Z",
+        "stop": "2026-10-02T20:48:51Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S01E18",
+        "start": "2026-10-02T20:48:51Z",
+        "stop": "2026-10-02T21:11:24Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S01E11",
+        "start": "2026-10-02T21:11:24Z",
+        "stop": "2026-10-02T21:33:57Z"
+      },
+      {
+        "title": "Victorious",
+        "subtitle": "S01E16",
+        "start": "2026-10-02T21:33:57Z",
+        "stop": "2026-10-02T21:57:41Z"
+      },
+      {
+        "title": "Avatar TLAB",
+        "subtitle": "S02E11",
+        "start": "2026-10-02T21:57:41Z",
+        "stop": "2026-10-02T22:22:16Z"
+      },
+      {
+        "title": "Avatar TLAB",
+        "subtitle": "S01E10",
+        "start": "2026-10-02T22:22:16Z",
+        "stop": "2026-10-02T22:46:01Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S01E25",
+        "start": "2026-10-02T22:46:01Z",
+        "stop": "2026-10-02T23:08:34Z"
+      },
+      {
+        "title": "Avatar TLAB",
+        "subtitle": "S02E08",
+        "start": "2026-10-02T23:08:34Z",
+        "stop": "2026-10-02T23:33:11Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S01E08",
+        "start": "2026-10-02T23:33:11Z",
+        "stop": "2026-10-02T23:55:44Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S02E12",
+        "start": "2026-10-02T23:55:44Z",
+        "stop": "2026-10-03T00:18:12Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S03E13",
+        "start": "2026-10-03T00:18:12Z",
+        "stop": "2026-10-03T00:41:56Z"
+      },
+      {
+        "title": "Avatar TLAB",
+        "subtitle": "S02E12",
+        "start": "2026-10-03T00:41:56Z",
+        "stop": "2026-10-03T01:28:24Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S02E21",
+        "start": "2026-10-03T01:28:24Z",
+        "stop": "2026-10-03T01:52:07Z"
+      },
+      {
+        "title": "Avatar TLAB",
+        "subtitle": "S02E19",
+        "start": "2026-10-03T01:52:07Z",
+        "stop": "2026-10-03T02:38:44Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S03E11",
+        "start": "2026-10-03T02:38:44Z",
+        "stop": "2026-10-03T03:01:47Z"
+      },
+      {
+        "title": "Victorious",
+        "subtitle": "S01E13",
+        "start": "2026-10-03T03:01:47Z",
+        "stop": "2026-10-03T03:47:44Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S03E09",
+        "start": "2026-10-03T03:47:44Z",
+        "stop": "2026-10-03T04:10:23Z"
+      },
+      {
+        "title": "Victorious",
+        "subtitle": "S01E20",
+        "start": "2026-10-03T04:10:23Z",
+        "stop": "2026-10-03T04:34:07Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S03E03",
+        "start": "2026-10-03T04:34:07Z",
+        "stop": "2026-10-03T04:57:51Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E10",
+        "start": "2026-10-03T04:57:51Z",
+        "stop": "2026-10-03T05:21:34Z"
+      },
+      {
+        "title": "Victorious",
+        "subtitle": "S02E05",
+        "start": "2026-10-03T05:21:34Z",
+        "stop": "2026-10-03T05:45:11Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S02E15",
+        "start": "2026-10-03T05:45:11Z",
+        "stop": "2026-10-03T06:07:44Z"
+      },
+      {
+        "title": "Avatar TLAB",
+        "subtitle": "S02E05",
+        "start": "2026-10-03T06:07:44Z",
+        "stop": "2026-10-03T06:31:47Z"
+      },
+      {
+        "title": "Victorious",
+        "subtitle": "S01E12",
+        "start": "2026-10-03T06:31:47Z",
+        "stop": "2026-10-03T06:55:30Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S02E16",
+        "start": "2026-10-03T06:55:30Z",
+        "stop": "2026-10-03T07:17:48Z"
+      },
+      {
+        "title": "Victorious",
+        "subtitle": "S02E08",
+        "start": "2026-10-03T07:17:48Z",
+        "stop": "2026-10-03T07:41:26Z"
+      },
+      {
+        "title": "Avatar TLAB",
+        "subtitle": "S01E18",
+        "start": "2026-10-03T07:41:26Z",
+        "stop": "2026-10-03T08:05:28Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S03E17",
+        "start": "2026-10-03T08:05:28Z",
+        "stop": "2026-10-03T08:27:31Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S03E19",
+        "start": "2026-10-03T08:27:31Z",
+        "stop": "2026-10-03T08:49:44Z"
       },
       {
         "title": "Henry Danger",
         "subtitle": "S02E06",
-        "start": "2026-10-03T19:59:11Z",
-        "stop": "2026-10-03T20:21:44Z"
+        "start": "2026-10-03T08:49:44Z",
+        "stop": "2026-10-03T09:12:17Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S04E17",
+        "start": "2026-10-03T09:12:17Z",
+        "stop": "2026-10-03T09:34:50Z"
       },
       {
         "title": "iCarly",
-        "subtitle": "S01E01",
-        "start": "2026-10-03T20:21:44Z",
-        "stop": "2026-10-03T20:45:26Z"
+        "subtitle": "S01E15",
+        "start": "2026-10-03T09:34:50Z",
+        "stop": "2026-10-03T09:58:33Z"
       },
       {
         "title": "Victorious",
+        "subtitle": "S02E12",
+        "start": "2026-10-03T09:58:33Z",
+        "stop": "2026-10-03T10:22:11Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E07",
+        "start": "2026-10-03T10:22:11Z",
+        "stop": "2026-10-03T10:45:54Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S04E15",
+        "start": "2026-10-03T10:45:54Z",
+        "stop": "2026-10-03T11:08:17Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S02E12",
+        "start": "2026-10-03T11:08:17Z",
+        "stop": "2026-10-03T11:32:02Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S04E01",
+        "start": "2026-10-03T11:32:02Z",
+        "stop": "2026-10-03T11:54:30Z"
+      },
+      {
+        "title": "Avatar TLAB",
+        "subtitle": "S02E17",
+        "start": "2026-10-03T11:54:30Z",
+        "stop": "2026-10-03T12:19:03Z"
+      },
+      {
+        "title": "Victorious",
+        "subtitle": "S01E06",
+        "start": "2026-10-03T12:19:03Z",
+        "stop": "2026-10-03T12:43:03Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S02E13",
+        "start": "2026-10-03T12:43:03Z",
+        "stop": "2026-10-03T13:05:36Z"
+      },
+      {
+        "title": "Avatar TLAB",
+        "subtitle": "S03E13",
+        "start": "2026-10-03T13:05:36Z",
+        "stop": "2026-10-03T13:30:13Z"
+      },
+      {
+        "title": "Avatar TLAB",
+        "subtitle": "S01E02",
+        "start": "2026-10-03T13:30:13Z",
+        "stop": "2026-10-03T13:52:42Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S02E03",
+        "start": "2026-10-03T13:52:42Z",
+        "stop": "2026-10-03T14:16:24Z"
+      },
+      {
+        "title": "Victorious",
+        "subtitle": "S01E02",
+        "start": "2026-10-03T14:16:24Z",
+        "stop": "2026-10-03T14:40:19Z"
+      },
+      {
+        "title": "Avatar TLAB",
+        "subtitle": "S02E01",
+        "start": "2026-10-03T14:40:19Z",
+        "stop": "2026-10-03T15:04:26Z"
+      },
+      {
+        "title": "Avatar TLAB",
+        "subtitle": "S01E13",
+        "start": "2026-10-03T15:04:26Z",
+        "stop": "2026-10-03T15:28:16Z"
+      },
+      {
+        "title": "Avatar TLAB",
+        "subtitle": "S03E07",
+        "start": "2026-10-03T15:28:16Z",
+        "stop": "2026-10-03T15:52:52Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S02E02",
+        "start": "2026-10-03T15:52:52Z",
+        "stop": "2026-10-03T16:16:34Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S02E11",
+        "start": "2026-10-03T16:16:34Z",
+        "stop": "2026-10-03T16:40:18Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S04E08",
+        "start": "2026-10-03T16:40:18Z",
+        "stop": "2026-10-03T17:02:51Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S03E18",
+        "start": "2026-10-03T17:02:51Z",
+        "stop": "2026-10-03T17:49:42Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S03E15",
+        "start": "2026-10-03T17:49:42Z",
+        "stop": "2026-10-03T18:13:26Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S04E19",
+        "start": "2026-10-03T18:13:26Z",
+        "stop": "2026-10-03T18:35:58Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S02E07",
+        "start": "2026-10-03T18:35:58Z",
+        "stop": "2026-10-03T18:58:32Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S04E11",
+        "start": "2026-10-03T18:58:32Z",
+        "stop": "2026-10-03T19:21:05Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E16",
+        "start": "2026-10-03T19:21:05Z",
+        "stop": "2026-10-03T19:44:48Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S04E18",
+        "start": "2026-10-03T19:44:48Z",
+        "stop": "2026-10-03T20:07:21Z"
+      },
+      {
+        "title": "Avatar TLAB",
         "subtitle": "S01E11",
-        "start": "2026-10-03T20:45:26Z",
-        "stop": "2026-10-03T21:09:10Z"
+        "start": "2026-10-03T20:07:21Z",
+        "stop": "2026-10-03T20:31:28Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S03E18",
+        "start": "2026-10-03T20:31:28Z",
+        "stop": "2026-10-03T20:54:01Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S03E06",
+        "start": "2026-10-03T20:54:01Z",
+        "stop": "2026-10-03T21:17:45Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S02E24",
+        "start": "2026-10-03T21:17:45Z",
+        "stop": "2026-10-03T22:04:01Z"
+      },
+      {
+        "title": "Avatar TLAB",
+        "subtitle": "S02E15",
+        "start": "2026-10-03T22:04:01Z",
+        "stop": "2026-10-03T22:28:37Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S02E15",
+        "start": "2026-10-03T22:28:37Z",
+        "stop": "2026-10-03T22:52:21Z"
+      },
+      {
+        "title": "Avatar TLAB",
+        "subtitle": "S03E16",
+        "start": "2026-10-03T22:52:21Z",
+        "stop": "2026-10-03T23:16:41Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "S01E24",
+        "start": "2026-10-03T23:16:41Z",
+        "stop": "2026-10-03T23:40:23Z"
+      },
+      {
+        "title": "Victorious",
+        "subtitle": "S01E10",
+        "start": "2026-10-03T23:40:23Z",
+        "stop": "2026-10-04T00:04:07Z"
+      },
+      {
+        "title": "Avatar TLAB",
+        "subtitle": "S01E03",
+        "start": "2026-10-04T00:04:07Z",
+        "stop": "2026-10-04T00:27:32Z"
+      },
+      {
+        "title": "Henry Danger",
+        "subtitle": "S02E11",
+        "start": "2026-10-04T00:27:32Z",
+        "stop": "2026-10-04T00:50:00Z"
+      },
+      {
+        "title": "Avatar TLAB",
+        "subtitle": "S03E12",
+        "start": "2026-10-04T00:50:00Z",
+        "stop": "2026-10-04T01:14:31Z"
       }
     ]
   }
