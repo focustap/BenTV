@@ -984,7 +984,11 @@
       const useBackup = source === "backup" && hasBackup;
       const nextSrc = useBackup ? channel.backupSrc : channel.primarySrc;
 
-      if (useBackup) {
+      // ntv.st explicitly requires an unsandboxed iframe. Keep the existing
+      // restrictions for every other backup source.
+      const ntvBackup = useBackup && channel.key === "cbsla" &&
+        new URL(nextSrc).origin === "https://ntv.st";
+      if (useBackup && !ntvBackup) {
         player.setAttribute("sandbox", "allow-scripts allow-same-origin allow-forms allow-presentation");
       } else {
         player.removeAttribute("sandbox");
@@ -998,7 +1002,8 @@
       sourceBtn.textContent = !hasBackup ? "No Backup" : (useBackup ? "↻ Primary" : "↻ Backup");
       sourceBtn.title = !hasBackup
         ? "No backup source is configured for this channel"
-        : (useBackup ? "Switch back to zlive.st" : "Switch to sandboxed dlive.sx backup");
+        : (useBackup ? "Switch back to primary stream"
+          : (channel.key === "cbsla" ? "Switch to ntv.st backup" : "Switch to sandboxed dlive.sx backup"));
     }
 
     function tune(index) {
