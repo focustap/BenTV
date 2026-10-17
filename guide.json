@@ -1,14 +1,8 @@
 {
-  "generatedAt": "2026-10-17T19:24:17.834639Z",
+  "generatedAt": "2026-10-17T22:19:07.792381Z",
   "source": "EPGShare01 US2 + ErsatzTV",
   "channels": {
     "freeform": [
-      {
-        "title": "Sleepy Hollow",
-        "subtitle": "",
-        "start": "2026-10-17T15:50:00Z",
-        "stop": "2026-10-17T18:20:00Z"
-      },
       {
         "title": "Haunted Mansion",
         "subtitle": "",
@@ -134,33 +128,15 @@
         "subtitle": "",
         "start": "2026-10-18T18:35:00Z",
         "stop": "2026-10-18T20:40:00Z"
+      },
+      {
+        "title": "Addams Family Values",
+        "subtitle": "",
+        "start": "2026-10-18T20:40:00Z",
+        "stop": "2026-10-18T22:45:00Z"
       }
     ],
     "disney": [
-      {
-        "title": "Miraculous World Paris: Tales of Shadybug and Claw Noir",
-        "subtitle": "",
-        "start": "2026-10-17T16:05:00Z",
-        "stop": "2026-10-17T17:05:00Z"
-      },
-      {
-        "title": "Miraculous World London: At The Edge Of Time",
-        "subtitle": "",
-        "start": "2026-10-17T17:05:00Z",
-        "stop": "2026-10-17T18:05:00Z"
-      },
-      {
-        "title": "Bluey",
-        "subtitle": "Hammerbarn; Feather Wand; Dance Mode",
-        "start": "2026-10-17T18:05:00Z",
-        "stop": "2026-10-17T18:30:00Z"
-      },
-      {
-        "title": "Bluey",
-        "subtitle": "Squash; Charades; Bingo",
-        "start": "2026-10-17T18:30:00Z",
-        "stop": "2026-10-17T19:00:00Z"
-      },
       {
         "title": "Bluey",
         "subtitle": "Sleepytime; Daddy Dropoff; Favorite Thing",
@@ -418,33 +394,45 @@
         "subtitle": "Freebie Frenzy; TP'd",
         "start": "2026-10-18T19:00:00Z",
         "stop": "2026-10-18T19:30:00Z"
+      },
+      {
+        "title": "Big City Greens",
+        "subtitle": "Chocolate Santa; Meadow Mania",
+        "start": "2026-10-18T19:30:00Z",
+        "stop": "2026-10-18T20:00:00Z"
+      },
+      {
+        "title": "Big City Greens",
+        "subtitle": "Split Decision; Skipped Over",
+        "start": "2026-10-18T20:00:00Z",
+        "stop": "2026-10-18T20:30:00Z"
+      },
+      {
+        "title": "Big City Greens",
+        "subtitle": "One Hundred",
+        "start": "2026-10-18T20:30:00Z",
+        "stop": "2026-10-18T21:00:00Z"
+      },
+      {
+        "title": "Big City Greens",
+        "subtitle": "Chip's Revenge",
+        "start": "2026-10-18T21:00:00Z",
+        "stop": "2026-10-18T21:30:00Z"
+      },
+      {
+        "title": "Big City Greens",
+        "subtitle": "Charity Case; Like Father",
+        "start": "2026-10-18T21:30:00Z",
+        "stop": "2026-10-18T22:00:00Z"
+      },
+      {
+        "title": "Big City Greens",
+        "subtitle": "Locked In; City Wayne",
+        "start": "2026-10-18T22:00:00Z",
+        "stop": "2026-10-18T22:30:00Z"
       }
     ],
     "nickelodeon": [
-      {
-        "title": "The Patrick Star Show",
-        "subtitle": "Week of Stars!",
-        "start": "2026-10-17T15:30:00Z",
-        "stop": "2026-10-17T17:00:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Big Top Flop; Sandy, Help Us!",
-        "start": "2026-10-17T17:00:00Z",
-        "stop": "2026-10-17T17:30:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "The Flower Pot; SpongeBob on Parade",
-        "start": "2026-10-17T17:30:00Z",
-        "stop": "2026-10-17T18:00:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "The Night Patty",
-        "start": "2026-10-17T18:00:00Z",
-        "stop": "2026-10-17T18:15:00Z"
-      },
       {
         "title": "The Boss Baby 2: Family Business",
         "subtitle": "",
@@ -606,51 +594,15 @@
         "subtitle": "",
         "start": "2026-10-18T18:30:00Z",
         "stop": "2026-10-18T21:00:00Z"
+      },
+      {
+        "title": "Trolls World Tour",
+        "subtitle": "",
+        "start": "2026-10-18T21:00:00Z",
+        "stop": "2026-10-18T23:00:00Z"
       }
     ],
     "nicktoons": [
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Ghoul Fools",
-        "start": "2026-10-17T16:04:00Z",
-        "stop": "2026-10-17T16:30:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Naughty Nautical Neighbors; Boating School",
-        "start": "2026-10-17T16:30:00Z",
-        "stop": "2026-10-17T16:56:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Big Bad Bubble Bass; Sea-Man Sponge Haters Club",
-        "start": "2026-10-17T16:56:00Z",
-        "stop": "2026-10-17T17:22:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Club SpongeBob; My Pretty Seahorse",
-        "start": "2026-10-17T17:22:00Z",
-        "stop": "2026-10-17T17:48:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Curse of the WereDoodle; Gorilla Suit Day",
-        "start": "2026-10-17T17:48:00Z",
-        "stop": "2026-10-17T18:14:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Hello Bikini Bottom!",
-        "start": "2026-10-17T18:14:00Z",
-        "stop": "2026-10-17T18:40:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Grandma's Kisses; Squidville",
-        "start": "2026-10-17T18:40:00Z",
-        "stop": "2026-10-17T19:07:00Z"
-      },
       {
         "title": "SpongeBob SquarePants",
         "subtitle": "Tentacle Vision; I Heart Dancing",
@@ -992,51 +944,51 @@
         "subtitle": "The Fry Cook and the Elves; It's About Mime",
         "start": "2026-10-18T19:07:00Z",
         "stop": "2026-10-18T19:33:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "Food Con Castaways; Snail Mail",
+        "start": "2026-10-18T19:33:00Z",
+        "stop": "2026-10-18T19:59:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "Pressure; The Smoking Peanut",
+        "start": "2026-10-18T19:59:00Z",
+        "stop": "2026-10-18T20:25:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "High Sea Diving; Bottle Burglars",
+        "start": "2026-10-18T20:25:00Z",
+        "stop": "2026-10-18T20:51:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "The Thing; Hocus Pocus",
+        "start": "2026-10-18T20:51:00Z",
+        "stop": "2026-10-18T21:17:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "SpongeBob vs. the Goo",
+        "start": "2026-10-18T21:17:00Z",
+        "stop": "2026-10-18T21:43:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "The Grill Is Gone; The Night Patty",
+        "start": "2026-10-18T21:43:00Z",
+        "stop": "2026-10-18T22:09:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "SquidBird; Allergy Attack",
+        "start": "2026-10-18T22:09:00Z",
+        "stop": "2026-10-18T22:35:00Z"
       }
     ],
     "teenick": [
-      {
-        "title": "The Thundermans",
-        "subtitle": "Haunted Thundermans",
-        "start": "2026-10-17T16:12:00Z",
-        "stop": "2026-10-17T16:38:00Z"
-      },
-      {
-        "title": "The Thundermans",
-        "subtitle": "Happy Heroween",
-        "start": "2026-10-17T16:38:00Z",
-        "stop": "2026-10-17T17:04:00Z"
-      },
-      {
-        "title": "The Thundermans",
-        "subtitle": "Mad Max: Beyond Thunderhome",
-        "start": "2026-10-17T17:04:00Z",
-        "stop": "2026-10-17T17:30:00Z"
-      },
-      {
-        "title": "The Thundermans",
-        "subtitle": "Exit Stage Theft",
-        "start": "2026-10-17T17:30:00Z",
-        "stop": "2026-10-17T17:56:00Z"
-      },
-      {
-        "title": "The Thundermans: Undercover",
-        "subtitle": "She's All Splat",
-        "start": "2026-10-17T17:56:00Z",
-        "stop": "2026-10-17T18:22:00Z"
-      },
-      {
-        "title": "The Thundermans: Undercover",
-        "subtitle": "Tide and Prejudice",
-        "start": "2026-10-17T18:22:00Z",
-        "stop": "2026-10-17T18:49:00Z"
-      },
-      {
-        "title": "The Thundermans",
-        "subtitle": "He Got Game Night",
-        "start": "2026-10-17T18:49:00Z",
-        "stop": "2026-10-17T19:15:00Z"
-      },
       {
         "title": "The Thundermans",
         "subtitle": "Change of Art",
@@ -1372,6 +1324,42 @@
         "subtitle": "Bad Girl",
         "start": "2026-10-18T19:15:00Z",
         "stop": "2026-10-18T19:42:00Z"
+      },
+      {
+        "title": "Zoey 101",
+        "subtitle": "Robot Wars",
+        "start": "2026-10-18T19:42:00Z",
+        "stop": "2026-10-18T20:08:00Z"
+      },
+      {
+        "title": "Zoey 101",
+        "subtitle": "Haunted House",
+        "start": "2026-10-18T20:08:00Z",
+        "stop": "2026-10-18T20:34:00Z"
+      },
+      {
+        "title": "Zoey 101",
+        "subtitle": "Broadcast Views",
+        "start": "2026-10-18T20:34:00Z",
+        "stop": "2026-10-18T21:01:00Z"
+      },
+      {
+        "title": "Zoey 101",
+        "subtitle": "Quinn's Alpaca",
+        "start": "2026-10-18T21:01:00Z",
+        "stop": "2026-10-18T21:28:00Z"
+      },
+      {
+        "title": "Zoey 101",
+        "subtitle": "Anger Management",
+        "start": "2026-10-18T21:28:00Z",
+        "stop": "2026-10-18T21:54:00Z"
+      },
+      {
+        "title": "Zoey 101",
+        "subtitle": "Quinn Misses the Mark",
+        "start": "2026-10-18T21:54:00Z",
+        "stop": "2026-10-18T22:21:00Z"
       }
     ],
     "trutv": [
@@ -1512,81 +1500,15 @@
         "subtitle": "",
         "start": "2026-10-18T18:00:00Z",
         "stop": "2026-10-18T20:00:00Z"
+      },
+      {
+        "title": "Magic Mike's Last Dance",
+        "subtitle": "",
+        "start": "2026-10-18T20:00:00Z",
+        "stop": "2026-10-18T22:30:00Z"
       }
     ],
     "cartoonnetwork": [
-      {
-        "title": "The Amazing World of Gumball",
-        "subtitle": "The Worst",
-        "start": "2026-10-17T16:15:00Z",
-        "stop": "2026-10-17T16:30:00Z"
-      },
-      {
-        "title": "The Amazing World of Gumball",
-        "subtitle": "The Deal",
-        "start": "2026-10-17T16:30:00Z",
-        "stop": "2026-10-17T16:45:00Z"
-      },
-      {
-        "title": "The Amazing World of Gumball",
-        "subtitle": "The Petals",
-        "start": "2026-10-17T16:45:00Z",
-        "stop": "2026-10-17T17:00:00Z"
-      },
-      {
-        "title": "The Amazing World of Gumball",
-        "subtitle": "The Puppets",
-        "start": "2026-10-17T17:00:00Z",
-        "stop": "2026-10-17T17:15:00Z"
-      },
-      {
-        "title": "The Amazing World of Gumball",
-        "subtitle": "The Nuisance",
-        "start": "2026-10-17T17:15:00Z",
-        "stop": "2026-10-17T17:30:00Z"
-      },
-      {
-        "title": "Tiny Toons Looniversity",
-        "subtitle": "Tears of a Clone",
-        "start": "2026-10-17T17:30:00Z",
-        "stop": "2026-10-17T18:00:00Z"
-      },
-      {
-        "title": "Tom & Jerry",
-        "subtitle": "Of Feline Bondage",
-        "start": "2026-10-17T18:00:00Z",
-        "stop": "2026-10-17T18:10:00Z"
-      },
-      {
-        "title": "Tom & Jerry",
-        "subtitle": "Pie in the Sky",
-        "start": "2026-10-17T18:10:00Z",
-        "stop": "2026-10-17T18:20:00Z"
-      },
-      {
-        "title": "The Tom and Jerry Comedy Show",
-        "subtitle": "Pied Piper Puss",
-        "start": "2026-10-17T18:20:00Z",
-        "stop": "2026-10-17T18:30:00Z"
-      },
-      {
-        "title": "Looney Tunes",
-        "subtitle": "You Were Never Duckier",
-        "start": "2026-10-17T18:30:00Z",
-        "stop": "2026-10-17T18:40:00Z"
-      },
-      {
-        "title": "Looney Tunes",
-        "subtitle": "Hot Cross Bunny",
-        "start": "2026-10-17T18:40:00Z",
-        "stop": "2026-10-17T18:50:00Z"
-      },
-      {
-        "title": "Looney Tunes",
-        "subtitle": "Scaredy Cat",
-        "start": "2026-10-17T18:50:00Z",
-        "stop": "2026-10-17T19:00:00Z"
-      },
       {
         "title": "Scooby-Doo, Where Are You!",
         "subtitle": "Who's Afraid of the Big Bad Werewolf?",
@@ -1982,45 +1904,51 @@
         "subtitle": "The Rival",
         "start": "2026-10-18T19:15:00Z",
         "stop": "2026-10-18T19:30:00Z"
+      },
+      {
+        "title": "Regular Show",
+        "subtitle": "Terror Tales of the Park III",
+        "start": "2026-10-18T19:30:00Z",
+        "stop": "2026-10-18T20:00:00Z"
+      },
+      {
+        "title": "Regular Show",
+        "subtitle": "Terror Tales of the Park VI",
+        "start": "2026-10-18T20:00:00Z",
+        "stop": "2026-10-18T20:30:00Z"
+      },
+      {
+        "title": "Regular Show: The Lost Tapes",
+        "subtitle": "Smoke Alarm on the Water",
+        "start": "2026-10-18T20:30:00Z",
+        "stop": "2026-10-18T20:45:00Z"
+      },
+      {
+        "title": "Regular Show: The Lost Tapes",
+        "subtitle": "Party Horse 4: Third Time's a Charm",
+        "start": "2026-10-18T20:45:00Z",
+        "stop": "2026-10-18T21:00:00Z"
+      },
+      {
+        "title": "Bob's Burgers",
+        "subtitle": "Itty Bitty Ditty Committee",
+        "start": "2026-10-18T21:00:00Z",
+        "stop": "2026-10-18T21:30:00Z"
+      },
+      {
+        "title": "Bob's Burgers",
+        "subtitle": "Eat, Spray, Linda",
+        "start": "2026-10-18T21:30:00Z",
+        "stop": "2026-10-18T22:00:00Z"
+      },
+      {
+        "title": "Bob's Burgers",
+        "subtitle": "Housetrap",
+        "start": "2026-10-18T22:00:00Z",
+        "stop": "2026-10-18T22:30:00Z"
       }
     ],
     "disneyxd": [
-      {
-        "title": "Chip 'n' Dale Rescue Rangers",
-        "subtitle": "One Upsman-Chip",
-        "start": "2026-10-17T16:00:00Z",
-        "stop": "2026-10-17T16:30:00Z"
-      },
-      {
-        "title": "Chip 'n' Dale Rescue Rangers",
-        "subtitle": "Shell Shocked",
-        "start": "2026-10-17T16:30:00Z",
-        "stop": "2026-10-17T17:00:00Z"
-      },
-      {
-        "title": "Chip 'n' Dale Rescue Rangers",
-        "subtitle": "Love Is a Many Splintered Thing",
-        "start": "2026-10-17T17:00:00Z",
-        "stop": "2026-10-17T17:30:00Z"
-      },
-      {
-        "title": "Chip 'n' Dale Rescue Rangers",
-        "subtitle": "Song of the Night n' Dale",
-        "start": "2026-10-17T17:30:00Z",
-        "stop": "2026-10-17T18:00:00Z"
-      },
-      {
-        "title": "Chip 'n' Dale Rescue Rangers",
-        "subtitle": "Double O'Chipmunk",
-        "start": "2026-10-17T18:00:00Z",
-        "stop": "2026-10-17T18:30:00Z"
-      },
-      {
-        "title": "Chip 'n' Dale Rescue Rangers",
-        "subtitle": "Gadget Goes Hawaiian",
-        "start": "2026-10-17T18:30:00Z",
-        "stop": "2026-10-17T19:00:00Z"
-      },
       {
         "title": "Chip 'n' Dale Rescue Rangers",
         "subtitle": "It's a Bird, It's Insane, It's Dale",
@@ -2308,6 +2236,30 @@
         "subtitle": "The Stanchurian Candidate",
         "start": "2026-10-18T19:00:00Z",
         "stop": "2026-10-18T19:30:00Z"
+      },
+      {
+        "title": "Gravity Falls",
+        "subtitle": "The Last Mabelcorn",
+        "start": "2026-10-18T19:30:00Z",
+        "stop": "2026-10-18T20:00:00Z"
+      },
+      {
+        "title": "Gravity Falls",
+        "subtitle": "Roadside Attraction",
+        "start": "2026-10-18T20:00:00Z",
+        "stop": "2026-10-18T20:30:00Z"
+      },
+      {
+        "title": "Gravity Falls",
+        "subtitle": "Dipper And Mabel vs The Future",
+        "start": "2026-10-18T20:30:00Z",
+        "stop": "2026-10-18T21:00:00Z"
+      },
+      {
+        "title": "Gravity Falls",
+        "subtitle": "Weirdmageddon",
+        "start": "2026-10-18T21:00:00Z",
+        "stop": "2026-10-18T23:00:00Z"
       }
     ],
     "bencentral": []
