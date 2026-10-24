@@ -1,14 +1,8 @@
 {
-  "generatedAt": "2026-10-23T22:11:11.687214Z",
+  "generatedAt": "2026-10-24T00:42:08.774768Z",
   "source": "EPGShare01 US2 + ErsatzTV",
   "channels": {
     "freeform": [
-      {
-        "title": "Maleficent",
-        "subtitle": "",
-        "start": "2026-10-23T18:55:00Z",
-        "stop": "2026-10-23T21:00:00Z"
-      },
       {
         "title": "Cruella",
         "subtitle": "",
@@ -41,36 +35,6 @@
       }
     ],
     "disney": [
-      {
-        "title": "Kiff",
-        "subtitle": "No Thank You; Love Ed",
-        "start": "2026-10-23T19:00:00Z",
-        "stop": "2026-10-23T19:30:00Z"
-      },
-      {
-        "title": "Phineas and Ferb",
-        "subtitle": "Bend It Like Doof; Dooflicated",
-        "start": "2026-10-23T19:30:00Z",
-        "stop": "2026-10-23T20:00:00Z"
-      },
-      {
-        "title": "Big City Greens",
-        "subtitle": "Honey Heist; Dog Mayor",
-        "start": "2026-10-23T20:00:00Z",
-        "stop": "2026-10-23T20:30:00Z"
-      },
-      {
-        "title": "Big City Greens",
-        "subtitle": "Chill Bill; Bunny",
-        "start": "2026-10-23T20:30:00Z",
-        "stop": "2026-10-23T21:00:00Z"
-      },
-      {
-        "title": "Big City Greens",
-        "subtitle": "Long Goodbye",
-        "start": "2026-10-23T21:00:00Z",
-        "stop": "2026-10-23T21:30:00Z"
-      },
       {
         "title": "Bluey",
         "subtitle": "The Kids; Butterflies; The Creek",
@@ -152,18 +116,6 @@
     ],
     "nickelodeon": [
       {
-        "title": "Dr. Seuss' the Lorax",
-        "subtitle": "",
-        "start": "2026-10-23T19:00:00Z",
-        "stop": "2026-10-23T21:00:00Z"
-      },
-      {
-        "title": "The Boss Baby: Back in Business",
-        "subtitle": "Escape From Krinkle's",
-        "start": "2026-10-23T21:00:00Z",
-        "stop": "2026-10-23T21:30:00Z"
-      },
-      {
         "title": "The Loud House",
         "subtitle": "Con Girl; No Fun Run",
         "start": "2026-10-23T21:30:00Z",
@@ -237,36 +189,6 @@
       }
     ],
     "nicktoons": [
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "The Fry Cook and the Elves; It's About Mime",
-        "start": "2026-10-23T19:07:00Z",
-        "stop": "2026-10-23T19:33:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Bad Luck Bob; The Sandman Cometh",
-        "start": "2026-10-23T19:33:00Z",
-        "stop": "2026-10-23T19:59:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Sandy's Rocket; Squeaky Boots",
-        "start": "2026-10-23T19:59:00Z",
-        "stop": "2026-10-23T20:25:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Bummer Vacation; Wigstuck",
-        "start": "2026-10-23T20:25:00Z",
-        "stop": "2026-10-23T20:51:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Survival of the Idiots; Dumped",
-        "start": "2026-10-23T20:51:00Z",
-        "stop": "2026-10-23T21:17:00Z"
-      },
       {
         "title": "SpongeBob SquarePants",
         "subtitle": "Bubbletown; Girls' Night Out",
@@ -379,42 +301,6 @@
     "teenick": [
       {
         "title": "The Thundermans",
-        "subtitle": "Evil Never Sleeps",
-        "start": "2026-10-23T18:49:00Z",
-        "stop": "2026-10-23T19:15:00Z"
-      },
-      {
-        "title": "The Thundermans",
-        "subtitle": "Why You Buggin'?",
-        "start": "2026-10-23T19:15:00Z",
-        "stop": "2026-10-23T19:42:00Z"
-      },
-      {
-        "title": "The Thundermans",
-        "subtitle": "Nowhere to Slide",
-        "start": "2026-10-23T19:42:00Z",
-        "stop": "2026-10-23T20:08:00Z"
-      },
-      {
-        "title": "The Thundermans",
-        "subtitle": "Haunted Thundermans",
-        "start": "2026-10-23T20:08:00Z",
-        "stop": "2026-10-23T20:34:00Z"
-      },
-      {
-        "title": "The Thundermans",
-        "subtitle": "Happy Heroween",
-        "start": "2026-10-23T20:34:00Z",
-        "stop": "2026-10-23T21:01:00Z"
-      },
-      {
-        "title": "The Thundermans",
-        "subtitle": "Mad Max: Beyond Thunderhome",
-        "start": "2026-10-23T21:01:00Z",
-        "stop": "2026-10-23T21:28:00Z"
-      },
-      {
-        "title": "The Thundermans",
         "subtitle": "Exit Stage Theft",
         "start": "2026-10-23T21:28:00Z",
         "stop": "2026-10-23T21:54:00Z"
@@ -519,36 +405,6 @@
     "trutv": [
       {
         "title": "Impractical Jokers",
-        "subtitle": "The Endless Esophagus",
-        "start": "2026-10-23T19:00:00Z",
-        "stop": "2026-10-23T19:30:00Z"
-      },
-      {
-        "title": "Impractical Jokers",
-        "subtitle": "Call of the Wild",
-        "start": "2026-10-23T19:30:00Z",
-        "stop": "2026-10-23T20:00:00Z"
-      },
-      {
-        "title": "Impractical Jokers",
-        "subtitle": "Facial Awareness",
-        "start": "2026-10-23T20:00:00Z",
-        "stop": "2026-10-23T20:30:00Z"
-      },
-      {
-        "title": "Impractical Jokers",
-        "subtitle": "Customer Disservice",
-        "start": "2026-10-23T20:30:00Z",
-        "stop": "2026-10-23T21:00:00Z"
-      },
-      {
-        "title": "Impractical Jokers",
-        "subtitle": "Rage Baiter",
-        "start": "2026-10-23T21:00:00Z",
-        "stop": "2026-10-23T21:30:00Z"
-      },
-      {
-        "title": "Impractical Jokers",
         "subtitle": "Mind, Body, Swole",
         "start": "2026-10-23T21:30:00Z",
         "stop": "2026-10-23T22:00:00Z"
@@ -585,60 +441,6 @@
       }
     ],
     "cartoonnetwork": [
-      {
-        "title": "The Amazing World of Gumball",
-        "subtitle": "The News",
-        "start": "2026-10-23T19:00:00Z",
-        "stop": "2026-10-23T19:15:00Z"
-      },
-      {
-        "title": "The Amazing World of Gumball",
-        "subtitle": "The Rival",
-        "start": "2026-10-23T19:15:00Z",
-        "stop": "2026-10-23T19:30:00Z"
-      },
-      {
-        "title": "The Amazing World of Gumball",
-        "subtitle": "The Lady",
-        "start": "2026-10-23T19:30:00Z",
-        "stop": "2026-10-23T19:45:00Z"
-      },
-      {
-        "title": "The Amazing World of Gumball",
-        "subtitle": "The Sucker",
-        "start": "2026-10-23T19:45:00Z",
-        "stop": "2026-10-23T20:00:00Z"
-      },
-      {
-        "title": "Regular Show",
-        "subtitle": "Wall Buddy",
-        "start": "2026-10-23T20:00:00Z",
-        "stop": "2026-10-23T20:15:00Z"
-      },
-      {
-        "title": "Regular Show",
-        "subtitle": "A Skips in Time",
-        "start": "2026-10-23T20:15:00Z",
-        "stop": "2026-10-23T20:30:00Z"
-      },
-      {
-        "title": "Regular Show",
-        "subtitle": "Survival Skills",
-        "start": "2026-10-23T20:30:00Z",
-        "stop": "2026-10-23T20:45:00Z"
-      },
-      {
-        "title": "Regular Show: The Lost Tapes",
-        "subtitle": "Party Horse 4: Third Time's a Charm",
-        "start": "2026-10-23T20:45:00Z",
-        "stop": "2026-10-23T21:00:00Z"
-      },
-      {
-        "title": "The Grim Adventures of Billy and Mandy",
-        "subtitle": "Attack of the Clowns; Complete and Utter Chaos",
-        "start": "2026-10-23T21:00:00Z",
-        "stop": "2026-10-23T21:30:00Z"
-      },
       {
         "title": "The Grim Adventures of Billy and Mandy",
         "subtitle": "Test of Time; A Kick in the Asgard",
@@ -737,36 +539,6 @@
       }
     ],
     "disneyxd": [
-      {
-        "title": "Beyblade X",
-        "subtitle": "Something Captivating",
-        "start": "2026-10-23T19:00:00Z",
-        "stop": "2026-10-23T19:30:00Z"
-      },
-      {
-        "title": "Gravity Falls",
-        "subtitle": "The Love God",
-        "start": "2026-10-23T19:30:00Z",
-        "stop": "2026-10-23T20:00:00Z"
-      },
-      {
-        "title": "Gravity Falls",
-        "subtitle": "Northwest Mansion Mystery",
-        "start": "2026-10-23T20:00:00Z",
-        "stop": "2026-10-23T20:30:00Z"
-      },
-      {
-        "title": "Gravity Falls",
-        "subtitle": "Not What He Seems",
-        "start": "2026-10-23T20:30:00Z",
-        "stop": "2026-10-23T21:00:00Z"
-      },
-      {
-        "title": "Gravity Falls",
-        "subtitle": "A Tale of Two Stans",
-        "start": "2026-10-23T21:00:00Z",
-        "stop": "2026-10-23T21:30:00Z"
-      },
       {
         "title": "Gravity Falls",
         "subtitle": "Dungeons, Dungeons and More Dungeons",
