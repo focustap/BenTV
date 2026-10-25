@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T23:14:31.336412Z",
+  "generatedAt": "2026-10-25T01:13:30.407250Z",
   "source": "EPGShare01 US2 + ErsatzTV",
   "channels": {
     "freeform": [
@@ -116,33 +116,15 @@
         "subtitle": "",
         "start": "2026-10-25T22:50:00Z",
         "stop": "2026-10-26T00:55:00Z"
+      },
+      {
+        "title": "Monsters University",
+        "subtitle": "",
+        "start": "2026-10-26T00:55:00Z",
+        "stop": "2026-10-26T03:25:00Z"
       }
     ],
     "disney": [
-      {
-        "title": "Kiff",
-        "subtitle": "Taily; Cocina Island",
-        "start": "2026-10-24T20:00:00Z",
-        "stop": "2026-10-24T20:30:00Z"
-      },
-      {
-        "title": "Big City Greens",
-        "subtitle": "Boss Life; Papaganda",
-        "start": "2026-10-24T20:30:00Z",
-        "stop": "2026-10-24T21:00:00Z"
-      },
-      {
-        "title": "Big City Greens",
-        "subtitle": "Little Buddy; Zen Garden",
-        "start": "2026-10-24T21:00:00Z",
-        "stop": "2026-10-24T21:30:00Z"
-      },
-      {
-        "title": "Big City Greens",
-        "subtitle": "No Service; Takened",
-        "start": "2026-10-24T21:30:00Z",
-        "stop": "2026-10-24T22:00:00Z"
-      },
       {
         "title": "Big City Greens",
         "subtitle": "Green Greens; Truce Bomb",
@@ -412,15 +394,21 @@
         "subtitle": "",
         "start": "2026-10-25T23:00:00Z",
         "stop": "2026-10-26T00:45:00Z"
+      },
+      {
+        "title": "Phineas and Ferb",
+        "subtitle": "No Slumber Party; The Ballad of Bubba Doof",
+        "start": "2026-10-26T00:45:00Z",
+        "stop": "2026-10-26T01:10:00Z"
+      },
+      {
+        "title": "Phineas and Ferb",
+        "subtitle": "Space Adventure; Droogenfest",
+        "start": "2026-10-26T01:10:00Z",
+        "stop": "2026-10-26T01:35:00Z"
       }
     ],
     "nickelodeon": [
-      {
-        "title": "Shrek",
-        "subtitle": "",
-        "start": "2026-10-24T19:00:00Z",
-        "stop": "2026-10-24T21:00:00Z"
-      },
       {
         "title": "Shrek 2",
         "subtitle": "",
@@ -612,39 +600,15 @@
         "subtitle": "",
         "start": "2026-10-25T23:00:00Z",
         "stop": "2026-10-26T01:00:00Z"
+      },
+      {
+        "title": "Friends",
+        "subtitle": "The One With the Stain",
+        "start": "2026-10-26T01:00:00Z",
+        "stop": "2026-10-26T01:30:00Z"
       }
     ],
     "nicktoons": [
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Jeffy T's Prankwell Emporium; A Taste of Plankton",
-        "start": "2026-10-24T19:59:00Z",
-        "stop": "2026-10-24T20:25:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "The Grill Is Gone; The Night Patty",
-        "start": "2026-10-24T20:25:00Z",
-        "stop": "2026-10-24T20:51:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Back to the Past; The Bad Guy Club for Villains",
-        "start": "2026-10-24T20:51:00Z",
-        "stop": "2026-10-24T21:17:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Pigskin Pearl",
-        "start": "2026-10-24T21:17:00Z",
-        "stop": "2026-10-24T21:43:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Who's Afraid of Mr. Snippers?; A Fish Called Sandy",
-        "start": "2026-10-24T21:43:00Z",
-        "stop": "2026-10-24T22:09:00Z"
-      },
       {
         "title": "SpongeBob SquarePants",
         "subtitle": "The Best Day Ever; The Gift of Gum",
@@ -998,33 +962,39 @@
         "subtitle": "Scaredy Pants; I Was a Teenage Gary",
         "start": "2026-10-25T23:01:00Z",
         "stop": "2026-10-25T23:28:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "Exchange Student Driver; The Kreepy Krab",
+        "start": "2026-10-25T23:28:00Z",
+        "stop": "2026-10-25T23:54:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "The Great Patty Caper",
+        "start": "2026-10-25T23:54:00Z",
+        "stop": "2026-10-26T00:20:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "Jolly Lodgers; Biddy Sitting",
+        "start": "2026-10-26T00:20:00Z",
+        "stop": "2026-10-26T00:46:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "Born Again Krabs; I Had an Accident",
+        "start": "2026-10-26T00:46:00Z",
+        "stop": "2026-10-26T01:12:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "To Love a Patty; Breath of a Fresh Squidward",
+        "start": "2026-10-26T01:12:00Z",
+        "stop": "2026-10-26T01:39:00Z"
       }
     ],
     "teenick": [
-      {
-        "title": "The Thundermans",
-        "subtitle": "Shred It Go",
-        "start": "2026-10-24T20:08:00Z",
-        "stop": "2026-10-24T20:34:00Z"
-      },
-      {
-        "title": "The Thundermans",
-        "subtitle": "Weekend Guest",
-        "start": "2026-10-24T20:34:00Z",
-        "stop": "2026-10-24T21:01:00Z"
-      },
-      {
-        "title": "The Thundermans",
-        "subtitle": "Ditch Day",
-        "start": "2026-10-24T21:01:00Z",
-        "stop": "2026-10-24T21:28:00Z"
-      },
-      {
-        "title": "The Thundermans",
-        "subtitle": "Call of Lunch Duty",
-        "start": "2026-10-24T21:28:00Z",
-        "stop": "2026-10-24T21:54:00Z"
-      },
       {
         "title": "The Thundermans",
         "subtitle": "Thunder Van",
@@ -1372,15 +1342,39 @@
         "subtitle": "iMeet Fred",
         "start": "2026-10-25T22:48:00Z",
         "stop": "2026-10-25T23:15:00Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "iLook Alike",
+        "start": "2026-10-25T23:15:00Z",
+        "stop": "2026-10-25T23:42:00Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "iGo Nuclear",
+        "start": "2026-10-25T23:42:00Z",
+        "stop": "2026-10-26T00:09:00Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "iRocked the Vote",
+        "start": "2026-10-26T00:09:00Z",
+        "stop": "2026-10-26T00:36:00Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "iMake Sam Girlier",
+        "start": "2026-10-26T00:36:00Z",
+        "stop": "2026-10-26T01:03:00Z"
+      },
+      {
+        "title": "iCarly",
+        "subtitle": "iReunite With Missy",
+        "start": "2026-10-26T01:03:00Z",
+        "stop": "2026-10-26T01:30:00Z"
       }
     ],
     "trutv": [
-      {
-        "title": "Jaws the Revenge",
-        "subtitle": "",
-        "start": "2026-10-24T18:30:00Z",
-        "stop": "2026-10-24T20:30:00Z"
-      },
       {
         "title": "The Flash",
         "subtitle": "",
@@ -1509,30 +1503,6 @@
       }
     ],
     "cartoonnetwork": [
-      {
-        "title": "What's New Scooby-Doo?",
-        "subtitle": "Simple Plan and the Invisible Madman",
-        "start": "2026-10-24T20:00:00Z",
-        "stop": "2026-10-24T20:30:00Z"
-      },
-      {
-        "title": "What's New Scooby-Doo?",
-        "subtitle": "Uncle Scooby and Antarctica",
-        "start": "2026-10-24T20:30:00Z",
-        "stop": "2026-10-24T21:00:00Z"
-      },
-      {
-        "title": "Bob's Burgers",
-        "subtitle": "Sea Me Now",
-        "start": "2026-10-24T21:00:00Z",
-        "stop": "2026-10-24T21:30:00Z"
-      },
-      {
-        "title": "Bob's Burgers",
-        "subtitle": "They Serve Horses, Don't They?",
-        "start": "2026-10-24T21:30:00Z",
-        "stop": "2026-10-24T22:00:00Z"
-      },
       {
         "title": "Bob's Burgers",
         "subtitle": "Large Brother, Where Fart Thou?",
@@ -1934,33 +1904,33 @@
         "subtitle": "The Wolf of Wharf Street",
         "start": "2026-10-25T23:00:00Z",
         "stop": "2026-10-25T23:30:00Z"
+      },
+      {
+        "title": "Bob's Burgers",
+        "subtitle": "Nightmare on Ocean Avenue Street",
+        "start": "2026-10-25T23:30:00Z",
+        "stop": "2026-10-26T00:00:00Z"
+      },
+      {
+        "title": "Bob's Burgers",
+        "subtitle": "Pig Trouble in Little Tina",
+        "start": "2026-10-26T00:00:00Z",
+        "stop": "2026-10-26T00:30:00Z"
+      },
+      {
+        "title": "Bob's Burgers",
+        "subtitle": "Heartbreak Hotel-oween",
+        "start": "2026-10-26T00:30:00Z",
+        "stop": "2026-10-26T01:00:00Z"
+      },
+      {
+        "title": "Bob's Burgers",
+        "subtitle": "The Pumpkinening",
+        "start": "2026-10-26T01:00:00Z",
+        "stop": "2026-10-26T01:30:00Z"
       }
     ],
     "disneyxd": [
-      {
-        "title": "Chip 'n' Dale Rescue Rangers",
-        "subtitle": "Dale Beside Himself",
-        "start": "2026-10-24T20:00:00Z",
-        "stop": "2026-10-24T20:30:00Z"
-      },
-      {
-        "title": "Chip 'n' Dale Rescue Rangers",
-        "subtitle": "Flash the Wonder Dog",
-        "start": "2026-10-24T20:30:00Z",
-        "stop": "2026-10-24T21:00:00Z"
-      },
-      {
-        "title": "Chibiverse",
-        "subtitle": "Penny and the Chibi Scouts; Quackstreet Boys; Cheer Up Chibis",
-        "start": "2026-10-24T21:00:00Z",
-        "stop": "2026-10-24T21:10:00Z"
-      },
-      {
-        "title": "Chip 'n' Dale Rescue Rangers",
-        "subtitle": "Out to Launch",
-        "start": "2026-10-24T21:10:00Z",
-        "stop": "2026-10-24T21:40:00Z"
-      },
       {
         "title": "Miraculous World: New York, United Heroez",
         "subtitle": "",
@@ -2260,6 +2230,30 @@
         "subtitle": "Risk It All",
         "start": "2026-10-25T23:00:00Z",
         "stop": "2026-10-25T23:30:00Z"
+      },
+      {
+        "title": "The Suite Life of Zack & Cody",
+        "subtitle": "Back in the Game",
+        "start": "2026-10-25T23:30:00Z",
+        "stop": "2026-10-26T00:00:00Z"
+      },
+      {
+        "title": "The Suite Life of Zack & Cody",
+        "subtitle": "The Suite Life Goes Hollywood",
+        "start": "2026-10-26T00:00:00Z",
+        "stop": "2026-10-26T00:30:00Z"
+      },
+      {
+        "title": "The Suite Life of Zack & Cody",
+        "subtitle": "The Suite Life Goes Hollywood",
+        "start": "2026-10-26T00:30:00Z",
+        "stop": "2026-10-26T01:00:00Z"
+      },
+      {
+        "title": "The Suite Life of Zack & Cody",
+        "subtitle": "I Want My Mummy",
+        "start": "2026-10-26T01:00:00Z",
+        "stop": "2026-10-26T01:30:00Z"
       }
     ],
     "bencentral": []
