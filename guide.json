@@ -1,56 +1,8 @@
 {
-  "generatedAt": "2026-10-27T05:04:59.795777Z",
+  "generatedAt": "2026-10-27T10:34:32.441749Z",
   "source": "EPGShare01 US2 + ErsatzTV",
   "channels": {
     "freeform": [
-      {
-        "title": "Addams Family Values",
-        "subtitle": "",
-        "start": "2026-10-27T00:55:00Z",
-        "stop": "2026-10-27T03:00:00Z"
-      },
-      {
-        "title": "The 700 Club",
-        "subtitle": "",
-        "start": "2026-10-27T03:00:00Z",
-        "stop": "2026-10-27T04:00:00Z"
-      },
-      {
-        "title": "Boy Meets World",
-        "subtitle": "Stormy Weather",
-        "start": "2026-10-27T04:00:00Z",
-        "stop": "2026-10-27T04:30:00Z"
-      },
-      {
-        "title": "Boy Meets World",
-        "subtitle": "The Pink Flamingo Kid",
-        "start": "2026-10-27T04:30:00Z",
-        "stop": "2026-10-27T05:00:00Z"
-      },
-      {
-        "title": "Boy Meets World",
-        "subtitle": "Life Lessons",
-        "start": "2026-10-27T05:00:00Z",
-        "stop": "2026-10-27T05:30:00Z"
-      },
-      {
-        "title": "Boy Meets World",
-        "subtitle": "I Was a Teenage Spy",
-        "start": "2026-10-27T05:30:00Z",
-        "stop": "2026-10-27T06:00:00Z"
-      },
-      {
-        "title": "Inogen Portable Oxygen - No More Tanks!",
-        "subtitle": "",
-        "start": "2026-10-27T06:00:00Z",
-        "stop": "2026-10-27T06:30:00Z"
-      },
-      {
-        "title": "Paid Programming",
-        "subtitle": "",
-        "start": "2026-10-27T06:30:00Z",
-        "stop": "2026-10-27T07:00:00Z"
-      },
       {
         "title": "The 700 Club",
         "subtitle": "",
@@ -194,75 +146,69 @@
         "subtitle": "Brother-Brother",
         "start": "2026-10-28T05:00:00Z",
         "stop": "2026-10-28T05:30:00Z"
+      },
+      {
+        "title": "Boy Meets World",
+        "subtitle": "You Can Go Home Again",
+        "start": "2026-10-28T05:30:00Z",
+        "stop": "2026-10-28T06:00:00Z"
+      },
+      {
+        "title": "Inogen Portable Oxygen - No More Tanks!",
+        "subtitle": "",
+        "start": "2026-10-28T06:00:00Z",
+        "stop": "2026-10-28T06:30:00Z"
+      },
+      {
+        "title": "Paid Programming",
+        "subtitle": "",
+        "start": "2026-10-28T06:30:00Z",
+        "stop": "2026-10-28T07:00:00Z"
+      },
+      {
+        "title": "The 700 Club",
+        "subtitle": "",
+        "start": "2026-10-28T07:00:00Z",
+        "stop": "2026-10-28T08:00:00Z"
+      },
+      {
+        "title": "RateEscape: Stop Overpaying For Cellular",
+        "subtitle": "",
+        "start": "2026-10-28T08:00:00Z",
+        "stop": "2026-10-28T08:30:00Z"
+      },
+      {
+        "title": "Paid Programming",
+        "subtitle": "",
+        "start": "2026-10-28T08:30:00Z",
+        "stop": "2026-10-28T09:00:00Z"
+      },
+      {
+        "title": "Inogen Portable Oxygen - No More Tanks!",
+        "subtitle": "",
+        "start": "2026-10-28T09:00:00Z",
+        "stop": "2026-10-28T09:30:00Z"
+      },
+      {
+        "title": "Bathroom Makeover",
+        "subtitle": "",
+        "start": "2026-10-28T09:30:00Z",
+        "stop": "2026-10-28T10:00:00Z"
+      },
+      {
+        "title": "Paid Programming",
+        "subtitle": "",
+        "start": "2026-10-28T10:00:00Z",
+        "stop": "2026-10-28T10:30:00Z"
+      },
+      {
+        "title": "See Wrinkles and Bags Vanish Instantly With GEN90!!",
+        "subtitle": "",
+        "start": "2026-10-28T10:30:00Z",
+        "stop": "2026-10-28T11:00:00Z"
       }
     ],
     "disney": [
-      {
-        "title": "Phineas and Ferb",
-        "subtitle": "Night of the Living Candace Suits; Terrors of the AltSpace",
-        "start": "2026-10-27T02:00:00Z",
-        "stop": "2026-10-27T02:30:00Z"
-      },
-      {
-        "title": "Kiff",
-        "subtitle": "Slippery Slopes; Of B&B's and Piano Keys",
-        "start": "2026-10-27T02:30:00Z",
-        "stop": "2026-10-27T03:00:00Z"
-      },
-      {
-        "title": "Miraculous: Tales of Ladybug and Cat Noir",
-        "subtitle": "A Fairy Good Night",
-        "start": "2026-10-27T03:00:00Z",
-        "stop": "2026-10-27T03:30:00Z"
-      },
-      {
-        "title": "Miraculous: Tales of Ladybug and Cat Noir",
-        "subtitle": "The Dirtifiers",
-        "start": "2026-10-27T03:30:00Z",
-        "stop": "2026-10-27T04:00:00Z"
-      },
-      {
-        "title": "Bluey",
-        "subtitle": "Dunny / Duck Cake / Handstand",
-        "start": "2026-10-27T04:00:00Z",
-        "stop": "2026-10-27T04:30:00Z"
-      },
-      {
-        "title": "Bluey",
-        "subtitle": "Helicopter; Octopus; Baby Race",
-        "start": "2026-10-27T04:30:00Z",
-        "stop": "2026-10-27T05:00:00Z"
-      },
-      {
-        "title": "Big City Greens",
-        "subtitle": "Farmer Remy; Homeward Hound",
-        "start": "2026-10-27T05:00:00Z",
-        "stop": "2026-10-27T05:30:00Z"
-      },
-      {
-        "title": "Big City Greens",
-        "subtitle": "Pie Hard; Rat Tail",
-        "start": "2026-10-27T05:30:00Z",
-        "stop": "2026-10-27T06:00:00Z"
-      },
-      {
-        "title": "Big City Greens",
-        "subtitle": "Frilly Tilly; Montaged",
-        "start": "2026-10-27T06:00:00Z",
-        "stop": "2026-10-27T06:30:00Z"
-      },
-      {
-        "title": "Big City Greens",
-        "subtitle": "Pizza Deliverance; Horse Girl",
-        "start": "2026-10-27T06:30:00Z",
-        "stop": "2026-10-27T07:00:00Z"
-      },
-      {
-        "title": "Big City Greens",
-        "subtitle": "Pen Pals; Study Abroad",
-        "start": "2026-10-27T07:00:00Z",
-        "stop": "2026-10-27T07:30:00Z"
-      },
       {
         "title": "Big City Greens",
         "subtitle": "Honey Heist; Dog Mayor",
@@ -526,69 +472,75 @@
         "subtitle": "Chill Bill; Bunny",
         "start": "2026-10-28T05:00:00Z",
         "stop": "2026-10-28T05:30:00Z"
+      },
+      {
+        "title": "Big City Greens",
+        "subtitle": "Long Goodbye",
+        "start": "2026-10-28T05:30:00Z",
+        "stop": "2026-10-28T06:00:00Z"
+      },
+      {
+        "title": "Big City Greens",
+        "subtitle": "Truck Stopped; Jingled",
+        "start": "2026-10-28T06:00:00Z",
+        "stop": "2026-10-28T06:30:00Z"
+      },
+      {
+        "title": "Big City Greens",
+        "subtitle": "Stand-Up Bill; Green Trial",
+        "start": "2026-10-28T06:30:00Z",
+        "stop": "2026-10-28T07:00:00Z"
+      },
+      {
+        "title": "Big City Greens",
+        "subtitle": "Bad Dad; Junk Junkie",
+        "start": "2026-10-28T07:00:00Z",
+        "stop": "2026-10-28T07:30:00Z"
+      },
+      {
+        "title": "Big City Greens",
+        "subtitle": "Handshaken; Coffee Mates",
+        "start": "2026-10-28T07:30:00Z",
+        "stop": "2026-10-28T08:00:00Z"
+      },
+      {
+        "title": "Kiff",
+        "subtitle": "Fun Uncle Pat; Kiff Escape!",
+        "start": "2026-10-28T08:00:00Z",
+        "stop": "2026-10-28T08:30:00Z"
+      },
+      {
+        "title": "Kiff",
+        "subtitle": "Beach Day; Sun's Out Buns Out",
+        "start": "2026-10-28T08:30:00Z",
+        "stop": "2026-10-28T09:00:00Z"
+      },
+      {
+        "title": "Bluey",
+        "subtitle": "Ghost Basket; Escape; Surprise",
+        "start": "2026-10-28T09:00:00Z",
+        "stop": "2026-10-28T09:30:00Z"
+      },
+      {
+        "title": "Bluey",
+        "subtitle": "Family Meeting; Barky Boats; Smoochy Kiss",
+        "start": "2026-10-28T09:30:00Z",
+        "stop": "2026-10-28T10:00:00Z"
+      },
+      {
+        "title": "Bluey",
+        "subtitle": "Keepy Uppy; Magic Xylophone; Shadowlands",
+        "start": "2026-10-28T10:00:00Z",
+        "stop": "2026-10-28T10:30:00Z"
+      },
+      {
+        "title": "Pupstruction",
+        "subtitle": "Dollhouse Dogs; Pupsicle Problems",
+        "start": "2026-10-28T10:30:00Z",
+        "stop": "2026-10-28T11:00:00Z"
       }
     ],
     "nickelodeon": [
-      {
-        "title": "The Big Bang Theory",
-        "subtitle": "The Russian Rocket Reaction",
-        "start": "2026-10-27T02:01:00Z",
-        "stop": "2026-10-27T02:38:00Z"
-      },
-      {
-        "title": "The Big Bang Theory",
-        "subtitle": "The Rhinitis Revelation",
-        "start": "2026-10-27T02:38:00Z",
-        "stop": "2026-10-27T03:15:00Z"
-      },
-      {
-        "title": "The Big Bang Theory",
-        "subtitle": "The Good Guy Fluctuation",
-        "start": "2026-10-27T03:15:00Z",
-        "stop": "2026-10-27T03:51:00Z"
-      },
-      {
-        "title": "The Big Bang Theory",
-        "subtitle": "The Isolation Permutation",
-        "start": "2026-10-27T03:51:00Z",
-        "stop": "2026-10-27T04:23:00Z"
-      },
-      {
-        "title": "The Big Bang Theory",
-        "subtitle": "The Ornithophobia Diffusion",
-        "start": "2026-10-27T04:23:00Z",
-        "stop": "2026-10-27T04:56:00Z"
-      },
-      {
-        "title": "Friends",
-        "subtitle": "The One Where Rachel Has a Baby",
-        "start": "2026-10-27T04:56:00Z",
-        "stop": "2026-10-27T05:28:00Z"
-      },
-      {
-        "title": "Friends",
-        "subtitle": "The One Where Rachel Has a Baby",
-        "start": "2026-10-27T05:28:00Z",
-        "stop": "2026-10-27T06:00:00Z"
-      },
-      {
-        "title": "Friends",
-        "subtitle": "The One Where No One Proposes",
-        "start": "2026-10-27T06:00:00Z",
-        "stop": "2026-10-27T06:30:00Z"
-      },
-      {
-        "title": "Friends",
-        "subtitle": "The One Where Emma Cries",
-        "start": "2026-10-27T06:30:00Z",
-        "stop": "2026-10-27T07:00:00Z"
-      },
-      {
-        "title": "Friends",
-        "subtitle": "The One With the Pediatrician",
-        "start": "2026-10-27T07:00:00Z",
-        "stop": "2026-10-27T07:30:00Z"
-      },
       {
         "title": "Friends",
         "subtitle": "The One With the Male Nanny",
@@ -798,93 +750,75 @@
         "subtitle": "The One With the Blind Dates",
         "start": "2026-10-28T05:00:00Z",
         "stop": "2026-10-28T05:30:00Z"
+      },
+      {
+        "title": "Friends",
+        "subtitle": "The One With the Mugging",
+        "start": "2026-10-28T05:30:00Z",
+        "stop": "2026-10-28T06:00:00Z"
+      },
+      {
+        "title": "Friends",
+        "subtitle": "The One With the Boob Job",
+        "start": "2026-10-28T06:00:00Z",
+        "stop": "2026-10-28T06:30:00Z"
+      },
+      {
+        "title": "Friends",
+        "subtitle": "The One With the Memorial Service",
+        "start": "2026-10-28T06:30:00Z",
+        "stop": "2026-10-28T07:00:00Z"
+      },
+      {
+        "title": "Friends",
+        "subtitle": "The One With the Lottery",
+        "start": "2026-10-28T07:00:00Z",
+        "stop": "2026-10-28T07:30:00Z"
+      },
+      {
+        "title": "Friends",
+        "subtitle": "The One With Rachel's Dream",
+        "start": "2026-10-28T07:30:00Z",
+        "stop": "2026-10-28T08:00:00Z"
+      },
+      {
+        "title": "Friends",
+        "subtitle": "The One With the Soap Opera Party",
+        "start": "2026-10-28T08:00:00Z",
+        "stop": "2026-10-28T08:30:00Z"
+      },
+      {
+        "title": "Friends",
+        "subtitle": "The One With the Fertility Test",
+        "start": "2026-10-28T08:30:00Z",
+        "stop": "2026-10-28T09:00:00Z"
+      },
+      {
+        "title": "Friends",
+        "subtitle": "The One With the Donor",
+        "start": "2026-10-28T09:00:00Z",
+        "stop": "2026-10-28T09:30:00Z"
+      },
+      {
+        "title": "The Neighborhood",
+        "subtitle": "Welcome to the Climb",
+        "start": "2026-10-28T09:30:00Z",
+        "stop": "2026-10-28T10:00:00Z"
+      },
+      {
+        "title": "The Neighborhood",
+        "subtitle": "Welcome to Logan #2",
+        "start": "2026-10-28T10:00:00Z",
+        "stop": "2026-10-28T10:30:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "The Secret Box; Band Geeks",
+        "start": "2026-10-28T10:30:00Z",
+        "stop": "2026-10-28T11:00:00Z"
       }
     ],
     "nicktoons": [
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Mermaid Man and Barnacle Boy; Pickles",
-        "start": "2026-10-27T01:39:00Z",
-        "stop": "2026-10-27T02:05:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Wiener Takes All; Stuck in an Elevator",
-        "start": "2026-10-27T02:05:00Z",
-        "stop": "2026-10-27T02:31:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Krabby Land; The Camping Episode",
-        "start": "2026-10-27T02:31:00Z",
-        "stop": "2026-10-27T02:57:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "My Tighty Whiteys; What Ever Happened to Baby Prunes?",
-        "start": "2026-10-27T02:57:00Z",
-        "stop": "2026-10-27T03:23:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Ghoul Fools",
-        "start": "2026-10-27T03:23:00Z",
-        "stop": "2026-10-27T03:50:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "The Haunted Bucket; Go Fetch",
-        "start": "2026-10-27T03:50:00Z",
-        "stop": "2026-10-27T04:16:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Patrick's Coupon; Out of the Picture",
-        "start": "2026-10-27T04:16:00Z",
-        "stop": "2026-10-27T04:42:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Hall Monitor; Jellyfish Jam",
-        "start": "2026-10-27T04:42:00Z",
-        "stop": "2026-10-27T05:08:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Squidness Protection; Dome Alone",
-        "start": "2026-10-27T05:08:00Z",
-        "stop": "2026-10-27T05:34:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Plankton's Intern; Patrick's Tantrum",
-        "start": "2026-10-27T05:34:00Z",
-        "stop": "2026-10-27T06:00:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "The Grill Is Gone; The Night Patty",
-        "start": "2026-10-27T06:00:00Z",
-        "stop": "2026-10-27T06:25:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "The Sponge Who Could Fly",
-        "start": "2026-10-27T06:25:00Z",
-        "stop": "2026-10-27T06:50:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Feral Friends; Don't Wake Patrick!",
-        "start": "2026-10-27T06:50:00Z",
-        "stop": "2026-10-27T07:15:00Z"
-      },
-      {
-        "title": "SpongeBob SquarePants",
-        "subtitle": "Mermaidman Begins / Plankton's Good Eye",
-        "start": "2026-10-27T07:15:00Z",
-        "stop": "2026-10-27T07:30:00Z"
-      },
       {
         "title": "SpongeBob SquarePants",
         "subtitle": "Sandy's Rocket; Squeaky Boots",
@@ -1184,81 +1118,93 @@
         "subtitle": "Sanitation Insanity; Bunny Hunt",
         "start": "2026-10-28T04:42:00Z",
         "stop": "2026-10-28T05:08:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "Dunces and Dragons",
+        "start": "2026-10-28T05:08:00Z",
+        "stop": "2026-10-28T05:34:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "Rock Bottom Games; Clicking With a Clique",
+        "start": "2026-10-28T05:34:00Z",
+        "stop": "2026-10-28T06:00:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "Potato Puff; There Will Be Grease!",
+        "start": "2026-10-28T06:00:00Z",
+        "stop": "2026-10-28T06:25:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "Sleepy Time; Suds",
+        "start": "2026-10-28T06:25:00Z",
+        "stop": "2026-10-28T06:50:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "Squid Noir; ScavengerPants",
+        "start": "2026-10-28T06:50:00Z",
+        "stop": "2026-10-28T07:15:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "Dear Vikings; Ditchin'",
+        "start": "2026-10-28T07:15:00Z",
+        "stop": "2026-10-28T07:30:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "Jeffy T's Prankwell Emporium; A Taste of Plankton",
+        "start": "2026-10-28T07:30:00Z",
+        "stop": "2026-10-28T07:55:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "Enemy In-Law; Mermaid Man & Barnacle Boy VI: The Motion Picture",
+        "start": "2026-10-28T07:55:00Z",
+        "stop": "2026-10-28T08:20:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "Karen 2.0; InSPONGEiac",
+        "start": "2026-10-28T08:20:00Z",
+        "stop": "2026-10-28T08:45:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "Big Bad Bubble Bass; Sea-Man Sponge Haters Club",
+        "start": "2026-10-28T08:45:00Z",
+        "stop": "2026-10-28T09:10:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "Valentine's Day; The Paper",
+        "start": "2026-10-28T09:10:00Z",
+        "stop": "2026-10-28T09:35:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "Cuddle E. Hugs; Pat the Horse",
+        "start": "2026-10-28T09:35:00Z",
+        "stop": "2026-10-28T10:00:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "The Graveyard Shift; Krusty Love",
+        "start": "2026-10-28T10:00:00Z",
+        "stop": "2026-10-28T10:26:00Z"
+      },
+      {
+        "title": "SpongeBob SquarePants",
+        "subtitle": "Grandpappy the Pirate; Cephalopod Lodge",
+        "start": "2026-10-28T10:26:00Z",
+        "stop": "2026-10-28T10:52:00Z"
       }
     ],
     "teenick": [
-      {
-        "title": "The Loud House",
-        "subtitle": "Waking History; Pranks Fore Nothing",
-        "start": "2026-10-27T01:57:00Z",
-        "stop": "2026-10-27T02:24:00Z"
-      },
-      {
-        "title": "The Loud House",
-        "subtitle": "Child's Play; Force of Habits",
-        "start": "2026-10-27T02:24:00Z",
-        "stop": "2026-10-27T02:51:00Z"
-      },
-      {
-        "title": "The Loud House",
-        "subtitle": "Tails of Woe; The Last Loud on Earth",
-        "start": "2026-10-27T02:51:00Z",
-        "stop": "2026-10-27T03:18:00Z"
-      },
-      {
-        "title": "The Loud House",
-        "subtitle": "Save the Last Pants; A Stella Performance",
-        "start": "2026-10-27T03:18:00Z",
-        "stop": "2026-10-27T03:45:00Z"
-      },
-      {
-        "title": "The Loud House",
-        "subtitle": "No Such Luck; Frog Wild",
-        "start": "2026-10-27T03:45:00Z",
-        "stop": "2026-10-27T04:12:00Z"
-      },
-      {
-        "title": "The Loud House",
-        "subtitle": "Great Lakes Freakout!",
-        "start": "2026-10-27T04:12:00Z",
-        "stop": "2026-10-27T04:39:00Z"
-      },
-      {
-        "title": "The Loud House",
-        "subtitle": "A Grave Mistake; Leader of the Rack",
-        "start": "2026-10-27T04:39:00Z",
-        "stop": "2026-10-27T05:06:00Z"
-      },
-      {
-        "title": "The Loud House",
-        "subtitle": "Much Ado About Noshing; Broadcast Blues",
-        "start": "2026-10-27T05:06:00Z",
-        "stop": "2026-10-27T05:33:00Z"
-      },
-      {
-        "title": "The Loud House",
-        "subtitle": "Fandom Pains; Rita Her Rights",
-        "start": "2026-10-27T05:33:00Z",
-        "stop": "2026-10-27T06:00:00Z"
-      },
-      {
-        "title": "The Loud House",
-        "subtitle": "Musical Chairs; The Taunting Hour",
-        "start": "2026-10-27T06:00:00Z",
-        "stop": "2026-10-27T06:24:00Z"
-      },
-      {
-        "title": "The Loud House",
-        "subtitle": "Fright Bite; The Loudly Bones",
-        "start": "2026-10-27T06:24:00Z",
-        "stop": "2026-10-27T06:48:00Z"
-      },
-      {
-        "title": "The Loud House",
-        "subtitle": "The Write Stuff; Racing Hearts",
-        "start": "2026-10-27T06:48:00Z",
-        "stop": "2026-10-27T07:12:00Z"
-      },
       {
         "title": "The Loud House",
         "subtitle": "House of Lies; Game Boys",
@@ -1558,45 +1504,93 @@
         "subtitle": "Bummer Camp; Sleepstakes",
         "start": "2026-10-28T04:39:00Z",
         "stop": "2026-10-28T05:06:00Z"
+      },
+      {
+        "title": "The Loud House",
+        "subtitle": "Love Birds; Rocket Men",
+        "start": "2026-10-28T05:06:00Z",
+        "stop": "2026-10-28T05:33:00Z"
+      },
+      {
+        "title": "The Loud House",
+        "subtitle": "Cover Girls; Save the Date",
+        "start": "2026-10-28T05:33:00Z",
+        "stop": "2026-10-28T06:00:00Z"
+      },
+      {
+        "title": "The Loud House",
+        "subtitle": "Left in the Dark; Get the Message",
+        "start": "2026-10-28T06:00:00Z",
+        "stop": "2026-10-28T06:24:00Z"
+      },
+      {
+        "title": "The Loud House",
+        "subtitle": "Along Came a Sister; Chore and Peace",
+        "start": "2026-10-28T06:24:00Z",
+        "stop": "2026-10-28T06:48:00Z"
+      },
+      {
+        "title": "The Loud House",
+        "subtitle": "Driving Miss Hazy; No Guts, No Glori",
+        "start": "2026-10-28T06:48:00Z",
+        "stop": "2026-10-28T07:12:00Z"
+      },
+      {
+        "title": "The Loud House",
+        "subtitle": "Linc or Swim; Changing the Baby",
+        "start": "2026-10-28T07:12:00Z",
+        "stop": "2026-10-28T07:36:00Z"
+      },
+      {
+        "title": "The Loud House",
+        "subtitle": "Stall Monitor; A Pimple Plan",
+        "start": "2026-10-28T07:36:00Z",
+        "stop": "2026-10-28T08:00:00Z"
+      },
+      {
+        "title": "The Loud House",
+        "subtitle": "How Double Dare You!; Snoop's On",
+        "start": "2026-10-28T08:00:00Z",
+        "stop": "2026-10-28T08:24:00Z"
+      },
+      {
+        "title": "The Loud House",
+        "subtitle": "Diss the Cook; For Sale by Loner",
+        "start": "2026-10-28T08:24:00Z",
+        "stop": "2026-10-28T08:48:00Z"
+      },
+      {
+        "title": "The Loud House",
+        "subtitle": "Camped!",
+        "start": "2026-10-28T08:48:00Z",
+        "stop": "2026-10-28T09:12:00Z"
+      },
+      {
+        "title": "The Loud House",
+        "subtitle": "Snow Escape; Snow News Day",
+        "start": "2026-10-28T09:12:00Z",
+        "stop": "2026-10-28T09:36:00Z"
+      },
+      {
+        "title": "The Loud House",
+        "subtitle": "Friends in Dry Places; Coupe Dreams",
+        "start": "2026-10-28T09:36:00Z",
+        "stop": "2026-10-28T10:00:00Z"
+      },
+      {
+        "title": "The Loud House",
+        "subtitle": "Great Lakes Freakout!",
+        "start": "2026-10-28T10:00:00Z",
+        "stop": "2026-10-28T10:26:00Z"
+      },
+      {
+        "title": "The Loud House",
+        "subtitle": "The Loudest Mission: Relative Chaos",
+        "start": "2026-10-28T10:26:00Z",
+        "stop": "2026-10-28T10:53:00Z"
       }
     ],
     "trutv": [
-      {
-        "title": "Angels in the Outfield",
-        "subtitle": "",
-        "start": "2026-10-27T01:15:00Z",
-        "stop": "2026-10-27T03:30:00Z"
-      },
-      {
-        "title": "Super Bowl XXIII Champions: The 1988 San Francisco 49ers",
-        "subtitle": "",
-        "start": "2026-10-27T03:30:00Z",
-        "stop": "2026-10-27T04:45:00Z"
-      },
-      {
-        "title": "Super Bowl XXV Champions: 1990 New York Giants",
-        "subtitle": "",
-        "start": "2026-10-27T04:45:00Z",
-        "stop": "2026-10-27T06:00:00Z"
-      },
-      {
-        "title": "Impractical Jokers: Inside Jokes",
-        "subtitle": "Quantum Mock-anics",
-        "start": "2026-10-27T06:00:00Z",
-        "stop": "2026-10-27T06:30:00Z"
-      },
-      {
-        "title": "Impractical Jokers: Inside Jokes",
-        "subtitle": "Remember the Pact",
-        "start": "2026-10-27T06:30:00Z",
-        "stop": "2026-10-27T07:00:00Z"
-      },
-      {
-        "title": "Impractical Jokers: Inside Jokes",
-        "subtitle": "Spider Man",
-        "start": "2026-10-27T07:00:00Z",
-        "stop": "2026-10-27T07:30:00Z"
-      },
       {
         "title": "Impractical Jokers: Inside Jokes",
         "subtitle": "Silence of the Lame",
@@ -1800,93 +1794,69 @@
         "subtitle": "Finals",
         "start": "2026-10-28T04:30:00Z",
         "stop": "2026-10-28T06:00:00Z"
+      },
+      {
+        "title": "Impractical Jokers: Inside Jokes",
+        "subtitle": "The Walking Dread",
+        "start": "2026-10-28T06:00:00Z",
+        "stop": "2026-10-28T06:30:00Z"
+      },
+      {
+        "title": "Impractical Jokers: Inside Jokes",
+        "subtitle": "The Lost Boy",
+        "start": "2026-10-28T06:30:00Z",
+        "stop": "2026-10-28T07:00:00Z"
+      },
+      {
+        "title": "Impractical Jokers: Inside Jokes",
+        "subtitle": "Take Me Out at the Ballgame",
+        "start": "2026-10-28T07:00:00Z",
+        "stop": "2026-10-28T07:30:00Z"
+      },
+      {
+        "title": "Impractical Jokers: Inside Jokes",
+        "subtitle": "Just Say No",
+        "start": "2026-10-28T07:30:00Z",
+        "stop": "2026-10-28T08:00:00Z"
+      },
+      {
+        "title": "Inogen Portable Oxygen - No More Tanks!",
+        "subtitle": "",
+        "start": "2026-10-28T08:00:00Z",
+        "stop": "2026-10-28T08:30:00Z"
+      },
+      {
+        "title": "Paid Programming",
+        "subtitle": "",
+        "start": "2026-10-28T08:30:00Z",
+        "stop": "2026-10-28T09:00:00Z"
+      },
+      {
+        "title": "Never Scrub Your Floors Again",
+        "subtitle": "",
+        "start": "2026-10-28T09:00:00Z",
+        "stop": "2026-10-28T09:30:00Z"
+      },
+      {
+        "title": "See Wrinkles and Bags Vanish Instantly With GEN90!!",
+        "subtitle": "",
+        "start": "2026-10-28T09:30:00Z",
+        "stop": "2026-10-28T10:00:00Z"
+      },
+      {
+        "title": "Impractical Jokers",
+        "subtitle": "Brother-in-Loss",
+        "start": "2026-10-28T10:00:00Z",
+        "stop": "2026-10-28T10:30:00Z"
+      },
+      {
+        "title": "Impractical Jokers",
+        "subtitle": "Welcome to Miami",
+        "start": "2026-10-28T10:30:00Z",
+        "stop": "2026-10-28T11:00:00Z"
       }
     ],
     "cartoonnetwork": [
-      {
-        "title": "Family Guy",
-        "subtitle": "The Big Bang Theory",
-        "start": "2026-10-27T02:00:00Z",
-        "stop": "2026-10-27T02:30:00Z"
-      },
-      {
-        "title": "Family Guy",
-        "subtitle": "Foreign Affairs",
-        "start": "2026-10-27T02:30:00Z",
-        "stop": "2026-10-27T03:00:00Z"
-      },
-      {
-        "title": "Rick and Morty",
-        "subtitle": "Salute Your Morts",
-        "start": "2026-10-27T03:00:00Z",
-        "stop": "2026-10-27T03:30:00Z"
-      },
-      {
-        "title": "Rick and Morty",
-        "subtitle": "Rick Potion No. 9",
-        "start": "2026-10-27T03:30:00Z",
-        "stop": "2026-10-27T04:00:00Z"
-      },
-      {
-        "title": "President Curtis",
-        "subtitle": "Hollow",
-        "start": "2026-10-27T04:00:00Z",
-        "stop": "2026-10-27T04:30:00Z"
-      },
-      {
-        "title": "Aqua Teen Hunger Force",
-        "subtitle": "Bus of the Undead",
-        "start": "2026-10-27T04:30:00Z",
-        "stop": "2026-10-27T04:45:00Z"
-      },
-      {
-        "title": "Aqua Teen Hunger Force",
-        "subtitle": "MC Pee Pants",
-        "start": "2026-10-27T04:45:00Z",
-        "stop": "2026-10-27T05:00:00Z"
-      },
-      {
-        "title": "[as] Smalls",
-        "subtitle": "Meeble & Creeble: JUDGEMENT (reversed)",
-        "start": "2026-10-27T05:00:00Z",
-        "stop": "2026-10-27T05:05:00Z"
-      },
-      {
-        "title": "Aqua Teen Hunger Force",
-        "subtitle": "Love Mummy",
-        "start": "2026-10-27T05:05:00Z",
-        "stop": "2026-10-27T05:20:00Z"
-      },
-      {
-        "title": "Aqua Teen Hunger Force",
-        "subtitle": "The Shaving",
-        "start": "2026-10-27T05:20:00Z",
-        "stop": "2026-10-27T05:35:00Z"
-      },
-      {
-        "title": "American Dad!",
-        "subtitle": "Z.O.I.N.C.S",
-        "start": "2026-10-27T05:35:00Z",
-        "stop": "2026-10-27T06:04:00Z"
-      },
-      {
-        "title": "American Dad!",
-        "subtitle": "My Affair Lady",
-        "start": "2026-10-27T06:04:00Z",
-        "stop": "2026-10-27T06:33:00Z"
-      },
-      {
-        "title": "American Dad!",
-        "subtitle": "A Star Is Reborn",
-        "start": "2026-10-27T06:33:00Z",
-        "stop": "2026-10-27T07:02:00Z"
-      },
-      {
-        "title": "American Dad!",
-        "subtitle": "Manhattan Magical Murder Mystery Tour",
-        "start": "2026-10-27T07:02:00Z",
-        "stop": "2026-10-27T07:31:00Z"
-      },
       {
         "title": "Rick and Morty",
         "subtitle": "Salute Your Morts",
@@ -2264,75 +2234,93 @@
         "subtitle": "Nightmare Generator",
         "start": "2026-10-28T05:04:00Z",
         "stop": "2026-10-28T05:19:00Z"
+      },
+      {
+        "title": "Robot Chicken",
+        "subtitle": "Happy Russian Deathdog Dolloween 2 U",
+        "start": "2026-10-28T05:19:00Z",
+        "stop": "2026-10-28T05:34:00Z"
+      },
+      {
+        "title": "American Dad!",
+        "subtitle": "Best Little Horror House in Langley Falls",
+        "start": "2026-10-28T05:34:00Z",
+        "stop": "2026-10-28T06:03:00Z"
+      },
+      {
+        "title": "American Dad!",
+        "subtitle": "The Shrink",
+        "start": "2026-10-28T06:03:00Z",
+        "stop": "2026-10-28T06:32:00Z"
+      },
+      {
+        "title": "American Dad!",
+        "subtitle": "Holy S..., Jeff's Back!",
+        "start": "2026-10-28T06:32:00Z",
+        "stop": "2026-10-28T07:01:00Z"
+      },
+      {
+        "title": "American Dad!",
+        "subtitle": "American Fung",
+        "start": "2026-10-28T07:01:00Z",
+        "stop": "2026-10-28T07:30:00Z"
+      },
+      {
+        "title": "Rick and Morty",
+        "subtitle": "Field of Dreams",
+        "start": "2026-10-28T07:30:00Z",
+        "stop": "2026-10-28T08:00:00Z"
+      },
+      {
+        "title": "Rick and Morty",
+        "subtitle": "Pilot",
+        "start": "2026-10-28T08:00:00Z",
+        "stop": "2026-10-28T08:30:00Z"
+      },
+      {
+        "title": "Your Pretty Face Is Going to Hell",
+        "subtitle": "Welcome to Hell",
+        "start": "2026-10-28T08:30:00Z",
+        "stop": "2026-10-28T08:45:00Z"
+      },
+      {
+        "title": "Check It Out! With Dr. Steve Brule",
+        "subtitle": "Fear",
+        "start": "2026-10-28T08:45:00Z",
+        "stop": "2026-10-28T09:00:00Z"
+      },
+      {
+        "title": "Dragon Ball Z Kai",
+        "subtitle": "The Power of the Kaio-Ken! Goku vs. Vegeta!",
+        "start": "2026-10-28T09:00:00Z",
+        "stop": "2026-10-28T09:30:00Z"
+      },
+      {
+        "title": "Dragon Ball Z Kai",
+        "subtitle": "An All-Out Kamehame-Ha! Vegeta's Terrible Transformation!",
+        "start": "2026-10-28T09:30:00Z",
+        "stop": "2026-10-28T10:00:00Z"
+      },
+      {
+        "title": "Batwheels",
+        "subtitle": "Oh Crow You Don't",
+        "start": "2026-10-28T10:00:00Z",
+        "stop": "2026-10-28T10:12:00Z"
+      },
+      {
+        "title": "Bugs Bunny Builders",
+        "subtitle": "Super Builders",
+        "start": "2026-10-28T10:12:00Z",
+        "stop": "2026-10-28T10:28:00Z"
+      },
+      {
+        "title": "Regular Show",
+        "subtitle": "Terror Tales of the Park IV",
+        "start": "2026-10-28T10:28:00Z",
+        "stop": "2026-10-28T10:56:00Z"
       }
     ],
     "disneyxd": [
-      {
-        "title": "Phineas and Ferb",
-        "subtitle": "The Curse of Candace; That's the Spirit!",
-        "start": "2026-10-27T02:00:00Z",
-        "stop": "2026-10-27T02:30:00Z"
-      },
-      {
-        "title": "Even Stevens",
-        "subtitle": "Raiders of the Lost Sausage",
-        "start": "2026-10-27T02:30:00Z",
-        "stop": "2026-10-27T03:00:00Z"
-      },
-      {
-        "title": "Even Stevens",
-        "subtitle": "Close Encounters of the Beans Kind",
-        "start": "2026-10-27T03:00:00Z",
-        "stop": "2026-10-27T03:30:00Z"
-      },
-      {
-        "title": "Even Stevens",
-        "subtitle": "Short Story",
-        "start": "2026-10-27T03:30:00Z",
-        "stop": "2026-10-27T04:00:00Z"
-      },
-      {
-        "title": "Even Stevens",
-        "subtitle": "Hutch Boy",
-        "start": "2026-10-27T04:00:00Z",
-        "stop": "2026-10-27T04:30:00Z"
-      },
-      {
-        "title": "Even Stevens",
-        "subtitle": "Hardly Famous",
-        "start": "2026-10-27T04:30:00Z",
-        "stop": "2026-10-27T05:00:00Z"
-      },
-      {
-        "title": "Even Stevens",
-        "subtitle": "The King Sloppy",
-        "start": "2026-10-27T05:00:00Z",
-        "stop": "2026-10-27T05:30:00Z"
-      },
-      {
-        "title": "Even Stevens",
-        "subtitle": "Dirty Work",
-        "start": "2026-10-27T05:30:00Z",
-        "stop": "2026-10-27T06:00:00Z"
-      },
-      {
-        "title": "Even Stevens",
-        "subtitle": "Boy on a Rock",
-        "start": "2026-10-27T06:00:00Z",
-        "stop": "2026-10-27T06:30:00Z"
-      },
-      {
-        "title": "Even Stevens",
-        "subtitle": "The Big Splash",
-        "start": "2026-10-27T06:30:00Z",
-        "stop": "2026-10-27T07:00:00Z"
-      },
-      {
-        "title": "Even Stevens",
-        "subtitle": "Snow Job",
-        "start": "2026-10-27T07:00:00Z",
-        "stop": "2026-10-27T07:30:00Z"
-      },
       {
         "title": "Even Stevens",
         "subtitle": "Beans on the Brain",
@@ -2596,6 +2584,72 @@
         "subtitle": "Alex Russo, Matchmaker?",
         "start": "2026-10-28T05:00:00Z",
         "stop": "2026-10-28T05:30:00Z"
+      },
+      {
+        "title": "Wizards of Waverly Place",
+        "subtitle": "Delinquent Justin",
+        "start": "2026-10-28T05:30:00Z",
+        "stop": "2026-10-28T06:00:00Z"
+      },
+      {
+        "title": "Wizards of Waverly Place",
+        "subtitle": "Captain Jim Bob Sherwood",
+        "start": "2026-10-28T06:00:00Z",
+        "stop": "2026-10-28T06:30:00Z"
+      },
+      {
+        "title": "Wizards of Waverly Place",
+        "subtitle": "Wizards vs. Finkles",
+        "start": "2026-10-28T06:30:00Z",
+        "stop": "2026-10-28T07:00:00Z"
+      },
+      {
+        "title": "Wizards of Waverly Place",
+        "subtitle": "All About You-Niverse",
+        "start": "2026-10-28T07:00:00Z",
+        "stop": "2026-10-28T07:30:00Z"
+      },
+      {
+        "title": "Wizards of Waverly Place",
+        "subtitle": "Uncle Ernesto",
+        "start": "2026-10-28T07:30:00Z",
+        "stop": "2026-10-28T08:00:00Z"
+      },
+      {
+        "title": "Wizards of Waverly Place",
+        "subtitle": "Moving On",
+        "start": "2026-10-28T08:00:00Z",
+        "stop": "2026-10-28T08:30:00Z"
+      },
+      {
+        "title": "Wizards of Waverly Place",
+        "subtitle": "Wizards Exposed",
+        "start": "2026-10-28T08:30:00Z",
+        "stop": "2026-10-28T09:00:00Z"
+      },
+      {
+        "title": "Big Hero 6 The Series",
+        "subtitle": "Trading Chips; Mini Noodle Burger Max",
+        "start": "2026-10-28T09:00:00Z",
+        "stop": "2026-10-28T09:30:00Z"
+      },
+      {
+        "title": "Big Hero 6 The Series",
+        "subtitle": "A Friendly Face; Big Chibi 6",
+        "start": "2026-10-28T09:30:00Z",
+        "stop": "2026-10-28T10:00:00Z"
+      },
+      {
+        "title": "Big Hero 6 The Series",
+        "subtitle": "Cobra and Mongoose; Better Off Fred",
+        "start": "2026-10-28T10:00:00Z",
+        "stop": "2026-10-28T10:30:00Z"
+      },
+      {
+        "title": "Big Hero 6 The Series",
+        "subtitle": "Big Hero Battle; Go Go the Woweroo",
+        "start": "2026-10-28T10:30:00Z",
+        "stop": "2026-10-28T11:00:00Z"
       }
     ],
     "bencentral": []
